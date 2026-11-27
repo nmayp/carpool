@@ -4,6 +4,10 @@ Changelog started 27 November 2026.
 
 ## Unreleased
 
+- `carpool compile`: a model reads logged calls and writes a plain function that may abstain; it is kept only if it
+  passes a gate on held-out calls, and `Cascade` sends what it abstains on to the model. On HDFS log lines it
+  replaced every call at the same accuracy; on banking intents and open-ended questions it did not, and the gate
+  said so (`docs/RESULTS.md` §12).
 - README: a Related work section crediting batch prompting and explaining what carpool adds.
 - Fair baseline: one lean call per task (`--backend claude-lean`). carpool still cut cost per accepted answer by
   78–83% on the first run, with 0 regressions; the README now leads with that figure.

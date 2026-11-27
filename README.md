@@ -113,6 +113,29 @@ claude mcp add carpool -- carpool-mcp
 
 It adds four tools: `carpool_prompt`, `carpool_verify`, `carpool_run` and `carpool_lookup`, which does exact lookups with no model call. [integrations/MCP.md](integrations/MCP.md) has the config for each client.
 
+### Compile logged calls into code
+
+If a call keeps seeing the same kind of input, a model can write a plain function that handles most of it. Give
+`carpool compile` your logged calls, one JSON object per line with an `input` and an `output`:
+
+```bash
+carpool compile calls.jsonl --task "map one log line to its event id" --out compiled/solve.py
+```
+
+The function may abstain. It is saved only if, on logged calls it didn't learn from, its answers agree with the
+logged ones (at least 95%, with a 95% lower bound of at least 85%). In code, `Cascade(fast, slow)` tries the
+function first and sends everything it abstains on to the model.
+
+| input | code answers | code + model vs model alone | cost to build | break-even |
+|---|---|---|---|---|
+| log lines to event ids | 100% | 100% vs 100% | $0.13 | 18 calls |
+| banking messages to 77 intents | 5% | 78% vs 78% (refused by the gate) | $0.60 | not worth it |
+| questions over passages | 17%, half wrong | 88% vs 96% (would have been refused) | $0.79 | none |
+
+It works on regular text and doesn't on anything that needs meaning. One run, small test sets;
+[details and caveats](docs/RESULTS.md#12-compiling-logged-calls-into-code-carpool-compile). The generated file runs
+as you, so read it before you deploy it.
+
 ### Any other agent (Codex, Cursor, Gemini CLI, Windsurf, Aider…)
 
 Paste the five rules in [`integrations/AGENTS.md`](integrations/AGENTS.md) into your `AGENTS.md`, `.cursorrules`, `GEMINI.md` or system prompt.
@@ -222,6 +245,7 @@ fewer requests. They work on different costs, so you can use both.
 - [x] `carpool stats results/<file>.json` summarises a saved benchmark
 - [x] MCP server ([integrations/MCP.md](integrations/MCP.md))
 - [x] Batching vs compact-evidence ablation (batching drives the savings)
+- [x] `carpool compile`: logged model calls into a plain function, behind a gate ([results](docs/RESULTS.md#12-compiling-logged-calls-into-code-carpool-compile))
 - [x] Learning group sizes automatically from retry rates (`carpool run --adaptive`, [results](docs/RESULTS.md#5-adaptive-group-size-learned-during-the-run))
 - [x] A hook that notices "N subagents for N tiny questions" and suggests a carpool (ships with the plugin)
 - [x] Measure whether the hook's note changes agent behaviour: it doesn't, because agents launch subagents in one batch before the note arrives ([results](docs/RESULTS.md#8-does-the-fan-out-hook-change-what-an-agent-does))

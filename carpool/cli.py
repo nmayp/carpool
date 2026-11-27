@@ -5,6 +5,7 @@
   carpool run    tasks.jsonl --backend anthropic | cmd:"claude -p"
   carpool bench  [tasks.jsonl]          # offline: 24 calls vs 1 carpool, mock model
   carpool stats  results/run.json       # summarise a saved benchmark (bench/real.py output)
+  carpool compile calls.jsonl --task "..." --out compiled/solve.py   # logged model calls -> a plain function
 """
 from __future__ import annotations
 
@@ -106,6 +107,42 @@ def cmd_run(a):
     print(f"\n{len(tasks)} tasks, {L.n_calls} calls, {L.total_tokens:,} tokens{est}", file=sys.stderr)
 
 
+def cmd_compile(a):
+    from .compile import Gate, compile_log, render
+
+    pairs = []
+    for n, line in enumerate(Path(a.log).read_text().splitlines(), 1):
+        if line.strip():
+            d = json.loads(line)
+            if a.input_key not in d or a.output_key not in d:
+                sys.exit(f"{a.log}:{n}: each line needs \"{a.input_key}\" and \"{a.output_key}\" keys")
+            pairs.append((d[a.input_key], d[a.output_key]))
+    context = Path(a.context_file).read_text() if a.context_file else ""
+    gate = Gate(a.min_precision, a.min_lower_bound, a.min_coverage)
+    try:
+        r = compile_log(pairs, make_backend(a.backend), a.task, fn=a.func, context=context,
+                        val_frac=a.val, seed=a.seed, gate=gate)
+    except ValueError as e:
+        sys.exit(f"carpool compile: {e}")
+    p = "n/a" if r.precision is None else f"{r.precision:.1%}"
+    print(f"learned from {r.n_train} logged calls, checked on {r.n_held_out} it had not seen")
+    print(f"answers {r.coverage:.0%} of calls; {r.agreed}/{r.answered} match the logged output "
+          f"(precision {p}, 95% lower bound {r.lower_bound:.1%})")
+    print(f"cost to compile: ${r.cost_usd:.3f} in {r.calls} calls" if r.cost_usd else f"{r.calls} model calls to compile")
+    if a.call_cost and r.coverage > 0:
+        print(f"break-even: about {r.cost_usd / (a.call_cost * r.coverage):,.0f} calls at ${a.call_cost}/call")
+    print(("PROMOTED: " if r.promoted else "NOT PROMOTED: ") + r.reason)
+    if r.promoted:
+        out = Path(a.out)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(render(r))
+        print(f"wrote {out}. Read it before you deploy it: it runs as you. It returns None when unsure; "
+              f"send those inputs to the model (carpool.compile.Cascade does this).")
+    if a.json:
+        Path(a.json).write_text(json.dumps(r.report(), indent=2))
+    return 0 if r.promoted else 2
+
+
 def cmd_bench(a):
     tasks = load_tasks(a.tasks)
     if a.backend == "mock":
@@ -161,6 +198,24 @@ def main(argv=None):
     s = sub.add_parser("stats", help="summarise a saved benchmark results file")
     s.add_argument("results")
     s.set_defaults(fn=cmd_stats)
+
+    s = sub.add_parser("compile", help="turn logged model calls into a plain function, behind a gate")
+    s.add_argument("log", help='JSONL of logged calls: {"input": ..., "output": ...} per line')
+    s.add_argument("--task", required=True, help="one sentence saying what the model call does")
+    s.add_argument("--out", default="compiled/solve.py")
+    s.add_argument("--backend", default="claude-lean", help="the model that writes the function (any carpool backend)")
+    s.add_argument("--fn", dest="func", default="solve", help="name of the generated function")
+    s.add_argument("--context-file", help="text added to the prompt, such as the list of allowed answers")
+    s.add_argument("--input-key", default="input")
+    s.add_argument("--output-key", default="output")
+    s.add_argument("--val", type=float, default=0.3, help="share of logged calls held out to judge the function")
+    s.add_argument("--seed", type=int, default=1)
+    s.add_argument("--min-precision", type=float, default=0.95)
+    s.add_argument("--min-lower-bound", type=float, default=0.85)
+    s.add_argument("--min-coverage", type=float, default=0.10)
+    s.add_argument("--call-cost", type=float, help="what one model call costs you, in USD, to estimate break-even")
+    s.add_argument("--json", help="write the report here")
+    s.set_defaults(fn=cmd_compile)
 
     s = sub.add_parser("bench", help="baseline vs carpool, paired")
     s.add_argument("tasks", nargs="?")

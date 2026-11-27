@@ -7,7 +7,7 @@ Every number below comes from a raw JSON file in [`results/`](../results/) and c
 Each call is a fresh, non-persisted session in an empty directory, so it pays the full agent harness
 (system prompt, tool definitions), about 26k input tokens even for a one-word reply. Token counts and USD come
 from Claude Code's own usage report. USD is the list price the CLI reports, not an invoice.
-Baseline calls ran 4 at a time. Total spend for everything on this page: $41.26.
+Baseline calls ran 4 at a time. Total spend for everything on this page: $43.53.
 
 **Scoring.** *Strict* means normalized exact match against the answer key (Unicode, case, whitespace, final
 punctuation and a leading article are normalized). *Equivalent* also accepts an answer that contains the key or
@@ -274,6 +274,55 @@ about 1,100 tokens of fixed setup per call). Results in `results/*-claude-lean.j
   about H/(H+E) of each call. With a raw API call and a short system prompt the fixed part is
   far smaller; on the local model in §7 the savings were 8–51%.
 - Grouping also didn't cost quality here: carpool accepted more answers than the lean baseline (46 vs 42 on SQuAD).
+
+## 12. Compiling logged calls into code (`carpool compile`)
+
+Question: when a model call keeps seeing the same kind of input, can a model write a plain function that replaces
+most of those calls, and what happens when it can't? `carpool compile` has a model read logged (input, output)
+pairs, write a function that may abstain, and keep it only if it passes a gate on logged calls it never saw.
+Anything the function abstains on goes to the model. Script: `bench/compile_pilot.py`. Results, spend and the
+generated code: `results/compile-pilot/`. Total spend $2.27, Claude Sonnet 5.5 through `claude-lean`.
+
+The three tasks use real data and go from regular to open-ended:
+
+- **hdfs**: HDFS log lines (loghub HDFS_2k, 200 test lines) to one of 14 event ids. The templates are in the prompt.
+- **bank**: customer messages (Banking77, 150 test messages) to one of 77 intents.
+- **squad**: the 48 SQuAD holdout questions from §3, answered from passages. A negative control.
+
+For each task, the model labelled a training sample (the "logged calls"; 100 lines, 300 messages), a second call
+wrote the function with two repair rounds against the training sample only, and a validation set was used for the
+gate. The gate rule was fixed before the run: at least 95% agreement with the logged outputs and a 95% lower bound
+of at least 85%. The pilot script has no gate of its own, so the rule was applied by hand to the numbers below.
+
+| task | code answers | precision of those answers (vs real labels) | model alone | code + model | cost to build | break-even |
+|---|---|---|---|---|---|---|
+| hdfs | 100% (200/200) | 100% (lower bound 98.1%) | 100% | 100% | $0.13 | 18 calls |
+| bank | 4.7% (7/150) | 100% on 7 answers (lower bound 64.6%) | 78% | 78% | $0.60 | 1,631 calls |
+| squad | 16.7% (8/48) | 50% (lower bound 21.5%) | 95.8% | 87.5% | $0.79 | none |
+
+- **Regular text compiles.** On log lines the function answered every line correctly and replaced every model
+  call, for about $0.13. A one-line call here cost $0.0069, so it paid for itself after 18 lines.
+- **Meaning doesn't.** On banking intents the function answered 5% of messages. On validation it agreed with the
+  logged label on 16 of the 17 it answered (94.1%, lower bound 73.0%), so the gate refused it. Without the model
+  as fallback there would be nothing left to use; with it, the saving would have been about 5% of the calls.
+- **The gate matters.** On SQuAD the function was wrong on half of what it answered, and using it anyway cost 4
+  of 48 answers (95.8% to 87.5%). The SQuAD function had no validation split, so no gate was run there; the
+  numbers are the test result.
+- Break-even is the cost to build divided by the saving per call times the share of calls the code answers. It
+  assumes the model alone would have been right as often as code plus model, which holds for hdfs and bank and not
+  for squad.
+
+Caveats, all of which matter:
+
+- One run per task, one seed, and small test sets (200, 150 and 48). The intervals are wide.
+- hdfs is the easy end: the templates were in the prompt, so most of the function can be read off them.
+- The same model labelled the training sample and wrote the function. A weaker or stronger writer is untested.
+- squad was trained on the real answers, not on logged model outputs, which favours the code, and the writer got
+  only 40 questions.
+- Call costs are for short lean prompts ($0.007 to $0.017). Agent-sized calls cost more, so the saving per
+  replaced call is larger, but this isn't measured here.
+- `Gate.min_coverage` (default 10%) was added after the run and isn't part of these results. It doesn't change
+  them: hdfs passes it, and bank and squad already fail on precision.
 
 ## Limits
 

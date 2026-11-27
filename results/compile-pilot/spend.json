@@ -1,0 +1,16 @@
+{
+ "usd_by_stage": {
+  "compile-bank": 0.0945,
+  "compile-bank-fix": 0.1821,
+  "compile-hdfs": 0.0376,
+  "compile-squad": 0.1628,
+  "compile-squad-fix": 0.6294,
+  "single-bank": 0.0949,
+  "single-hdfs": 0.0825,
+  "teacher-bank": 0.6179,
+  "teacher-hdfs": 0.367
+ },
+ "total_usd": 2.269,
+ "backend": "claude-lean (Claude Code, no tools, one-line system prompt)",
+ "run_date": "2026-11-27"
+}

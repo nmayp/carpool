@@ -1,0 +1,65 @@
+{
+ "scenario": "large",
+ "task": "Review each of the 10 modules in ./src for bugs. Each module contains exactly one bug.\nThe modules are independent of each other, so you may use subagents (the Agent tool) to review\nthem in parallel if that helps.\nWrite ./review.json as a JSON array: [{\"file\": \"<file name>\", \"line\": <line number>, \"bug\": \"<one sentence>\"}]\nwith one entry per module. Do not ask questions; just do it.",
+ "arms": [
+  "skill"
+ ],
+ "runs": [
+  {
+   "arm": "skill",
+   "scenario": "large",
+   "seed": 300,
+   "seconds": 43.4,
+   "usd": 0.2503302,
+   "turns": 8,
+   "subagents": 0,
+   "input": 251906,
+   "cached": 234571,
+   "output": 3240,
+   "bugs_found": 10,
+   "n": 10
+  },
+  {
+   "arm": "skill",
+   "scenario": "large",
+   "seed": 301,
+   "seconds": 46.7,
+   "usd": 1.228061,
+   "turns": 3,
+   "subagents": 10,
+   "input": 125639,
+   "cached": 123184,
+   "output": 1500,
+   "bugs_found": 10,
+   "n": 10
+  },
+  {
+   "arm": "skill",
+   "scenario": "large",
+   "seed": 302,
+   "seconds": 44.9,
+   "usd": 1.2376878,
+   "turns": 18,
+   "subagents": 10,
+   "input": 339639,
+   "cached": 314329,
+   "output": 3833,
+   "bugs_found": 10,
+   "n": 10
+  },
+  {
+   "arm": "skill",
+   "scenario": "large",
+   "seed": 303,
+   "seconds": 47.0,
+   "usd": 0.9101804000000001,
+   "turns": 3,
+   "subagents": 5,
+   "input": 111261,
+   "cached": 109150,
+   "output": 1648,
+   "bugs_found": 10,
+   "n": 10
+  }
+ ]
+}

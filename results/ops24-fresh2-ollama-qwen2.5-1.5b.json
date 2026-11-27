@@ -1,0 +1,690 @@
+{
+ "backend": "ollama:qwen2.5:1.5b",
+ "tasks": "bench/data/ops24-fresh2.jsonl",
+ "n": 24,
+ "started": "2026-11-27T08:55:46",
+ "runs": [
+  {
+   "route": "baseline",
+   "accepted": "19/24",
+   "calls": 24,
+   "total_tokens": 5835,
+   "uncached+output": 5835,
+   "tokens/accepted": 307.1,
+   "uncached/accepted": 307.1,
+   "seconds": 47.76,
+   "usd/accepted": 0.0,
+   "lenient": "24/24",
+   "wall_seconds": 47.8,
+   "cached_input": 0,
+   "usd": 0.0,
+   "fallbacks": {},
+   "routes": {
+    "single-full": 24
+   },
+   "calls_detail": [
+    {
+     "in": 214,
+     "cached": 0,
+     "out": 41,
+     "s": 2.62,
+     "usd": 0.0
+    },
+    {
+     "in": 222,
+     "cached": 0,
+     "out": 25,
+     "s": 2.03,
+     "usd": 0.0
+    },
+    {
+     "in": 219,
+     "cached": 0,
+     "out": 26,
+     "s": 1.88,
+     "usd": 0.0
+    },
+    {
+     "in": 206,
+     "cached": 0,
+     "out": 29,
+     "s": 2.21,
+     "usd": 0.0
+    },
+    {
+     "in": 222,
+     "cached": 0,
+     "out": 25,
+     "s": 2.21,
+     "usd": 0.0
+    },
+    {
+     "in": 217,
+     "cached": 0,
+     "out": 26,
+     "s": 1.87,
+     "usd": 0.0
+    },
+    {
+     "in": 204,
+     "cached": 0,
+     "out": 39,
+     "s": 2.46,
+     "usd": 0.0
+    },
+    {
+     "in": 226,
+     "cached": 0,
+     "out": 26,
+     "s": 1.97,
+     "usd": 0.0
+    },
+    {
+     "in": 217,
+     "cached": 0,
+     "out": 26,
+     "s": 1.59,
+     "usd": 0.0
+    },
+    {
+     "in": 204,
+     "cached": 0,
+     "out": 36,
+     "s": 2.46,
+     "usd": 0.0
+    },
+    {
+     "in": 215,
+     "cached": 0,
+     "out": 26,
+     "s": 1.63,
+     "usd": 0.0
+    },
+    {
+     "in": 209,
+     "cached": 0,
+     "out": 26,
+     "s": 1.73,
+     "usd": 0.0
+    },
+    {
+     "in": 207,
+     "cached": 0,
+     "out": 28,
+     "s": 1.74,
+     "usd": 0.0
+    },
+    {
+     "in": 225,
+     "cached": 0,
+     "out": 26,
+     "s": 1.67,
+     "usd": 0.0
+    },
+    {
+     "in": 220,
+     "cached": 0,
+     "out": 26,
+     "s": 1.82,
+     "usd": 0.0
+    },
+    {
+     "in": 200,
+     "cached": 0,
+     "out": 37,
+     "s": 2.16,
+     "usd": 0.0
+    },
+    {
+     "in": 222,
+     "cached": 0,
+     "out": 26,
+     "s": 2.07,
+     "usd": 0.0
+    },
+    {
+     "in": 211,
+     "cached": 0,
+     "out": 26,
+     "s": 1.68,
+     "usd": 0.0
+    },
+    {
+     "in": 207,
+     "cached": 0,
+     "out": 38,
+     "s": 2.44,
+     "usd": 0.0
+    },
+    {
+     "in": 217,
+     "cached": 0,
+     "out": 26,
+     "s": 1.71,
+     "usd": 0.0
+    },
+    {
+     "in": 212,
+     "cached": 0,
+     "out": 26,
+     "s": 2.22,
+     "usd": 0.0
+    },
+    {
+     "in": 206,
+     "cached": 0,
+     "out": 29,
+     "s": 2.01,
+     "usd": 0.0
+    },
+    {
+     "in": 223,
+     "cached": 0,
+     "out": 26,
+     "s": 1.65,
+     "usd": 0.0
+    },
+    {
+     "in": 219,
+     "cached": 0,
+     "out": 26,
+     "s": 1.95,
+     "usd": 0.0
+    }
+   ],
+   "answers": {
+    "GC01": [
+     "50 days",
+     "GC01-b",
+     "single-full"
+    ],
+    "GC02": [
+     "57 days",
+     "GC02-b",
+     "single-full"
+    ],
+    "GC03": [
+     "64 days",
+     "GC03-b",
+     "single-full"
+    ],
+    "GC04": [
+     "71 days",
+     "GC04-b",
+     "single-full"
+    ],
+    "GC05": [
+     "78 days",
+     "GC05-b",
+     "single-full"
+    ],
+    "GC06": [
+     "85 days",
+     "GC06-b",
+     "single-full"
+    ],
+    "GC07": [
+     "92 days",
+     "GC07-b",
+     "single-full"
+    ],
+    "GC08": [
+     "99 days",
+     "GC08-b",
+     "single-full"
+    ],
+    "GS01": [
+     "The Northcote Reliability Desk maintains the condensate pump at Bramwell Quay.",
+     "GS01-a",
+     "single-full"
+    ],
+    "GS02": [
+     "The Brackley Utilities Crew",
+     "GS02-a",
+     "single-full"
+    ],
+    "GS03": [
+     "The Fenwick Plant Office maintains the foam inerting skid at Dunmore Yard.",
+     "GS03-a",
+     "single-full"
+    ],
+    "GS04": [
+     "The Stanway Systems Unit maintains the lift motor at Eskdale Rise.",
+     "GS04-a",
+     "single-full"
+    ],
+    "GS05": [
+     "The Holloway Integrity Team",
+     "GS05-a",
+     "single-full"
+    ],
+    "GS06": [
+     "The Carrick Field Group maintains the compressed air dryer at Gilsland.",
+     "GS06-a",
+     "single-full"
+    ],
+    "GS07": [
+     "The Mardale Controls Board maintains the flare igniter at Hawley Cut.",
+     "GS07-a",
+     "single-full"
+    ],
+    "GS08": [
+     "The Tavener Assets Cell",
+     "GS08-a",
+     "single-full"
+    ],
+    "GX01": [
+     "4 days",
+     "GX01-a",
+     "single-full"
+    ],
+    "GX02": [
+     "8 days",
+     "GX02-a",
+     "single-full"
+    ],
+    "GX03": [
+     "12 days",
+     "GX03-a",
+     "single-full"
+    ],
+    "GX04": [
+     "16 days",
+     "GX04-a",
+     "single-full"
+    ],
+    "GX05": [
+     "20 days",
+     "GX05-a",
+     "single-full"
+    ],
+    "GX06": [
+     "24 days",
+     "GX06-a",
+     "single-full"
+    ],
+    "GX07": [
+     "28 days",
+     "GX07-a",
+     "single-full"
+    ],
+    "GX08": [
+     "32 days",
+     "GX08-a",
+     "single-full"
+    ]
+   }
+  },
+  {
+   "route": "batch-only",
+   "accepted": "24/24",
+   "calls": 1,
+   "total_tokens": 3518,
+   "uncached+output": 3518,
+   "tokens/accepted": 146.6,
+   "uncached/accepted": 146.6,
+   "seconds": 62.58,
+   "usd/accepted": 0.0,
+   "lenient": "24/24",
+   "wall_seconds": 62.6,
+   "cached_input": 0,
+   "usd": 0.0,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {},
+   "routes": {
+    "batch-full": 24
+   },
+   "calls_detail": [
+    {
+     "in": 2733,
+     "cached": 0,
+     "out": 785,
+     "s": 62.58,
+     "usd": 0.0
+    }
+   ],
+   "answers": {
+    "GC01": [
+     "50 days",
+     "GC01-b",
+     "batch-full"
+    ],
+    "GC02": [
+     "57 days",
+     "GC02-b",
+     "batch-full"
+    ],
+    "GC03": [
+     "64 days",
+     "GC03-b",
+     "batch-full"
+    ],
+    "GC04": [
+     "71 days",
+     "GC04-b",
+     "batch-full"
+    ],
+    "GC05": [
+     "78 days",
+     "GC05-b",
+     "batch-full"
+    ],
+    "GC06": [
+     "85 days",
+     "GC06-b",
+     "batch-full"
+    ],
+    "GC07": [
+     "92 days",
+     "GC07-b",
+     "batch-full"
+    ],
+    "GC08": [
+     "99 days",
+     "GC08-b",
+     "batch-full"
+    ],
+    "GS01": [
+     "Northcote Reliability Desk",
+     "GS01-a",
+     "batch-full"
+    ],
+    "GS02": [
+     "Brackley Utilities Crew",
+     "GS02-a",
+     "batch-full"
+    ],
+    "GS03": [
+     "Fenwick Plant Office",
+     "GS03-a",
+     "batch-full"
+    ],
+    "GS04": [
+     "Stanway Systems Unit",
+     "GS04-a",
+     "batch-full"
+    ],
+    "GS05": [
+     "Holloway Integrity Team",
+     "GS05-a",
+     "batch-full"
+    ],
+    "GS06": [
+     "Carrick Field Group",
+     "GS06-a",
+     "batch-full"
+    ],
+    "GS07": [
+     "Mardale Controls Board",
+     "GS07-a",
+     "batch-full"
+    ],
+    "GS08": [
+     "Tavener Assets Cell",
+     "GS08-a",
+     "batch-full"
+    ],
+    "GX01": [
+     "4 days",
+     "GX01-a",
+     "batch-full"
+    ],
+    "GX02": [
+     "8 days",
+     "GX02-a",
+     "batch-full"
+    ],
+    "GX03": [
+     "12 days",
+     "GX03-a",
+     "batch-full"
+    ],
+    "GX04": [
+     "16 days",
+     "GX04-a",
+     "batch-full"
+    ],
+    "GX05": [
+     "20 days",
+     "GX05-a",
+     "batch-full"
+    ],
+    "GX06": [
+     "24 days",
+     "GX06-a",
+     "batch-full"
+    ],
+    "GX07": [
+     "28 days",
+     "GX07-a",
+     "batch-full"
+    ],
+    "GX08": [
+     "32 days",
+     "GX08-a",
+     "batch-full"
+    ]
+   }
+  },
+  {
+   "route": "carpool",
+   "accepted": "24/24",
+   "calls": 9,
+   "total_tokens": 5029,
+   "uncached+output": 5029,
+   "tokens/accepted": 209.5,
+   "uncached/accepted": 209.5,
+   "seconds": 93.9,
+   "usd/accepted": 0.0,
+   "lenient": "24/24",
+   "wall_seconds": 93.9,
+   "cached_input": 0,
+   "usd": 0.0,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {
+    "GC01": "cites an untrusted (draft/superseded) source",
+    "GC02": "duplicate answer",
+    "GC03": "duplicate answer",
+    "GC04": "duplicate answer",
+    "GC05": "duplicate answer",
+    "GC06": "duplicate answer",
+    "GC07": "duplicate answer",
+    "GC08": "duplicate answer"
+   },
+   "routes": {
+    "batch-compact": 16,
+    "single-full": 8
+   },
+   "calls_detail": [
+    {
+     "in": 2048,
+     "cached": 0,
+     "out": 1049,
+     "s": 78.9,
+     "usd": 0.0
+    },
+    {
+     "in": 219,
+     "cached": 0,
+     "out": 26,
+     "s": 1.89,
+     "usd": 0.0
+    },
+    {
+     "in": 217,
+     "cached": 0,
+     "out": 26,
+     "s": 2.27,
+     "usd": 0.0
+    },
+    {
+     "in": 217,
+     "cached": 0,
+     "out": 26,
+     "s": 1.73,
+     "usd": 0.0
+    },
+    {
+     "in": 209,
+     "cached": 0,
+     "out": 26,
+     "s": 1.81,
+     "usd": 0.0
+    },
+    {
+     "in": 220,
+     "cached": 0,
+     "out": 26,
+     "s": 2.07,
+     "usd": 0.0
+    },
+    {
+     "in": 211,
+     "cached": 0,
+     "out": 26,
+     "s": 1.9,
+     "usd": 0.0
+    },
+    {
+     "in": 212,
+     "cached": 0,
+     "out": 26,
+     "s": 1.9,
+     "usd": 0.0
+    },
+    {
+     "in": 219,
+     "cached": 0,
+     "out": 26,
+     "s": 1.42,
+     "usd": 0.0
+    }
+   ],
+   "answers": {
+    "GC01": [
+     "50 days",
+     "GC01-b",
+     "single-full"
+    ],
+    "GC02": [
+     "57 days",
+     "GC02-b",
+     "single-full"
+    ],
+    "GC03": [
+     "64 days",
+     "GC03-b",
+     "single-full"
+    ],
+    "GC04": [
+     "71 days",
+     "GC04-b",
+     "single-full"
+    ],
+    "GC05": [
+     "78 days",
+     "GC05-b",
+     "single-full"
+    ],
+    "GC06": [
+     "85 days",
+     "GC06-b",
+     "single-full"
+    ],
+    "GC07": [
+     "92 days",
+     "GC07-b",
+     "single-full"
+    ],
+    "GC08": [
+     "99 days",
+     "GC08-b",
+     "single-full"
+    ],
+    "GS01": [
+     "Northcote Reliability Desk",
+     "GS01-a",
+     "batch-compact"
+    ],
+    "GS02": [
+     "Brackley Utilities Crew",
+     "GS02-a",
+     "batch-compact"
+    ],
+    "GS03": [
+     "Fenwick Plant Office",
+     "GS03-a",
+     "batch-compact"
+    ],
+    "GS04": [
+     "Stanway Systems Unit",
+     "GS04-a",
+     "batch-compact"
+    ],
+    "GS05": [
+     "Holloway Integrity Team",
+     "GS05-a",
+     "batch-compact"
+    ],
+    "GS06": [
+     "Carrick Field Group",
+     "GS06-a",
+     "batch-compact"
+    ],
+    "GS07": [
+     "Mardale Controls Board",
+     "GS07-a",
+     "batch-compact"
+    ],
+    "GS08": [
+     "Tavener Assets Cell",
+     "GS08-a",
+     "batch-compact"
+    ],
+    "GX01": [
+     "4 days",
+     "GX01-a",
+     "batch-compact"
+    ],
+    "GX02": [
+     "8 days",
+     "GX02-a",
+     "batch-compact"
+    ],
+    "GX03": [
+     "12 days",
+     "GX03-a",
+     "batch-compact"
+    ],
+    "GX04": [
+     "16 days",
+     "GX04-a",
+     "batch-compact"
+    ],
+    "GX05": [
+     "20 days",
+     "GX05-a",
+     "batch-compact"
+    ],
+    "GX06": [
+     "24 days",
+     "GX06-a",
+     "batch-compact"
+    ],
+    "GX07": [
+     "28 days",
+     "GX07-a",
+     "batch-compact"
+    ],
+    "GX08": [
+     "32 days",
+     "GX08-a",
+     "batch-compact"
+    ]
+   }
+  }
+ ],
+ "finished": "2026-11-27T08:59:10"
+}

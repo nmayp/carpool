@@ -1,0 +1,2 @@
+{"route": "baseline", "accepted": "17/24", "lenient": "24/24", "calls": 24, "total_tokens": 5775, "uncached+output": 5775, "usd": 0.0, "wall_seconds": 52.1, "regressions": null}
+{"route": "batch-only", "accepted": "16/24", "lenient": "16/24", "calls": 1, "total_tokens": 3276, "uncached+output": 3276, "usd": 0.0, "wall_seconds": 51.8, "regressions": ["FC01", "FC02", "FC03", "FC04", "FC05", "FC06", "FC07", "FC08"]}

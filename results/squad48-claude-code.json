@@ -1,0 +1,4381 @@
+{
+ "backend": "claude-code",
+ "tasks": "bench/data/squad48.jsonl",
+ "n": 48,
+ "started": "2026-11-26T23:13:52",
+ "runs": [
+  {
+   "route": "baseline",
+   "accepted": "26/48",
+   "calls": 48,
+   "total_tokens": 1311995,
+   "uncached+output": 591227,
+   "tokens/accepted": 50461.3,
+   "uncached/accepted": 22739.5,
+   "seconds": 191.84,
+   "usd/accepted": 0.0941,
+   "lenient": "45/48",
+   "wall_seconds": 49.2,
+   "cached_input": 720768,
+   "usd": 2.4464,
+   "fallbacks": {},
+   "routes": {
+    "single-full": 48
+   },
+   "calls_detail": [
+    {
+     "in": 27639,
+     "cached": 15016,
+     "out": 26,
+     "s": 3.87,
+     "usd": 0.05225
+    },
+    {
+     "in": 27316,
+     "cached": 15016,
+     "out": 29,
+     "s": 4.27,
+     "usd": 0.05099
+    },
+    {
+     "in": 27352,
+     "cached": 15016,
+     "out": 21,
+     "s": 4.55,
+     "usd": 0.05105
+    },
+    {
+     "in": 27400,
+     "cached": 15016,
+     "out": 24,
+     "s": 4.58,
+     "usd": 0.05127
+    },
+    {
+     "in": 27141,
+     "cached": 15016,
+     "out": 24,
+     "s": 3.91,
+     "usd": 0.05024
+    },
+    {
+     "in": 27274,
+     "cached": 15016,
+     "out": 50,
+     "s": 4.43,
+     "usd": 0.05103
+    },
+    {
+     "in": 27293,
+     "cached": 15016,
+     "out": 37,
+     "s": 4.0,
+     "usd": 0.05098
+    },
+    {
+     "in": 27642,
+     "cached": 15016,
+     "out": 32,
+     "s": 3.97,
+     "usd": 0.05232
+    },
+    {
+     "in": 27262,
+     "cached": 15016,
+     "out": 40,
+     "s": 3.74,
+     "usd": 0.05088
+    },
+    {
+     "in": 27554,
+     "cached": 15016,
+     "out": 27,
+     "s": 4.24,
+     "usd": 0.05192
+    },
+    {
+     "in": 27482,
+     "cached": 15016,
+     "out": 27,
+     "s": 4.02,
+     "usd": 0.05163
+    },
+    {
+     "in": 27167,
+     "cached": 15016,
+     "out": 62,
+     "s": 4.45,
+     "usd": 0.05072
+    },
+    {
+     "in": 27309,
+     "cached": 15016,
+     "out": 27,
+     "s": 3.75,
+     "usd": 0.05094
+    },
+    {
+     "in": 27206,
+     "cached": 15016,
+     "out": 30,
+     "s": 3.87,
+     "usd": 0.05056
+    },
+    {
+     "in": 26972,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.84,
+     "usd": 0.04954
+    },
+    {
+     "in": 27420,
+     "cached": 15016,
+     "out": 30,
+     "s": 3.77,
+     "usd": 0.05141
+    },
+    {
+     "in": 27499,
+     "cached": 15016,
+     "out": 39,
+     "s": 4.15,
+     "usd": 0.05182
+    },
+    {
+     "in": 27205,
+     "cached": 15016,
+     "out": 28,
+     "s": 4.09,
+     "usd": 0.05053
+    },
+    {
+     "in": 27731,
+     "cached": 15016,
+     "out": 41,
+     "s": 4.2,
+     "usd": 0.05277
+    },
+    {
+     "in": 27235,
+     "cached": 15016,
+     "out": 31,
+     "s": 4.01,
+     "usd": 0.05068
+    },
+    {
+     "in": 27777,
+     "cached": 15016,
+     "out": 24,
+     "s": 3.64,
+     "usd": 0.05278
+    },
+    {
+     "in": 27101,
+     "cached": 15016,
+     "out": 30,
+     "s": 3.76,
+     "usd": 0.05014
+    },
+    {
+     "in": 27118,
+     "cached": 15016,
+     "out": 33,
+     "s": 3.98,
+     "usd": 0.05024
+    },
+    {
+     "in": 27442,
+     "cached": 15016,
+     "out": 40,
+     "s": 4.46,
+     "usd": 0.0516
+    },
+    {
+     "in": 27442,
+     "cached": 15016,
+     "out": 27,
+     "s": 3.71,
+     "usd": 0.05147
+    },
+    {
+     "in": 27115,
+     "cached": 15016,
+     "out": 34,
+     "s": 3.67,
+     "usd": 0.05023
+    },
+    {
+     "in": 27187,
+     "cached": 15016,
+     "out": 26,
+     "s": 3.87,
+     "usd": 0.05044
+    },
+    {
+     "in": 27035,
+     "cached": 15016,
+     "out": 34,
+     "s": 4.18,
+     "usd": 0.04991
+    },
+    {
+     "in": 27315,
+     "cached": 15016,
+     "out": 27,
+     "s": 3.53,
+     "usd": 0.05096
+    },
+    {
+     "in": 27280,
+     "cached": 15016,
+     "out": 28,
+     "s": 3.78,
+     "usd": 0.05083
+    },
+    {
+     "in": 27337,
+     "cached": 15016,
+     "out": 39,
+     "s": 4.0,
+     "usd": 0.05117
+    },
+    {
+     "in": 27358,
+     "cached": 15016,
+     "out": 24,
+     "s": 3.48,
+     "usd": 0.05111
+    },
+    {
+     "in": 27164,
+     "cached": 15016,
+     "out": 27,
+     "s": 3.8,
+     "usd": 0.05036
+    },
+    {
+     "in": 27140,
+     "cached": 15016,
+     "out": 61,
+     "s": 4.88,
+     "usd": 0.0506
+    },
+    {
+     "in": 27231,
+     "cached": 15016,
+     "out": 29,
+     "s": 3.86,
+     "usd": 0.05065
+    },
+    {
+     "in": 27378,
+     "cached": 15016,
+     "out": 110,
+     "s": 5.32,
+     "usd": 0.05205
+    },
+    {
+     "in": 27322,
+     "cached": 15016,
+     "out": 27,
+     "s": 3.52,
+     "usd": 0.05099
+    },
+    {
+     "in": 27128,
+     "cached": 15016,
+     "out": 30,
+     "s": 4.04,
+     "usd": 0.05025
+    },
+    {
+     "in": 28447,
+     "cached": 15016,
+     "out": 24,
+     "s": 3.71,
+     "usd": 0.05546
+    },
+    {
+     "in": 27384,
+     "cached": 15016,
+     "out": 45,
+     "s": 3.72,
+     "usd": 0.05142
+    },
+    {
+     "in": 27206,
+     "cached": 15016,
+     "out": 49,
+     "s": 3.84,
+     "usd": 0.05075
+    },
+    {
+     "in": 27123,
+     "cached": 15016,
+     "out": 28,
+     "s": 4.11,
+     "usd": 0.05021
+    },
+    {
+     "in": 26912,
+     "cached": 15016,
+     "out": 25,
+     "s": 3.94,
+     "usd": 0.04933
+    },
+    {
+     "in": 27081,
+     "cached": 15016,
+     "out": 23,
+     "s": 3.84,
+     "usd": 0.04999
+    },
+    {
+     "in": 27298,
+     "cached": 15016,
+     "out": 30,
+     "s": 3.7,
+     "usd": 0.05093
+    },
+    {
+     "in": 26826,
+     "cached": 15016,
+     "out": 28,
+     "s": 4.3,
+     "usd": 0.04902
+    },
+    {
+     "in": 26857,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.83,
+     "usd": 0.04908
+    },
+    {
+     "in": 27291,
+     "cached": 15016,
+     "out": 30,
+     "s": 3.66,
+     "usd": 0.0509
+    }
+   ],
+   "answers": {
+    "Q01": [
+     "5.3%",
+     "Q01-c",
+     "single-full"
+    ],
+    "Q02": [
+     "4 kilometers",
+     "Q02-c",
+     "single-full"
+    ],
+    "Q03": [
+     "1",
+     "Q03-c",
+     "single-full"
+    ],
+    "Q04": [
+     "Long-lived memory cells",
+     "Q04-a",
+     "single-full"
+    ],
+    "Q05": [
+     "Photosynthesis (the oxygen cycle, driven mainly by photosynthesis)",
+     "Q05-b",
+     "single-full"
+    ],
+    "Q06": [
+     "solar energy",
+     "Q06-c",
+     "single-full"
+    ],
+    "Q07": [
+     "An estimated 25 million Chinese and other Asians",
+     "Q07-a",
+     "single-full"
+    ],
+    "Q08": [
+     "Saffir-Simpson Scale",
+     "Q08-b",
+     "single-full"
+    ],
+    "Q09": [
+     "Cataloging everything",
+     "Q09-a",
+     "single-full"
+    ],
+    "Q10": [
+     "A decentralized network with multiple paths between any two points; dividing user messages into message blocks (packets); delivery by store and forward switching",
+     "Q10-b",
+     "single-full"
+    ],
+    "Q11": [
+     "Flax cultivation (supporting the Irish linen industry)",
+     "Q11-b",
+     "single-full"
+    ],
+    "Q12": [
+     "Monday Night Football",
+     "Q12-a",
+     "single-full"
+    ],
+    "Q13": [
+     "Cisco Systems",
+     "Q13-c",
+     "single-full"
+    ],
+    "Q14": [
+     "Over 100 billion dollars",
+     "Q14-c",
+     "single-full"
+    ],
+    "Q15": [
+     "1965",
+     "Q15-c",
+     "single-full"
+    ],
+    "Q16": [
+     "Several University of Chicago professors",
+     "Q16-b",
+     "single-full"
+    ],
+    "Q17": [
+     "His brutality/butchery (while his positive role is underrated)",
+     "Q17-b",
+     "single-full"
+    ],
+    "Q18": [
+     "On the West Side (Fresno Chandler Executive Airport)",
+     "Q18-c",
+     "single-full"
+    ],
+    "Q19": [
+     "An innate force of impetus",
+     "Q19-a",
+     "single-full"
+    ],
+    "Q20": [
+     "A high-gain S-band antenna",
+     "Q20-b",
+     "single-full"
+    ],
+    "Q21": [
+     "all other animals",
+     "Q21-c",
+     "single-full"
+    ],
+    "Q22": [
+     "The principle of cross-cutting relationships",
+     "Q22-b",
+     "single-full"
+    ],
+    "Q23": [
+     "Standard & Poor's economists",
+     "Q23-a",
+     "single-full"
+    ],
+    "Q24": [
+     "He ignored C\u00e9loron's warning and continued trading with the British.",
+     "Q24-a",
+     "single-full"
+    ],
+    "Q25": [
+     "hockey stick graph",
+     "Q25-c",
+     "single-full"
+    ],
+    "Q26": [
+     "Between 96,660 and 128,843 species",
+     "Q26-a",
+     "single-full"
+    ],
+    "Q27": [
+     "The Mission Council",
+     "Q27-b",
+     "single-full"
+    ],
+    "Q28": [
+     "Five inches long (very thick and noisy)",
+     "Q28-b",
+     "single-full"
+    ],
+    "Q29": [
+     "Over 200 awards",
+     "Q29-c",
+     "single-full"
+    ],
+    "Q30": [
+     "about 13,000 BP",
+     "Q30-a",
+     "single-full"
+    ],
+    "Q31": [
+     "Wisdom, Compassion, Justice and Integrity",
+     "Q31-a",
+     "single-full"
+    ],
+    "Q32": [
+     "New Holland",
+     "Q32-a",
+     "single-full"
+    ],
+    "Q33": [
+     "Proper safety equipment such as harnesses and guardrails, and procedures such as securing ladders and inspecting scaffolding",
+     "Q33-b",
+     "single-full"
+    ],
+    "Q34": [
+     "Charging students tuition",
+     "Q34-c",
+     "single-full"
+    ],
+    "Q35": [
+     "3 in 1,000,000",
+     "Q35-a",
+     "single-full"
+    ],
+    "Q36": [
+     "Under the Mongols, Chinese physicians were brought along on military campaigns as the empire expanded west, transmitting techniques like acupuncture, moxibustion, pulse diagnosis, and herbal drugs and elixirs to the Middle East and the rest of the empire.",
+     "Q36-a",
+     "single-full"
+    ],
+    "Q37": [
+     "quietist/non-political Islam",
+     "Q37-a",
+     "single-full"
+    ],
+    "Q38": [
+     "Architectural attraction",
+     "Q38-b",
+     "single-full"
+    ],
+    "Q39": [
+     "A postal company",
+     "Q39-c",
+     "single-full"
+    ],
+    "Q40": [
+     "Pons Aelius, a Roman fort and bridge across the River Tyne",
+     "Q40-c",
+     "single-full"
+    ],
+    "Q41": [
+     "Lessing (1755)",
+     "Q41-c",
+     "single-full"
+    ],
+    "Q42": [
+     "The political weakness of the Mughal state (and local elites, incorporated economically and administratively)",
+     "Q42-b",
+     "single-full"
+    ],
+    "Q43": [
+     "Embroidery",
+     "Q43-b",
+     "single-full"
+    ],
+    "Q44": [
+     "80,000",
+     "Q44-b",
+     "single-full"
+    ],
+    "Q45": [
+     "phowa and siddhi",
+     "Q45-c",
+     "single-full"
+    ],
+    "Q46": [
+     "Super Bowl XLVII",
+     "Q46-a",
+     "single-full"
+    ],
+    "Q47": [
+     "economically",
+     "Q47-a",
+     "single-full"
+    ],
+    "Q48": [
+     "Sophocles' Antigone",
+     "Q48-a",
+     "single-full"
+    ]
+   }
+  },
+  {
+   "route": "compact-only",
+   "accepted": "29/48",
+   "calls": 60,
+   "total_tokens": 1618114,
+   "uncached+output": 694769,
+   "tokens/accepted": 55797.0,
+   "uncached/accepted": 23957.6,
+   "seconds": 234.99,
+   "usd/accepted": 0.0994,
+   "lenient": "45/48",
+   "wall_seconds": 62.8,
+   "cached_input": 923345,
+   "usd": 2.8837,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {
+    "Q05": "answer not found in cited source",
+    "Q09": "answer not found in cited source",
+    "Q10": "answer not found in cited source",
+    "Q11": "answer not found in cited source",
+    "Q17": "answer not found in cited source",
+    "Q18": "answer not found in cited source",
+    "Q21": "answer not found in cited source",
+    "Q24": "answer not found in cited source",
+    "Q26": "answer not found in cited source",
+    "Q33": "answer not found in cited source",
+    "Q42": "answer not found in cited source",
+    "Q48": "answer not found in cited source"
+   },
+   "routes": {
+    "single-compact": 33,
+    "single-full": 15
+   },
+   "calls_detail": [
+    {
+     "in": 26728,
+     "cached": 15016,
+     "out": 26,
+     "s": 3.76,
+     "usd": 0.04861
+    },
+    {
+     "in": 26712,
+     "cached": 15016,
+     "out": 29,
+     "s": 3.94,
+     "usd": 0.04857
+    },
+    {
+     "in": 26697,
+     "cached": 15016,
+     "out": 24,
+     "s": 4.05,
+     "usd": 0.04846
+    },
+    {
+     "in": 26798,
+     "cached": 15016,
+     "out": 21,
+     "s": 4.2,
+     "usd": 0.04884
+    },
+    {
+     "in": 26753,
+     "cached": 15016,
+     "out": 43,
+     "s": 3.71,
+     "usd": 0.04888
+    },
+    {
+     "in": 26707,
+     "cached": 15016,
+     "out": 24,
+     "s": 3.59,
+     "usd": 0.0485
+    },
+    {
+     "in": 27143,
+     "cached": 15016,
+     "out": 32,
+     "s": 3.49,
+     "usd": 0.05033
+    },
+    {
+     "in": 26886,
+     "cached": 15016,
+     "out": 37,
+     "s": 3.86,
+     "usd": 0.04935
+    },
+    {
+     "in": 27273,
+     "cached": 16445,
+     "out": 50,
+     "s": 3.86,
+     "usd": 0.04545
+    },
+    {
+     "in": 26772,
+     "cached": 15016,
+     "out": 37,
+     "s": 3.69,
+     "usd": 0.04889
+    },
+    {
+     "in": 26970,
+     "cached": 15016,
+     "out": 27,
+     "s": 4.13,
+     "usd": 0.04958
+    },
+    {
+     "in": 26734,
+     "cached": 15016,
+     "out": 62,
+     "s": 4.46,
+     "usd": 0.04899
+    },
+    {
+     "in": 26795,
+     "cached": 15016,
+     "out": 27,
+     "s": 3.73,
+     "usd": 0.04888
+    },
+    {
+     "in": 27555,
+     "cached": 16725,
+     "out": 27,
+     "s": 4.06,
+     "usd": 0.04526
+    },
+    {
+     "in": 27264,
+     "cached": 16434,
+     "out": 37,
+     "s": 4.2,
+     "usd": 0.04533
+    },
+    {
+     "in": 27166,
+     "cached": 16339,
+     "out": 62,
+     "s": 4.3,
+     "usd": 0.04556
+    },
+    {
+     "in": 26699,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.61,
+     "usd": 0.04845
+    },
+    {
+     "in": 26709,
+     "cached": 15016,
+     "out": 27,
+     "s": 4.4,
+     "usd": 0.04854
+    },
+    {
+     "in": 26754,
+     "cached": 15016,
+     "out": 30,
+     "s": 4.1,
+     "usd": 0.04875
+    },
+    {
+     "in": 27035,
+     "cached": 15016,
+     "out": 30,
+     "s": 3.78,
+     "usd": 0.04987
+    },
+    {
+     "in": 26963,
+     "cached": 15016,
+     "out": 32,
+     "s": 3.66,
+     "usd": 0.04961
+    },
+    {
+     "in": 26817,
+     "cached": 15016,
+     "out": 48,
+     "s": 4.35,
+     "usd": 0.04918
+    },
+    {
+     "in": 26731,
+     "cached": 15016,
+     "out": 28,
+     "s": 4.04,
+     "usd": 0.04864
+    },
+    {
+     "in": 26800,
+     "cached": 15016,
+     "out": 31,
+     "s": 3.78,
+     "usd": 0.04894
+    },
+    {
+     "in": 27731,
+     "cached": 16902,
+     "out": 30,
+     "s": 3.89,
+     "usd": 0.0453
+    },
+    {
+     "in": 26692,
+     "cached": 15016,
+     "out": 33,
+     "s": 3.76,
+     "usd": 0.04853
+    },
+    {
+     "in": 27030,
+     "cached": 15016,
+     "out": 33,
+     "s": 3.93,
+     "usd": 0.04988
+    },
+    {
+     "in": 27498,
+     "cached": 16670,
+     "out": 39,
+     "s": 4.08,
+     "usd": 0.04537
+    },
+    {
+     "in": 27101,
+     "cached": 16271,
+     "out": 30,
+     "s": 3.6,
+     "usd": 0.04524
+    },
+    {
+     "in": 27778,
+     "cached": 16950,
+     "out": 24,
+     "s": 3.94,
+     "usd": 0.04524
+    },
+    {
+     "in": 26729,
+     "cached": 15016,
+     "out": 28,
+     "s": 4.0,
+     "usd": 0.04863
+    },
+    {
+     "in": 27005,
+     "cached": 15016,
+     "out": 32,
+     "s": 4.02,
+     "usd": 0.04977
+    },
+    {
+     "in": 26724,
+     "cached": 15016,
+     "out": 34,
+     "s": 3.87,
+     "usd": 0.04867
+    },
+    {
+     "in": 26763,
+     "cached": 15016,
+     "out": 38,
+     "s": 3.62,
+     "usd": 0.04887
+    },
+    {
+     "in": 27441,
+     "cached": 16612,
+     "out": 40,
+     "s": 4.15,
+     "usd": 0.04537
+    },
+    {
+     "in": 26801,
+     "cached": 15016,
+     "out": 33,
+     "s": 4.12,
+     "usd": 0.04897
+    },
+    {
+     "in": 27114,
+     "cached": 16285,
+     "out": 32,
+     "s": 4.05,
+     "usd": 0.04526
+    },
+    {
+     "in": 26800,
+     "cached": 15016,
+     "out": 27,
+     "s": 3.72,
+     "usd": 0.0489
+    },
+    {
+     "in": 26809,
+     "cached": 15016,
+     "out": 39,
+     "s": 3.3,
+     "usd": 0.04906
+    },
+    {
+     "in": 26747,
+     "cached": 15016,
+     "out": 28,
+     "s": 3.59,
+     "usd": 0.0487
+    },
+    {
+     "in": 26805,
+     "cached": 15016,
+     "out": 24,
+     "s": 3.42,
+     "usd": 0.04889
+    },
+    {
+     "in": 26710,
+     "cached": 15016,
+     "out": 28,
+     "s": 3.8,
+     "usd": 0.04855
+    },
+    {
+     "in": 26754,
+     "cached": 15016,
+     "out": 61,
+     "s": 4.3,
+     "usd": 0.04906
+    },
+    {
+     "in": 26784,
+     "cached": 15016,
+     "out": 29,
+     "s": 4.22,
+     "usd": 0.04886
+    },
+    {
+     "in": 27379,
+     "cached": 16549,
+     "out": 113,
+     "s": 4.96,
+     "usd": 0.0461
+    },
+    {
+     "in": 26751,
+     "cached": 15016,
+     "out": 30,
+     "s": 3.85,
+     "usd": 0.04874
+    },
+    {
+     "in": 26853,
+     "cached": 15016,
+     "out": 27,
+     "s": 3.73,
+     "usd": 0.04912
+    },
+    {
+     "in": 27139,
+     "cached": 16310,
+     "out": 60,
+     "s": 4.59,
+     "usd": 0.04554
+    },
+    {
+     "in": 27236,
+     "cached": 15016,
+     "out": 24,
+     "s": 3.93,
+     "usd": 0.05062
+    },
+    {
+     "in": 26894,
+     "cached": 15016,
+     "out": 45,
+     "s": 3.94,
+     "usd": 0.04946
+    },
+    {
+     "in": 27124,
+     "cached": 16294,
+     "out": 28,
+     "s": 3.82,
+     "usd": 0.04523
+    },
+    {
+     "in": 26787,
+     "cached": 15016,
+     "out": 44,
+     "s": 3.46,
+     "usd": 0.04902
+    },
+    {
+     "in": 26692,
+     "cached": 15016,
+     "out": 23,
+     "s": 3.69,
+     "usd": 0.04843
+    },
+    {
+     "in": 26658,
+     "cached": 15016,
+     "out": 25,
+     "s": 3.94,
+     "usd": 0.04832
+    },
+    {
+     "in": 26623,
+     "cached": 15016,
+     "out": 28,
+     "s": 3.9,
+     "usd": 0.04821
+    },
+    {
+     "in": 27206,
+     "cached": 16376,
+     "out": 52,
+     "s": 4.07,
+     "usd": 0.04547
+    },
+    {
+     "in": 26733,
+     "cached": 15016,
+     "out": 30,
+     "s": 3.48,
+     "usd": 0.04867
+    },
+    {
+     "in": 26670,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.95,
+     "usd": 0.04833
+    },
+    {
+     "in": 26712,
+     "cached": 15016,
+     "out": 32,
+     "s": 3.66,
+     "usd": 0.0486
+    },
+    {
+     "in": 27292,
+     "cached": 16463,
+     "out": 30,
+     "s": 3.89,
+     "usd": 0.04526
+    }
+   ],
+   "answers": {
+    "Q01": [
+     "5.3%",
+     "Q01-c",
+     "single-compact"
+    ],
+    "Q02": [
+     "4 kilometers",
+     "Q02-c",
+     "single-compact"
+    ],
+    "Q03": [
+     "1",
+     "Q03-c",
+     "single-compact"
+    ],
+    "Q04": [
+     "Long-lived memory cells",
+     "Q04-a",
+     "single-compact"
+    ],
+    "Q05": [
+     "Photosynthesis (the oxygen cycle, driven mainly by photosynthesis)",
+     "Q05-b",
+     "single-full"
+    ],
+    "Q06": [
+     "solar energy",
+     "Q06-c",
+     "single-compact"
+    ],
+    "Q07": [
+     "An estimated 25 million Chinese and other Asians",
+     "Q07-a",
+     "single-compact"
+    ],
+    "Q08": [
+     "Saffir-Simpson Scale",
+     "Q08-b",
+     "single-compact"
+    ],
+    "Q09": [
+     "Cataloging everything",
+     "Q09-a",
+     "single-full"
+    ],
+    "Q10": [
+     "A decentralized network with multiple paths between any two points; dividing user messages into message blocks (packets); delivery by store and forward switching",
+     "Q10-b",
+     "single-full"
+    ],
+    "Q11": [
+     "Flax cultivation (the Irish linen industry)",
+     "Q11-b",
+     "single-full"
+    ],
+    "Q12": [
+     "Monday Night Football",
+     "Q12-a",
+     "single-compact"
+    ],
+    "Q13": [
+     "Cisco Systems",
+     "Q13-c",
+     "single-compact"
+    ],
+    "Q14": [
+     "Over 100 billion dollars",
+     "Q14-c",
+     "single-compact"
+    ],
+    "Q15": [
+     "1965",
+     "Q15-c",
+     "single-compact"
+    ],
+    "Q16": [
+     "Several University of Chicago professors",
+     "Q16-b",
+     "single-compact"
+    ],
+    "Q17": [
+     "His brutality/butchery (while his positive role is underrated)",
+     "Q17-b",
+     "single-full"
+    ],
+    "Q18": [
+     "On the West Side of Fresno",
+     "Q18-c",
+     "single-full"
+    ],
+    "Q19": [
+     "An innate force of impetus",
+     "Q19-a",
+     "single-compact"
+    ],
+    "Q20": [
+     "A high-gain S-band antenna",
+     "Q20-b",
+     "single-compact"
+    ],
+    "Q21": [
+     "all other animals",
+     "Q21-c",
+     "single-full"
+    ],
+    "Q22": [
+     "The principle of cross-cutting relationships",
+     "Q22-b",
+     "single-compact"
+    ],
+    "Q23": [
+     "Standard & Poor's economists",
+     "Q23-a",
+     "single-full"
+    ],
+    "Q24": [
+     "He ignored C\u00e9loron's warning and continued trading with the British.",
+     "Q24-a",
+     "single-full"
+    ],
+    "Q25": [
+     "The \"hockey stick graph\"",
+     "Q25-c",
+     "single-compact"
+    ],
+    "Q26": [
+     "Between 96,660 and 128,843",
+     "Q26-a",
+     "single-full"
+    ],
+    "Q27": [
+     "The Mission Council (usually consisting of church bishops)",
+     "Q27-b",
+     "single-compact"
+    ],
+    "Q28": [
+     "five inches long, but very thick and noisy",
+     "Q28-b",
+     "single-compact"
+    ],
+    "Q29": [
+     "Over 200 awards",
+     "Q29-c",
+     "single-compact"
+    ],
+    "Q30": [
+     "About 13,000 BP",
+     "Q30-a",
+     "single-compact"
+    ],
+    "Q31": [
+     "Wisdom, Compassion, Justice and Integrity",
+     "Q31-a",
+     "single-compact"
+    ],
+    "Q32": [
+     "New Holland",
+     "Q32-a",
+     "single-compact"
+    ],
+    "Q33": [
+     "Proper safety equipment such as harnesses and guardrails and procedures such as securing ladders and inspecting scaffolding",
+     "Q33-b",
+     "single-full"
+    ],
+    "Q34": [
+     "Charging their students tuition",
+     "Q34-c",
+     "single-compact"
+    ],
+    "Q35": [
+     "3 in 1,000,000",
+     "Q35-a",
+     "single-compact"
+    ],
+    "Q36": [
+     "Under the Mongols, Chinese physicians were brought along on military campaigns as the Mongols expanded west, transmitting techniques such as acupuncture, moxibustion, pulse diagnosis, and herbal drugs and elixirs to the Middle East and the rest of the empire.",
+     "Q36-a",
+     "single-full"
+    ],
+    "Q37": [
+     "quietist/non-political Islam",
+     "Q37-a",
+     "single-compact"
+    ],
+    "Q38": [
+     "Architectural attraction",
+     "Q38-b",
+     "single-compact"
+    ],
+    "Q39": [
+     "A postal company",
+     "Q39-c",
+     "single-compact"
+    ],
+    "Q40": [
+     "Pons Aelius, a Roman fort and bridge across the River Tyne",
+     "Q40-c",
+     "single-compact"
+    ],
+    "Q41": [
+     "Lessing (1755)",
+     "Q41-c",
+     "single-full"
+    ],
+    "Q42": [
+     "The political weakness of the Mughal state (and its local elites, who were incorporated economically and administratively)",
+     "Q42-b",
+     "single-full"
+    ],
+    "Q43": [
+     "Embroidery",
+     "Q43-b",
+     "single-compact"
+    ],
+    "Q44": [
+     "80,000",
+     "Q44-b",
+     "single-compact"
+    ],
+    "Q45": [
+     "phowa and siddhi",
+     "Q45-c",
+     "single-compact"
+    ],
+    "Q46": [
+     "Super Bowl XLVII",
+     "Q46-a",
+     "single-compact"
+    ],
+    "Q47": [
+     "economically",
+     "Q47-a",
+     "single-compact"
+    ],
+    "Q48": [
+     "Sophocles' Antigone",
+     "Q48-a",
+     "single-full"
+    ]
+   }
+  },
+  {
+   "route": "batch-only#1",
+   "accepted": "33/48",
+   "calls": 1,
+   "total_tokens": 66881,
+   "uncached+output": 51865,
+   "tokens/accepted": 2026.7,
+   "uncached/accepted": 1571.7,
+   "seconds": 12.02,
+   "usd/accepted": 0.0066,
+   "lenient": "46/48",
+   "wall_seconds": 12.0,
+   "cached_input": 15016,
+   "usd": 0.2187,
+   "regressions": [],
+   "lenient_regressions": [
+    "Q36"
+   ],
+   "fallbacks": {},
+   "routes": {
+    "batch-full": 48
+   },
+   "calls_detail": [
+    {
+     "in": 65251,
+     "cached": 15016,
+     "out": 1630,
+     "s": 12.02,
+     "usd": 0.21874
+    }
+   ],
+   "answers": {
+    "Q01": [
+     "5.3%",
+     "Q01-c",
+     "batch-full"
+    ],
+    "Q02": [
+     "4 kilometers",
+     "Q02-c",
+     "batch-full"
+    ],
+    "Q03": [
+     "1",
+     "Q03-c",
+     "batch-full"
+    ],
+    "Q04": [
+     "Long-lived memory cells",
+     "Q04-a",
+     "batch-full"
+    ],
+    "Q05": [
+     "Photosynthesis (the oxygen cycle)",
+     "Q05-b",
+     "batch-full"
+    ],
+    "Q06": [
+     "Solar energy",
+     "Q06-c",
+     "batch-full"
+    ],
+    "Q07": [
+     "An estimated 25 million Chinese and other Asians",
+     "Q07-a",
+     "batch-full"
+    ],
+    "Q08": [
+     "Saffir-Simpson Scale",
+     "Q08-b",
+     "batch-full"
+    ],
+    "Q09": [
+     "Catalog everything",
+     "Q09-a",
+     "batch-full"
+    ],
+    "Q10": [
+     "Decentralized network with multiple paths between any two points; dividing user messages into message blocks (packets); delivery by store and forward switching",
+     "Q10-b",
+     "batch-full"
+    ],
+    "Q11": [
+     "Flax cultivation",
+     "Q11-b",
+     "batch-full"
+    ],
+    "Q12": [
+     "Monday Night Football",
+     "Q12-a",
+     "batch-full"
+    ],
+    "Q13": [
+     "Cisco Systems",
+     "Q13-c",
+     "batch-full"
+    ],
+    "Q14": [
+     "Over 100 billion dollars",
+     "Q14-c",
+     "batch-full"
+    ],
+    "Q15": [
+     "1965",
+     "Q15-c",
+     "batch-full"
+    ],
+    "Q16": [
+     "Several University of Chicago professors",
+     "Q16-b",
+     "batch-full"
+    ],
+    "Q17": [
+     "His brutality (his butchery)",
+     "Q17-b",
+     "batch-full"
+    ],
+    "Q18": [
+     "On the West Side (of Fresno)",
+     "Q18-c",
+     "batch-full"
+    ],
+    "Q19": [
+     "An innate force of impetus",
+     "Q19-a",
+     "batch-full"
+    ],
+    "Q20": [
+     "A high-gain S-band antenna",
+     "Q20-b",
+     "batch-full"
+    ],
+    "Q21": [
+     "All other animals",
+     "Q21-c",
+     "batch-full"
+    ],
+    "Q22": [
+     "Principle of cross-cutting relationships",
+     "Q22-b",
+     "batch-full"
+    ],
+    "Q23": [
+     "Standard & Poor's economists",
+     "Q23-a",
+     "batch-full"
+    ],
+    "Q24": [
+     "He ignored the warning",
+     "Q24-a",
+     "batch-full"
+    ],
+    "Q25": [
+     "Hockey stick graph",
+     "Q25-c",
+     "batch-full"
+    ],
+    "Q26": [
+     "Between 96,660 and 128,843",
+     "Q26-a",
+     "batch-full"
+    ],
+    "Q27": [
+     "The Mission Council",
+     "Q27-b",
+     "batch-full"
+    ],
+    "Q28": [
+     "Five inches",
+     "Q28-b",
+     "batch-full"
+    ],
+    "Q29": [
+     "Over 200",
+     "Q29-c",
+     "batch-full"
+    ],
+    "Q30": [
+     "About 13,000 BP",
+     "Q30-a",
+     "batch-full"
+    ],
+    "Q31": [
+     "Wisdom, Compassion, Justice and Integrity",
+     "Q31-a",
+     "batch-full"
+    ],
+    "Q32": [
+     "New Holland",
+     "Q32-a",
+     "batch-full"
+    ],
+    "Q33": [
+     "Proper safety equipment and procedures (harnesses, guardrails, securing ladders, inspecting scaffolding)",
+     "Q33-b",
+     "batch-full"
+    ],
+    "Q34": [
+     "Charging students tuition",
+     "Q34-c",
+     "batch-full"
+    ],
+    "Q35": [
+     "3 in 1,000,000",
+     "Q35-a",
+     "batch-full"
+    ],
+    "Q36": [
+     "Mongols brought Chinese physicians along on military campaigns as they expanded westward",
+     "Q36-a",
+     "batch-full"
+    ],
+    "Q37": [
+     "Quietist/non-political Islam",
+     "Q37-a",
+     "batch-full"
+    ],
+    "Q38": [
+     "Architectural attraction",
+     "Q38-b",
+     "batch-full"
+    ],
+    "Q39": [
+     "A postal company",
+     "Q39-c",
+     "batch-full"
+    ],
+    "Q40": [
+     "Pons Aelius",
+     "Q40-c",
+     "batch-full"
+    ],
+    "Q41": [
+     "Lessing (1755)",
+     "Q41-c",
+     "batch-full"
+    ],
+    "Q42": [
+     "The political weakness of the Mughal state (and its local elites)",
+     "Q42-b",
+     "batch-full"
+    ],
+    "Q43": [
+     "Embroidery",
+     "Q43-b",
+     "batch-full"
+    ],
+    "Q44": [
+     "80,000",
+     "Q44-b",
+     "batch-full"
+    ],
+    "Q45": [
+     "Phowa and siddhi",
+     "Q45-c",
+     "batch-full"
+    ],
+    "Q46": [
+     "Super Bowl XLVII",
+     "Q46-a",
+     "batch-full"
+    ],
+    "Q47": [
+     "Economically",
+     "Q47-a",
+     "batch-full"
+    ],
+    "Q48": [
+     "Antigone",
+     "Q48-a",
+     "batch-full"
+    ]
+   }
+  },
+  {
+   "route": "carpool#1",
+   "accepted": "34/48",
+   "calls": 8,
+   "total_tokens": 235975,
+   "uncached+output": 105223,
+   "tokens/accepted": 6940.4,
+   "uncached/accepted": 3094.8,
+   "seconds": 39.73,
+   "usd/accepted": 0.0131,
+   "lenient": "46/48",
+   "wall_seconds": 39.7,
+   "cached_input": 130752,
+   "usd": 0.446,
+   "regressions": [],
+   "lenient_regressions": [
+    "Q36"
+   ],
+   "fallbacks": {
+    "Q05": "verifier: answer not found in cited source",
+    "Q10": "verifier: answer not found in cited source",
+    "Q11": "verifier: answer not found in cited source",
+    "Q17": "verifier: answer not found in cited source",
+    "Q18": "verifier: answer not found in cited source",
+    "Q24": "verifier: answer not found in cited source",
+    "Q34": "verifier: answer not found in cited source"
+   },
+   "routes": {
+    "batch-compact": 38,
+    "batch-full": 3,
+    "single-full": 7
+   },
+   "calls_detail": [
+    {
+     "in": 42429,
+     "cached": 15016,
+     "out": 1689,
+     "s": 12.09,
+     "usd": 0.12804
+    },
+    {
+     "in": 27274,
+     "cached": 16445,
+     "out": 64,
+     "s": 4.34,
+     "usd": 0.0456
+    },
+    {
+     "in": 27168,
+     "cached": 16339,
+     "out": 62,
+     "s": 4.63,
+     "usd": 0.04557
+    },
+    {
+     "in": 27264,
+     "cached": 16434,
+     "out": 44,
+     "s": 3.58,
+     "usd": 0.0454
+    },
+    {
+     "in": 27498,
+     "cached": 16670,
+     "out": 48,
+     "s": 3.75,
+     "usd": 0.04546
+    },
+    {
+     "in": 27731,
+     "cached": 16902,
+     "out": 46,
+     "s": 4.13,
+     "usd": 0.04546
+    },
+    {
+     "in": 27440,
+     "cached": 16612,
+     "out": 28,
+     "s": 3.52,
+     "usd": 0.04525
+    },
+    {
+     "in": 27162,
+     "cached": 16334,
+     "out": 28,
+     "s": 3.66,
+     "usd": 0.04522
+    }
+   ],
+   "answers": {
+    "Q01": [
+     "5.3%",
+     "Q01-c",
+     "batch-compact"
+    ],
+    "Q02": [
+     "4 kilometers",
+     "Q02-c",
+     "batch-compact"
+    ],
+    "Q03": [
+     "1",
+     "Q03-c",
+     "batch-compact"
+    ],
+    "Q04": [
+     "Long-lived memory cells",
+     "Q04-a",
+     "batch-compact"
+    ],
+    "Q05": [
+     "Photosynthesis (the oxygen cycle, driven mainly by photosynthesis, releases oxygen into the atmosphere)",
+     "Q05-b",
+     "single-full"
+    ],
+    "Q06": [
+     "Solar energy",
+     "Q06-c",
+     "batch-compact"
+    ],
+    "Q07": [
+     "An estimated 25 million Chinese and other Asians",
+     "Q07-a",
+     "batch-compact"
+    ],
+    "Q08": [
+     "Saffir-Simpson Scale",
+     "Q08-b",
+     "batch-compact"
+    ],
+    "Q09": [
+     "Catalog everything",
+     "Q09-a",
+     "batch-compact"
+    ],
+    "Q10": [
+     "A decentralized network with multiple paths between any two points; dividing user messages into message blocks (packets); delivery by store and forward switching",
+     "Q10-b",
+     "single-full"
+    ],
+    "Q11": [
+     "Flax cultivation (supporting the growth of the Irish linen industry)",
+     "Q11-b",
+     "single-full"
+    ],
+    "Q12": [
+     "Monday Night Football",
+     "Q12-a",
+     "batch-compact"
+    ],
+    "Q13": [
+     "Cisco Systems",
+     "Q13-c",
+     "batch-compact"
+    ],
+    "Q14": [
+     "Over 100 billion dollars",
+     "Q14-c",
+     "batch-compact"
+    ],
+    "Q15": [
+     "1965",
+     "Q15-c",
+     "batch-compact"
+    ],
+    "Q16": [
+     "Several University of Chicago professors",
+     "Q16-b",
+     "batch-compact"
+    ],
+    "Q17": [
+     "His brutality/butchery (they say it is exaggerated while his positive role is underrated)",
+     "Q17-b",
+     "single-full"
+    ],
+    "Q18": [
+     "On the West Side of Fresno (Fresno Chandler Executive Airport)",
+     "Q18-c",
+     "single-full"
+    ],
+    "Q19": [
+     "An innate force of impetus",
+     "Q19-a",
+     "batch-compact"
+    ],
+    "Q20": [
+     "High-gain S-band antenna",
+     "Q20-b",
+     "batch-compact"
+    ],
+    "Q21": [
+     "All other animals",
+     "Q21-c",
+     "batch-compact"
+    ],
+    "Q22": [
+     "The principle of cross-cutting relationships",
+     "Q22-b",
+     "batch-compact"
+    ],
+    "Q23": [
+     "Standard & Poor's economists",
+     "Q23-a",
+     "batch-full"
+    ],
+    "Q24": [
+     "He ignored the warning.",
+     "Q24-a",
+     "single-full"
+    ],
+    "Q25": [
+     "The hockey stick graph",
+     "Q25-c",
+     "batch-compact"
+    ],
+    "Q26": [
+     "Between 96,660 and 128,843",
+     "Q26-a",
+     "batch-compact"
+    ],
+    "Q27": [
+     "The Mission Council",
+     "Q27-b",
+     "batch-compact"
+    ],
+    "Q28": [
+     "Five inches",
+     "Q28-b",
+     "batch-compact"
+    ],
+    "Q29": [
+     "Over 200",
+     "Q29-c",
+     "batch-compact"
+    ],
+    "Q30": [
+     "About 13,000 BP",
+     "Q30-a",
+     "batch-compact"
+    ],
+    "Q31": [
+     "Wisdom, Compassion, Justice and Integrity",
+     "Q31-a",
+     "batch-compact"
+    ],
+    "Q32": [
+     "New Holland",
+     "Q32-a",
+     "batch-compact"
+    ],
+    "Q33": [
+     "Proper safety equipment such as harnesses and guardrails and procedures such as securing ladders and inspecting scaffolding",
+     "Q33-b",
+     "batch-compact"
+    ],
+    "Q34": [
+     "Charging their students tuition",
+     "Q34-c",
+     "single-full"
+    ],
+    "Q35": [
+     "3 in 1,000,000",
+     "Q35-a",
+     "batch-compact"
+    ],
+    "Q36": [
+     "Chinese physicians were brought along Mongol military campaigns as they expanded westward",
+     "Q36-a",
+     "batch-full"
+    ],
+    "Q37": [
+     "Quietist/non-political Islam",
+     "Q37-a",
+     "batch-compact"
+    ],
+    "Q38": [
+     "Architectural attraction",
+     "Q38-b",
+     "batch-compact"
+    ],
+    "Q39": [
+     "A postal company",
+     "Q39-c",
+     "batch-compact"
+    ],
+    "Q40": [
+     "Pons Aelius",
+     "Q40-c",
+     "batch-compact"
+    ],
+    "Q41": [
+     "Lessing (1755)",
+     "Q41-c",
+     "batch-full"
+    ],
+    "Q42": [
+     "The political weakness of the Mughal state",
+     "Q42-b",
+     "batch-compact"
+    ],
+    "Q43": [
+     "Embroidery",
+     "Q43-b",
+     "batch-compact"
+    ],
+    "Q44": [
+     "80,000",
+     "Q44-b",
+     "batch-compact"
+    ],
+    "Q45": [
+     "Phowa and siddhi",
+     "Q45-c",
+     "batch-compact"
+    ],
+    "Q46": [
+     "Super Bowl XLVII",
+     "Q46-a",
+     "batch-compact"
+    ],
+    "Q47": [
+     "Economically",
+     "Q47-a",
+     "batch-compact"
+    ],
+    "Q48": [
+     "Antigone",
+     "Q48-a",
+     "batch-compact"
+    ]
+   }
+  },
+  {
+   "route": "batch-only#2",
+   "accepted": "33/48",
+   "calls": 1,
+   "total_tokens": 66934,
+   "uncached+output": 12512,
+   "tokens/accepted": 2028.3,
+   "uncached/accepted": 379.2,
+   "seconds": 13.13,
+   "usd/accepted": 0.002,
+   "lenient": "46/48",
+   "wall_seconds": 13.1,
+   "cached_input": 54422,
+   "usd": 0.0656,
+   "regressions": [],
+   "lenient_regressions": [
+    "Q36"
+   ],
+   "fallbacks": {},
+   "routes": {
+    "batch-full": 48
+   },
+   "calls_detail": [
+    {
+     "in": 65251,
+     "cached": 54422,
+     "out": 1683,
+     "s": 13.13,
+     "usd": 0.06558
+    }
+   ],
+   "answers": {
+    "Q01": [
+     "5.3%",
+     "Q01-c",
+     "batch-full"
+    ],
+    "Q02": [
+     "More than 4 kilometers",
+     "Q02-c",
+     "batch-full"
+    ],
+    "Q03": [
+     "1",
+     "Q03-c",
+     "batch-full"
+    ],
+    "Q04": [
+     "Long-lived memory cells",
+     "Q04-a",
+     "batch-full"
+    ],
+    "Q05": [
+     "Photosynthesis (the oxygen cycle)",
+     "Q05-b",
+     "batch-full"
+    ],
+    "Q06": [
+     "Solar energy",
+     "Q06-c",
+     "batch-full"
+    ],
+    "Q07": [
+     "An estimated 25 million Chinese and other Asians",
+     "Q07-a",
+     "batch-full"
+    ],
+    "Q08": [
+     "Saffir-Simpson Scale",
+     "Q08-b",
+     "batch-full"
+    ],
+    "Q09": [
+     "Catalog everything",
+     "Q09-a",
+     "batch-full"
+    ],
+    "Q10": [
+     "Decentralized network with multiple paths between any two points; dividing user messages into message blocks (packets); delivery by store and forward switching",
+     "Q10-b",
+     "batch-full"
+    ],
+    "Q11": [
+     "Flax cultivation (Irish linen industry)",
+     "Q11-b",
+     "batch-full"
+    ],
+    "Q12": [
+     "Monday Night Football",
+     "Q12-a",
+     "batch-full"
+    ],
+    "Q13": [
+     "Cisco Systems",
+     "Q13-c",
+     "batch-full"
+    ],
+    "Q14": [
+     "Over 100 billion dollars",
+     "Q14-c",
+     "batch-full"
+    ],
+    "Q15": [
+     "1965",
+     "Q15-c",
+     "batch-full"
+    ],
+    "Q16": [
+     "Several University of Chicago professors",
+     "Q16-b",
+     "batch-full"
+    ],
+    "Q17": [
+     "His brutality (butchery)",
+     "Q17-b",
+     "batch-full"
+    ],
+    "Q18": [
+     "On the West Side (of Fresno)",
+     "Q18-c",
+     "batch-full"
+    ],
+    "Q19": [
+     "An innate force of impetus",
+     "Q19-a",
+     "batch-full"
+    ],
+    "Q20": [
+     "High-gain S-band antenna",
+     "Q20-b",
+     "batch-full"
+    ],
+    "Q21": [
+     "All other animals",
+     "Q21-c",
+     "batch-full"
+    ],
+    "Q22": [
+     "Cross-cutting relationships",
+     "Q22-b",
+     "batch-full"
+    ],
+    "Q23": [
+     "Standard & Poor's economists",
+     "Q23-a",
+     "batch-full"
+    ],
+    "Q24": [
+     "He ignored the warning",
+     "Q24-a",
+     "batch-full"
+    ],
+    "Q25": [
+     "Hockey stick graph",
+     "Q25-c",
+     "batch-full"
+    ],
+    "Q26": [
+     "Between 96,660 and 128,843",
+     "Q26-a",
+     "batch-full"
+    ],
+    "Q27": [
+     "The Mission Council",
+     "Q27-b",
+     "batch-full"
+    ],
+    "Q28": [
+     "Five inches",
+     "Q28-b",
+     "batch-full"
+    ],
+    "Q29": [
+     "Over 200",
+     "Q29-c",
+     "batch-full"
+    ],
+    "Q30": [
+     "About 13,000 BP",
+     "Q30-a",
+     "batch-full"
+    ],
+    "Q31": [
+     "Wisdom, Compassion, Justice and Integrity",
+     "Q31-a",
+     "batch-full"
+    ],
+    "Q32": [
+     "New Holland",
+     "Q32-a",
+     "batch-full"
+    ],
+    "Q33": [
+     "Proper safety equipment and procedures (harnesses, guardrails, securing ladders, inspecting scaffolding)",
+     "Q33-b",
+     "batch-full"
+    ],
+    "Q34": [
+     "Charging students tuition",
+     "Q34-c",
+     "batch-full"
+    ],
+    "Q35": [
+     "3 in 1,000,000",
+     "Q35-a",
+     "batch-full"
+    ],
+    "Q36": [
+     "Through the Mongols, who brought Chinese physicians along military campaigns as they expanded west",
+     "Q36-a",
+     "batch-full"
+    ],
+    "Q37": [
+     "Quietist/non-political Islam",
+     "Q37-a",
+     "batch-full"
+    ],
+    "Q38": [
+     "Architectural attraction",
+     "Q38-b",
+     "batch-full"
+    ],
+    "Q39": [
+     "A postal company",
+     "Q39-c",
+     "batch-full"
+    ],
+    "Q40": [
+     "Pons Aelius",
+     "Q40-c",
+     "batch-full"
+    ],
+    "Q41": [
+     "Lessing",
+     "Q41-c",
+     "batch-full"
+    ],
+    "Q42": [
+     "The political weakness of the Mughal state (and its local elites)",
+     "Q42-b",
+     "batch-full"
+    ],
+    "Q43": [
+     "Embroidery",
+     "Q43-b",
+     "batch-full"
+    ],
+    "Q44": [
+     "80,000",
+     "Q44-b",
+     "batch-full"
+    ],
+    "Q45": [
+     "Phowa and siddhi",
+     "Q45-c",
+     "batch-full"
+    ],
+    "Q46": [
+     "Super Bowl XLVII",
+     "Q46-a",
+     "batch-full"
+    ],
+    "Q47": [
+     "Economically",
+     "Q47-a",
+     "batch-full"
+    ],
+    "Q48": [
+     "Antigone",
+     "Q48-a",
+     "batch-full"
+    ]
+   }
+  },
+  {
+   "route": "carpool#2",
+   "accepted": "34/48",
+   "calls": 11,
+   "total_tokens": 318172,
+   "uncached+output": 121200,
+   "tokens/accepted": 9358.0,
+   "uncached/accepted": 3564.7,
+   "seconds": 50.34,
+   "usd/accepted": 0.0152,
+   "lenient": "45/48",
+   "wall_seconds": 50.3,
+   "cached_input": 196972,
+   "usd": 0.5169,
+   "regressions": [],
+   "lenient_regressions": [
+    "Q36"
+   ],
+   "fallbacks": {
+    "Q05": "verifier: answer not found in cited source",
+    "Q10": "verifier: answer not found in cited source",
+    "Q11": "verifier: answer not found in cited source",
+    "Q17": "verifier: answer not found in cited source",
+    "Q18": "verifier: answer not found in cited source",
+    "Q21": "verifier: answer not found in cited source",
+    "Q24": "verifier: answer not found in cited source",
+    "Q33": "verifier: answer not found in cited source",
+    "Q34": "verifier: answer not found in cited source",
+    "Q42": "verifier: answer not found in cited source"
+   },
+   "routes": {
+    "batch-compact": 35,
+    "batch-full": 3,
+    "single-full": 10
+   },
+   "calls_detail": [
+    {
+     "in": 42428,
+     "cached": 31600,
+     "out": 1661,
+     "s": 11.91,
+     "usd": 0.06308
+    },
+    {
+     "in": 27275,
+     "cached": 16445,
+     "out": 37,
+     "s": 3.42,
+     "usd": 0.04533
+    },
+    {
+     "in": 27167,
+     "cached": 16339,
+     "out": 62,
+     "s": 4.15,
+     "usd": 0.04556
+    },
+    {
+     "in": 27264,
+     "cached": 16434,
+     "out": 40,
+     "s": 3.64,
+     "usd": 0.04536
+    },
+    {
+     "in": 27499,
+     "cached": 16670,
+     "out": 39,
+     "s": 3.79,
+     "usd": 0.04537
+    },
+    {
+     "in": 27730,
+     "cached": 16902,
+     "out": 41,
+     "s": 3.97,
+     "usd": 0.04541
+    },
+    {
+     "in": 27780,
+     "cached": 16950,
+     "out": 24,
+     "s": 3.99,
+     "usd": 0.04525
+    },
+    {
+     "in": 27441,
+     "cached": 16612,
+     "out": 40,
+     "s": 3.61,
+     "usd": 0.04537
+    },
+    {
+     "in": 27138,
+     "cached": 16310,
+     "out": 60,
+     "s": 3.94,
+     "usd": 0.04554
+    },
+    {
+     "in": 27163,
+     "cached": 16334,
+     "out": 28,
+     "s": 3.72,
+     "usd": 0.04523
+    },
+    {
+     "in": 27205,
+     "cached": 16376,
+     "out": 50,
+     "s": 4.17,
+     "usd": 0.04545
+    }
+   ],
+   "answers": {
+    "Q01": [
+     "5.3%",
+     "Q01-c",
+     "batch-compact"
+    ],
+    "Q02": [
+     "4 kilometers",
+     "Q02-c",
+     "batch-compact"
+    ],
+    "Q03": [
+     "1",
+     "Q03-c",
+     "batch-compact"
+    ],
+    "Q04": [
+     "Long-lived memory cells",
+     "Q04-a",
+     "batch-compact"
+    ],
+    "Q05": [
+     "Photosynthesis (the oxygen cycle)",
+     "Q05-b",
+     "single-full"
+    ],
+    "Q06": [
+     "Solar energy",
+     "Q06-c",
+     "batch-compact"
+    ],
+    "Q07": [
+     "An estimated 25 million Chinese and other Asians",
+     "Q07-a",
+     "batch-compact"
+    ],
+    "Q08": [
+     "Saffir-Simpson Scale",
+     "Q08-b",
+     "batch-compact"
+    ],
+    "Q09": [
+     "Catalog everything",
+     "Q09-a",
+     "batch-compact"
+    ],
+    "Q10": [
+     "A decentralized network with multiple paths between any two points; dividing user messages into message blocks (packets); delivery by store and forward switching",
+     "Q10-b",
+     "single-full"
+    ],
+    "Q11": [
+     "Flax cultivation (growth of the Irish linen industry)",
+     "Q11-b",
+     "single-full"
+    ],
+    "Q12": [
+     "Monday Night Football",
+     "Q12-a",
+     "batch-compact"
+    ],
+    "Q13": [
+     "Cisco Systems",
+     "Q13-c",
+     "batch-compact"
+    ],
+    "Q14": [
+     "Over 100 billion dollars",
+     "Q14-c",
+     "batch-compact"
+    ],
+    "Q15": [
+     "1965",
+     "Q15-c",
+     "batch-compact"
+    ],
+    "Q16": [
+     "Several University of Chicago professors",
+     "Q16-b",
+     "batch-compact"
+    ],
+    "Q17": [
+     "His brutality/butchery (while his positive role is underrated)",
+     "Q17-b",
+     "single-full"
+    ],
+    "Q18": [
+     "On the West Side (Fresno Chandler Executive Airport)",
+     "Q18-c",
+     "single-full"
+    ],
+    "Q19": [
+     "An innate force of impetus",
+     "Q19-a",
+     "batch-compact"
+    ],
+    "Q20": [
+     "High-gain S-band antenna",
+     "Q20-b",
+     "batch-compact"
+    ],
+    "Q21": [
+     "All other animals",
+     "Q21-c",
+     "single-full"
+    ],
+    "Q22": [
+     "Principle of cross-cutting relationships",
+     "Q22-b",
+     "batch-compact"
+    ],
+    "Q23": [
+     "Standard & Poor's economists",
+     "Q23-a",
+     "batch-full"
+    ],
+    "Q24": [
+     "He ignored C\u00e9loron's warning and continued trading with the British.",
+     "Q24-a",
+     "single-full"
+    ],
+    "Q25": [
+     "Hockey stick graph",
+     "Q25-c",
+     "batch-compact"
+    ],
+    "Q26": [
+     "Between 96,660 and 128,843",
+     "Q26-a",
+     "batch-compact"
+    ],
+    "Q27": [
+     "The Mission Council",
+     "Q27-b",
+     "batch-compact"
+    ],
+    "Q28": [
+     "Five inches",
+     "Q28-b",
+     "batch-compact"
+    ],
+    "Q29": [
+     "Over 200",
+     "Q29-c",
+     "batch-compact"
+    ],
+    "Q30": [
+     "About 13,000 BP",
+     "Q30-a",
+     "batch-compact"
+    ],
+    "Q31": [
+     "Wisdom, Compassion, Justice and Integrity",
+     "Q31-a",
+     "batch-compact"
+    ],
+    "Q32": [
+     "New Holland",
+     "Q32-a",
+     "batch-compact"
+    ],
+    "Q33": [
+     "Proper safety equipment such as harnesses and guardrails and procedures such as securing ladders and inspecting scaffolding",
+     "Q33-b",
+     "single-full"
+    ],
+    "Q34": [
+     "Charging their students tuition",
+     "Q34-c",
+     "single-full"
+    ],
+    "Q35": [
+     "3 in 1,000,000",
+     "Q35-a",
+     "batch-compact"
+    ],
+    "Q36": [
+     "Chinese physicians were brought along on Mongol military campaigns as they expanded westward",
+     "Q36-a",
+     "batch-full"
+    ],
+    "Q37": [
+     "Quietist/non-political Islam",
+     "Q37-a",
+     "batch-compact"
+    ],
+    "Q38": [
+     "Architectural attraction",
+     "Q38-b",
+     "batch-compact"
+    ],
+    "Q39": [
+     "A postal company",
+     "Q39-c",
+     "batch-compact"
+    ],
+    "Q40": [
+     "Pons Aelius",
+     "Q40-c",
+     "batch-compact"
+    ],
+    "Q41": [
+     "Lessing (1755)",
+     "Q41-c",
+     "batch-full"
+    ],
+    "Q42": [
+     "The political weakness of the Mughal state, and the local elites (economically and administratively incorporated)",
+     "Q42-b",
+     "single-full"
+    ],
+    "Q43": [
+     "Embroidery",
+     "Q43-b",
+     "batch-compact"
+    ],
+    "Q44": [
+     "80,000",
+     "Q44-b",
+     "batch-compact"
+    ],
+    "Q45": [
+     "Phowa and siddhi",
+     "Q45-c",
+     "batch-compact"
+    ],
+    "Q46": [
+     "Super Bowl XLVII",
+     "Q46-a",
+     "batch-compact"
+    ],
+    "Q47": [
+     "Economically",
+     "Q47-a",
+     "batch-compact"
+    ],
+    "Q48": [
+     "Antigone",
+     "Q48-a",
+     "batch-compact"
+    ]
+   }
+  },
+  {
+   "route": "carpool k=1",
+   "accepted": "33/48",
+   "calls": 58,
+   "total_tokens": 1566979,
+   "uncached+output": 680839,
+   "tokens/accepted": 47484.2,
+   "uncached/accepted": 20631.5,
+   "seconds": 220.53,
+   "usd/accepted": 0.0856,
+   "lenient": "46/48",
+   "wall_seconds": 220.6,
+   "cached_input": 886140,
+   "usd": 2.8264,
+   "regressions": [
+    "Q21"
+   ],
+   "lenient_regressions": [],
+   "fallbacks": {
+    "Q05": "verifier: answer not found in cited source",
+    "Q10": "verifier: answer not found in cited source",
+    "Q11": "verifier: answer not found in cited source",
+    "Q17": "verifier: answer not found in cited source",
+    "Q18": "verifier: answer not found in cited source",
+    "Q21": "verifier: answer not found in cited source",
+    "Q24": "verifier: answer not found in cited source",
+    "Q33": "verifier: answer not found in cited source",
+    "Q34": "verifier: answer not found in cited source",
+    "Q42": "verifier: answer not found in cited source"
+   },
+   "routes": {
+    "batch-compact": 35,
+    "single-full": 10,
+    "batch-full": 3
+   },
+   "calls_detail": [
+    {
+     "in": 26768,
+     "cached": 15016,
+     "out": 34,
+     "s": 3.71,
+     "usd": 0.04885
+    },
+    {
+     "in": 26798,
+     "cached": 15016,
+     "out": 36,
+     "s": 3.66,
+     "usd": 0.04899
+    },
+    {
+     "in": 26868,
+     "cached": 15016,
+     "out": 31,
+     "s": 3.64,
+     "usd": 0.04922
+    },
+    {
+     "in": 26780,
+     "cached": 15016,
+     "out": 39,
+     "s": 3.86,
+     "usd": 0.04894
+    },
+    {
+     "in": 26822,
+     "cached": 15016,
+     "out": 47,
+     "s": 3.75,
+     "usd": 0.04919
+    },
+    {
+     "in": 27273,
+     "cached": 16445,
+     "out": 43,
+     "s": 3.82,
+     "usd": 0.04538
+    },
+    {
+     "in": 26774,
+     "cached": 15016,
+     "out": 35,
+     "s": 3.82,
+     "usd": 0.04888
+    },
+    {
+     "in": 26954,
+     "cached": 15016,
+     "out": 33,
+     "s": 3.72,
+     "usd": 0.04958
+    },
+    {
+     "in": 27211,
+     "cached": 15016,
+     "out": 42,
+     "s": 3.89,
+     "usd": 0.0507
+    },
+    {
+     "in": 27039,
+     "cached": 15016,
+     "out": 36,
+     "s": 3.58,
+     "usd": 0.04995
+    },
+    {
+     "in": 26804,
+     "cached": 15016,
+     "out": 72,
+     "s": 3.73,
+     "usd": 0.04937
+    },
+    {
+     "in": 27167,
+     "cached": 16339,
+     "out": 62,
+     "s": 3.95,
+     "usd": 0.04556
+    },
+    {
+     "in": 26843,
+     "cached": 15016,
+     "out": 50,
+     "s": 4.0,
+     "usd": 0.04931
+    },
+    {
+     "in": 27263,
+     "cached": 16434,
+     "out": 38,
+     "s": 3.65,
+     "usd": 0.04534
+    },
+    {
+     "in": 26863,
+     "cached": 15016,
+     "out": 37,
+     "s": 3.87,
+     "usd": 0.04926
+    },
+    {
+     "in": 26780,
+     "cached": 15016,
+     "out": 37,
+     "s": 3.7,
+     "usd": 0.04892
+    },
+    {
+     "in": 26823,
+     "cached": 15016,
+     "out": 40,
+     "s": 3.61,
+     "usd": 0.04913
+    },
+    {
+     "in": 26770,
+     "cached": 15016,
+     "out": 32,
+     "s": 3.42,
+     "usd": 0.04883
+    },
+    {
+     "in": 27105,
+     "cached": 15016,
+     "out": 40,
+     "s": 3.53,
+     "usd": 0.05025
+    },
+    {
+     "in": 26885,
+     "cached": 15016,
+     "out": 49,
+     "s": 3.79,
+     "usd": 0.04946
+    },
+    {
+     "in": 27498,
+     "cached": 16670,
+     "out": 39,
+     "s": 3.74,
+     "usd": 0.04537
+    },
+    {
+     "in": 27033,
+     "cached": 15016,
+     "out": 42,
+     "s": 3.46,
+     "usd": 0.04999
+    },
+    {
+     "in": 27732,
+     "cached": 16902,
+     "out": 41,
+     "s": 4.42,
+     "usd": 0.04542
+    },
+    {
+     "in": 26799,
+     "cached": 15016,
+     "out": 38,
+     "s": 3.49,
+     "usd": 0.04901
+    },
+    {
+     "in": 26869,
+     "cached": 15016,
+     "out": 40,
+     "s": 3.85,
+     "usd": 0.04931
+    },
+    {
+     "in": 27100,
+     "cached": 15016,
+     "out": 43,
+     "s": 3.76,
+     "usd": 0.05026
+    },
+    {
+     "in": 27779,
+     "cached": 16950,
+     "out": 33,
+     "s": 3.5,
+     "usd": 0.04534
+    },
+    {
+     "in": 26760,
+     "cached": 15016,
+     "out": 43,
+     "s": 3.55,
+     "usd": 0.0489
+    },
+    {
+     "in": 27169,
+     "cached": 15016,
+     "out": 40,
+     "s": 3.85,
+     "usd": 0.05051
+    },
+    {
+     "in": 26797,
+     "cached": 15016,
+     "out": 37,
+     "s": 3.76,
+     "usd": 0.04899
+    },
+    {
+     "in": 27440,
+     "cached": 16612,
+     "out": 40,
+     "s": 3.92,
+     "usd": 0.04537
+    },
+    {
+     "in": 27077,
+     "cached": 15016,
+     "out": 37,
+     "s": 3.4,
+     "usd": 0.05011
+    },
+    {
+     "in": 26792,
+     "cached": 15016,
+     "out": 42,
+     "s": 3.89,
+     "usd": 0.04902
+    },
+    {
+     "in": 26832,
+     "cached": 15016,
+     "out": 48,
+     "s": 4.12,
+     "usd": 0.04924
+    },
+    {
+     "in": 26871,
+     "cached": 15016,
+     "out": 34,
+     "s": 3.43,
+     "usd": 0.04926
+    },
+    {
+     "in": 26869,
+     "cached": 15016,
+     "out": 34,
+     "s": 3.73,
+     "usd": 0.04925
+    },
+    {
+     "in": 26818,
+     "cached": 15016,
+     "out": 38,
+     "s": 3.66,
+     "usd": 0.04909
+    },
+    {
+     "in": 26878,
+     "cached": 15016,
+     "out": 49,
+     "s": 3.96,
+     "usd": 0.04944
+    },
+    {
+     "in": 26874,
+     "cached": 15016,
+     "out": 34,
+     "s": 3.7,
+     "usd": 0.04927
+    },
+    {
+     "in": 26824,
+     "cached": 15016,
+     "out": 70,
+     "s": 3.78,
+     "usd": 0.04943
+    },
+    {
+     "in": 27137,
+     "cached": 16310,
+     "out": 60,
+     "s": 4.49,
+     "usd": 0.04553
+    },
+    {
+     "in": 26780,
+     "cached": 15016,
+     "out": 42,
+     "s": 4.01,
+     "usd": 0.04897
+    },
+    {
+     "in": 27162,
+     "cached": 16334,
+     "out": 27,
+     "s": 4.4,
+     "usd": 0.04521
+    },
+    {
+     "in": 26850,
+     "cached": 15016,
+     "out": 39,
+     "s": 4.13,
+     "usd": 0.04922
+    },
+    {
+     "in": 27446,
+     "cached": 15016,
+     "out": 114,
+     "s": 5.38,
+     "usd": 0.05236
+    },
+    {
+     "in": 26821,
+     "cached": 15016,
+     "out": 40,
+     "s": 3.66,
+     "usd": 0.04912
+    },
+    {
+     "in": 26922,
+     "cached": 15016,
+     "out": 37,
+     "s": 3.92,
+     "usd": 0.04949
+    },
+    {
+     "in": 27306,
+     "cached": 15016,
+     "out": 34,
+     "s": 3.63,
+     "usd": 0.051
+    },
+    {
+     "in": 26965,
+     "cached": 15016,
+     "out": 37,
+     "s": 3.68,
+     "usd": 0.04966
+    },
+    {
+     "in": 27191,
+     "cached": 15016,
+     "out": 38,
+     "s": 4.32,
+     "usd": 0.05058
+    },
+    {
+     "in": 26857,
+     "cached": 15016,
+     "out": 59,
+     "s": 3.65,
+     "usd": 0.04945
+    },
+    {
+     "in": 27204,
+     "cached": 16376,
+     "out": 43,
+     "s": 3.85,
+     "usd": 0.04538
+    },
+    {
+     "in": 26727,
+     "cached": 15016,
+     "out": 35,
+     "s": 3.71,
+     "usd": 0.04869
+    },
+    {
+     "in": 26758,
+     "cached": 15016,
+     "out": 33,
+     "s": 3.83,
+     "usd": 0.0488
+    },
+    {
+     "in": 26693,
+     "cached": 15016,
+     "out": 38,
+     "s": 3.46,
+     "usd": 0.04859
+    },
+    {
+     "in": 26802,
+     "cached": 15016,
+     "out": 40,
+     "s": 3.97,
+     "usd": 0.04904
+    },
+    {
+     "in": 26738,
+     "cached": 15016,
+     "out": 32,
+     "s": 3.35,
+     "usd": 0.04871
+    },
+    {
+     "in": 26782,
+     "cached": 15016,
+     "out": 34,
+     "s": 3.39,
+     "usd": 0.0489
+    }
+   ],
+   "answers": {
+    "Q01": [
+     "5.3%",
+     "Q01-c",
+     "batch-compact"
+    ],
+    "Q02": [
+     "4 kilometers",
+     "Q02-c",
+     "batch-compact"
+    ],
+    "Q03": [
+     "1",
+     "Q03-c",
+     "batch-compact"
+    ],
+    "Q04": [
+     "Long-lived memory cells",
+     "Q04-a",
+     "batch-compact"
+    ],
+    "Q05": [
+     "Photosynthesis (as the main driver of the oxygen cycle)",
+     "Q05-b",
+     "single-full"
+    ],
+    "Q06": [
+     "Solar energy",
+     "Q06-c",
+     "batch-compact"
+    ],
+    "Q07": [
+     "25 million",
+     "Q07-a",
+     "batch-compact"
+    ],
+    "Q08": [
+     "Saffir-Simpson Scale",
+     "Q08-b",
+     "batch-compact"
+    ],
+    "Q09": [
+     "Catalog everything",
+     "Q09-a",
+     "batch-compact"
+    ],
+    "Q10": [
+     "A decentralized network with multiple paths between any two points; dividing user messages into message blocks (packets); delivery by store and forward switching",
+     "Q10-b",
+     "single-full"
+    ],
+    "Q11": [
+     "Flax cultivation (and the Irish linen industry)",
+     "Q11-b",
+     "single-full"
+    ],
+    "Q12": [
+     "Monday Night Football",
+     "Q12-a",
+     "batch-compact"
+    ],
+    "Q13": [
+     "Cisco Systems",
+     "Q13-c",
+     "batch-compact"
+    ],
+    "Q14": [
+     "Over 100 billion dollars",
+     "Q14-c",
+     "batch-compact"
+    ],
+    "Q15": [
+     "1965",
+     "Q15-c",
+     "batch-compact"
+    ],
+    "Q16": [
+     "Several University of Chicago professors",
+     "Q16-b",
+     "batch-compact"
+    ],
+    "Q17": [
+     "His butchery/brutality (while his positive role is underrated)",
+     "Q17-b",
+     "single-full"
+    ],
+    "Q18": [
+     "On the West Side (Fresno Chandler Executive Airport)",
+     "Q18-c",
+     "single-full"
+    ],
+    "Q19": [
+     "an innate force of impetus",
+     "Q19-a",
+     "batch-compact"
+    ],
+    "Q20": [
+     "High-gain S-band antenna",
+     "Q20-b",
+     "batch-compact"
+    ],
+    "Q21": [
+     "All other animals (all other animal phyla)",
+     "Q21-c",
+     "single-full"
+    ],
+    "Q22": [
+     "Principle of cross-cutting relationships",
+     "Q22-b",
+     "batch-compact"
+    ],
+    "Q23": [
+     "Standard & Poor's economists",
+     "Q23-a",
+     "batch-full"
+    ],
+    "Q24": [
+     "He ignored C\u00e9loron's warning and continued trading with the British.",
+     "Q24-a",
+     "single-full"
+    ],
+    "Q25": [
+     "hockey stick graph",
+     "Q25-c",
+     "batch-compact"
+    ],
+    "Q26": [
+     "Between 96,660 and 128,843",
+     "Q26-a",
+     "batch-compact"
+    ],
+    "Q27": [
+     "The Mission Council (usually consisting of church bishops)",
+     "Q27-b",
+     "batch-compact"
+    ],
+    "Q28": [
+     "Five inches",
+     "Q28-b",
+     "batch-compact"
+    ],
+    "Q29": [
+     "Over 200",
+     "Q29-c",
+     "batch-compact"
+    ],
+    "Q30": [
+     "about 13,000 BP",
+     "Q30-a",
+     "batch-compact"
+    ],
+    "Q31": [
+     "Wisdom, Compassion, Justice and Integrity",
+     "Q31-a",
+     "batch-compact"
+    ],
+    "Q32": [
+     "New Holland",
+     "Q32-a",
+     "batch-compact"
+    ],
+    "Q33": [
+     "Proper safety equipment such as harnesses and guardrails and procedures such as securing ladders and inspecting scaffolding",
+     "Q33-b",
+     "single-full"
+    ],
+    "Q34": [
+     "Charging students tuition",
+     "Q34-c",
+     "single-full"
+    ],
+    "Q35": [
+     "3 in 1,000,000",
+     "Q35-a",
+     "batch-compact"
+    ],
+    "Q36": [
+     "Under the Mongols, Chinese physicians were brought along on military campaigns as the empire expanded west, carrying techniques such as acupuncture, moxibustion, pulse diagnosis and herbal drugs to the Middle East and the rest of the empire.",
+     "Q36-a",
+     "batch-full"
+    ],
+    "Q37": [
+     "quietist/non-political Islam",
+     "Q37-a",
+     "batch-compact"
+    ],
+    "Q38": [
+     "Architectural attraction",
+     "Q38-b",
+     "batch-compact"
+    ],
+    "Q39": [
+     "A postal company",
+     "Q39-c",
+     "batch-compact"
+    ],
+    "Q40": [
+     "Pons Aelius",
+     "Q40-c",
+     "batch-compact"
+    ],
+    "Q41": [
+     "Lessing (1755)",
+     "Q41-c",
+     "batch-full"
+    ],
+    "Q42": [
+     "The political weakness of the Mughal state, and the incorporation of local elites",
+     "Q42-b",
+     "single-full"
+    ],
+    "Q43": [
+     "Embroidery",
+     "Q43-b",
+     "batch-compact"
+    ],
+    "Q44": [
+     "80,000",
+     "Q44-b",
+     "batch-compact"
+    ],
+    "Q45": [
+     "phowa and siddhi",
+     "Q45-c",
+     "batch-compact"
+    ],
+    "Q46": [
+     "Super Bowl XLVII",
+     "Q46-a",
+     "batch-compact"
+    ],
+    "Q47": [
+     "economically",
+     "Q47-a",
+     "batch-compact"
+    ],
+    "Q48": [
+     "Antigone",
+     "Q48-a",
+     "batch-compact"
+    ]
+   }
+  },
+  {
+   "route": "carpool k=4",
+   "accepted": "34/48",
+   "calls": 20,
+   "total_tokens": 555906,
+   "uncached+output": 243097,
+   "tokens/accepted": 16350.2,
+   "uncached/accepted": 7149.9,
+   "seconds": 84.66,
+   "usd/accepted": 0.0299,
+   "lenient": "45/48",
+   "wall_seconds": 84.7,
+   "cached_input": 312809,
+   "usd": 1.0159,
+   "regressions": [],
+   "lenient_regressions": [
+    "Q05"
+   ],
+   "fallbacks": {
+    "Q10": "verifier: answer not found in cited source",
+    "Q11": "verifier: answer not found in cited source",
+    "Q17": "verifier: answer not found in cited source",
+    "Q18": "verifier: answer not found in cited source",
+    "Q21": "verifier: answer not found in cited source",
+    "Q24": "verifier: answer not found in cited source",
+    "Q34": "verifier: answer not found in cited source",
+    "Q42": "verifier: answer not found in cited source"
+   },
+   "routes": {
+    "batch-compact": 37,
+    "single-full": 8,
+    "batch-full": 3
+   },
+   "calls_detail": [
+    {
+     "in": 27523,
+     "cached": 15016,
+     "out": 119,
+     "s": 4.73,
+     "usd": 0.05272
+    },
+    {
+     "in": 28074,
+     "cached": 15016,
+     "out": 141,
+     "s": 5.41,
+     "usd": 0.05514
+    },
+    {
+     "in": 27860,
+     "cached": 15016,
+     "out": 175,
+     "s": 4.8,
+     "usd": 0.05462
+    },
+    {
+     "in": 27169,
+     "cached": 16339,
+     "out": 62,
+     "s": 4.1,
+     "usd": 0.04557
+    },
+    {
+     "in": 27264,
+     "cached": 16434,
+     "out": 40,
+     "s": 3.26,
+     "usd": 0.04536
+    },
+    {
+     "in": 27789,
+     "cached": 15016,
+     "out": 129,
+     "s": 4.66,
+     "usd": 0.05388
+    },
+    {
+     "in": 27896,
+     "cached": 15016,
+     "out": 138,
+     "s": 4.9,
+     "usd": 0.0544
+    },
+    {
+     "in": 27498,
+     "cached": 16670,
+     "out": 48,
+     "s": 3.73,
+     "usd": 0.04546
+    },
+    {
+     "in": 27731,
+     "cached": 16902,
+     "out": 32,
+     "s": 3.61,
+     "usd": 0.04532
+    },
+    {
+     "in": 28137,
+     "cached": 15016,
+     "out": 143,
+     "s": 4.5,
+     "usd": 0.05541
+    },
+    {
+     "in": 27778,
+     "cached": 16950,
+     "out": 24,
+     "s": 3.67,
+     "usd": 0.04524
+    },
+    {
+     "in": 27440,
+     "cached": 16612,
+     "out": 40,
+     "s": 3.96,
+     "usd": 0.04537
+    },
+    {
+     "in": 27881,
+     "cached": 15016,
+     "out": 128,
+     "s": 4.12,
+     "usd": 0.05424
+    },
+    {
+     "in": 27748,
+     "cached": 15016,
+     "out": 134,
+     "s": 4.27,
+     "usd": 0.05377
+    },
+    {
+     "in": 28211,
+     "cached": 15016,
+     "out": 220,
+     "s": 4.32,
+     "usd": 0.05648
+    },
+    {
+     "in": 27163,
+     "cached": 16334,
+     "out": 28,
+     "s": 4.21,
+     "usd": 0.04523
+    },
+    {
+     "in": 28324,
+     "cached": 15016,
+     "out": 126,
+     "s": 4.17,
+     "usd": 0.05599
+    },
+    {
+     "in": 27846,
+     "cached": 15016,
+     "out": 145,
+     "s": 4.3,
+     "usd": 0.05427
+    },
+    {
+     "in": 27204,
+     "cached": 16376,
+     "out": 51,
+     "s": 3.99,
+     "usd": 0.04546
+    },
+    {
+     "in": 27323,
+     "cached": 15016,
+     "out": 124,
+     "s": 3.94,
+     "usd": 0.05197
+    }
+   ],
+   "answers": {
+    "Q01": [
+     "5.3%",
+     "Q01-c",
+     "batch-compact"
+    ],
+    "Q02": [
+     "4 kilometers",
+     "Q02-c",
+     "batch-compact"
+    ],
+    "Q03": [
+     "1",
+     "Q03-c",
+     "batch-compact"
+    ],
+    "Q04": [
+     "long-lived memory cells",
+     "Q04-a",
+     "batch-compact"
+    ],
+    "Q05": [
+     "Photosynthesis",
+     "Q05-b",
+     "batch-compact"
+    ],
+    "Q06": [
+     "Solar energy",
+     "Q06-c",
+     "batch-compact"
+    ],
+    "Q07": [
+     "An estimated 25 million Chinese and other Asians",
+     "Q07-a",
+     "batch-compact"
+    ],
+    "Q08": [
+     "Saffir-Simpson Scale",
+     "Q08-b",
+     "batch-compact"
+    ],
+    "Q09": [
+     "Catalog everything",
+     "Q09-a",
+     "batch-compact"
+    ],
+    "Q10": [
+     "A decentralized network with multiple paths between any two points; dividing user messages into message blocks (packets); delivery by store and forward switching",
+     "Q10-b",
+     "single-full"
+    ],
+    "Q11": [
+     "Flax cultivation (supporting the Irish linen industry)",
+     "Q11-b",
+     "single-full"
+    ],
+    "Q12": [
+     "Monday Night Football",
+     "Q12-a",
+     "batch-compact"
+    ],
+    "Q13": [
+     "Cisco Systems",
+     "Q13-c",
+     "batch-compact"
+    ],
+    "Q14": [
+     "Over 100 billion dollars",
+     "Q14-c",
+     "batch-compact"
+    ],
+    "Q15": [
+     "1965",
+     "Q15-c",
+     "batch-compact"
+    ],
+    "Q16": [
+     "Several University of Chicago professors",
+     "Q16-b",
+     "batch-compact"
+    ],
+    "Q17": [
+     "His brutality/butchery (they say it is exaggerated while his positive role is underrated)",
+     "Q17-b",
+     "single-full"
+    ],
+    "Q18": [
+     "On the West Side (of Fresno)",
+     "Q18-c",
+     "single-full"
+    ],
+    "Q19": [
+     "An innate force of impetus",
+     "Q19-a",
+     "batch-compact"
+    ],
+    "Q20": [
+     "High-gain S-band antenna",
+     "Q20-b",
+     "batch-compact"
+    ],
+    "Q21": [
+     "all other animals",
+     "Q21-c",
+     "single-full"
+    ],
+    "Q22": [
+     "The principle of cross-cutting relationships",
+     "Q22-b",
+     "batch-compact"
+    ],
+    "Q23": [
+     "Standard & Poor's economists",
+     "Q23-a",
+     "batch-full"
+    ],
+    "Q24": [
+     "He ignored C\u00e9loron's warning and continued trading with the British.",
+     "Q24-a",
+     "single-full"
+    ],
+    "Q25": [
+     "hockey stick graph",
+     "Q25-c",
+     "batch-compact"
+    ],
+    "Q26": [
+     "Between 96,660 and 128,843",
+     "Q26-a",
+     "batch-compact"
+    ],
+    "Q27": [
+     "The Mission Council",
+     "Q27-b",
+     "batch-compact"
+    ],
+    "Q28": [
+     "five inches",
+     "Q28-b",
+     "batch-compact"
+    ],
+    "Q29": [
+     "over 200",
+     "Q29-c",
+     "batch-compact"
+    ],
+    "Q30": [
+     "about 13,000 BP",
+     "Q30-a",
+     "batch-compact"
+    ],
+    "Q31": [
+     "Wisdom, Compassion, Justice and Integrity",
+     "Q31-a",
+     "batch-compact"
+    ],
+    "Q32": [
+     "New Holland",
+     "Q32-a",
+     "batch-compact"
+    ],
+    "Q33": [
+     "Proper safety equipment such as harnesses and guardrails and procedures such as securing ladders and inspecting scaffolding",
+     "Q33-b",
+     "batch-compact"
+    ],
+    "Q34": [
+     "Charging their students tuition",
+     "Q34-c",
+     "single-full"
+    ],
+    "Q35": [
+     "3 in 1,000,000",
+     "Q35-a",
+     "batch-compact"
+    ],
+    "Q36": [
+     "Under the Mongols, Chinese physicians were brought along military campaigns as the Mongols expanded west, transmitting Chinese medical techniques westward to the Middle East and the rest of the empire",
+     "Q36-a",
+     "batch-full"
+    ],
+    "Q37": [
+     "quietist/non-political Islam",
+     "Q37-a",
+     "batch-compact"
+    ],
+    "Q38": [
+     "architectural attraction",
+     "Q38-b",
+     "batch-compact"
+    ],
+    "Q39": [
+     "postal company",
+     "Q39-c",
+     "batch-compact"
+    ],
+    "Q40": [
+     "Pons Aelius",
+     "Q40-c",
+     "batch-compact"
+    ],
+    "Q41": [
+     "Lessing (1755)",
+     "Q41-c",
+     "batch-full"
+    ],
+    "Q42": [
+     "The political weakness of the Mughal state, and its local elites, who were economically and administratively incorporated",
+     "Q42-b",
+     "single-full"
+    ],
+    "Q43": [
+     "Embroidery",
+     "Q43-b",
+     "batch-compact"
+    ],
+    "Q44": [
+     "80,000",
+     "Q44-b",
+     "batch-compact"
+    ],
+    "Q45": [
+     "phowa and siddhi",
+     "Q45-c",
+     "batch-compact"
+    ],
+    "Q46": [
+     "Super Bowl XLVII",
+     "Q46-a",
+     "batch-compact"
+    ],
+    "Q47": [
+     "economically",
+     "Q47-a",
+     "batch-compact"
+    ],
+    "Q48": [
+     "Antigone",
+     "Q48-a",
+     "batch-compact"
+    ]
+   }
+  },
+  {
+   "route": "carpool k=12",
+   "accepted": "33/48",
+   "calls": 13,
+   "total_tokens": 370564,
+   "uncached+output": 161573,
+   "tokens/accepted": 11229.2,
+   "uncached/accepted": 4896.2,
+   "seconds": 59.25,
+   "usd/accepted": 0.0206,
+   "lenient": "44/48",
+   "wall_seconds": 59.3,
+   "cached_input": 208991,
+   "usd": 0.6795,
+   "regressions": [
+    "Q21"
+   ],
+   "lenient_regressions": [
+    "Q05",
+    "Q36"
+   ],
+   "fallbacks": {
+    "Q10": "verifier: answer not found in cited source",
+    "Q11": "verifier: answer not found in cited source",
+    "Q17": "verifier: answer not found in cited source",
+    "Q18": "verifier: answer not found in cited source",
+    "Q21": "verifier: answer not found in cited source",
+    "Q24": "verifier: answer not found in cited source",
+    "Q33": "verifier: answer not found in cited source",
+    "Q34": "verifier: answer not found in cited source",
+    "Q42": "verifier: answer not found in cited source"
+   },
+   "routes": {
+    "batch-compact": 36,
+    "single-full": 9,
+    "batch-full": 3
+   },
+   "calls_detail": [
+    {
+     "in": 30330,
+     "cached": 15016,
+     "out": 423,
+     "s": 5.97,
+     "usd": 0.06698
+    },
+    {
+     "in": 27168,
+     "cached": 16339,
+     "out": 66,
+     "s": 4.73,
+     "usd": 0.04561
+    },
+    {
+     "in": 27261,
+     "cached": 16434,
+     "out": 40,
+     "s": 3.95,
+     "usd": 0.04535
+    },
+    {
+     "in": 30698,
+     "cached": 15016,
+     "out": 403,
+     "s": 6.26,
+     "usd": 0.06826
+    },
+    {
+     "in": 27500,
+     "cached": 16670,
+     "out": 48,
+     "s": 3.79,
+     "usd": 0.04546
+    },
+    {
+     "in": 27730,
+     "cached": 16902,
+     "out": 46,
+     "s": 3.64,
+     "usd": 0.04546
+    },
+    {
+     "in": 27778,
+     "cached": 16950,
+     "out": 33,
+     "s": 3.35,
+     "usd": 0.04533
+    },
+    {
+     "in": 27441,
+     "cached": 16612,
+     "out": 40,
+     "s": 3.76,
+     "usd": 0.04537
+    },
+    {
+     "in": 30719,
+     "cached": 15016,
+     "out": 444,
+     "s": 6.57,
+     "usd": 0.06875
+    },
+    {
+     "in": 27140,
+     "cached": 16310,
+     "out": 60,
+     "s": 3.97,
+     "usd": 0.04555
+    },
+    {
+     "in": 27163,
+     "cached": 16334,
+     "out": 27,
+     "s": 4.3,
+     "usd": 0.04522
+    },
+    {
+     "in": 30369,
+     "cached": 15016,
+     "out": 381,
+     "s": 5.42,
+     "usd": 0.06672
+    },
+    {
+     "in": 27206,
+     "cached": 16376,
+     "out": 50,
+     "s": 3.52,
+     "usd": 0.04545
+    }
+   ],
+   "answers": {
+    "Q01": [
+     "5.3%",
+     "Q01-c",
+     "batch-compact"
+    ],
+    "Q02": [
+     "4 kilometers",
+     "Q02-c",
+     "batch-compact"
+    ],
+    "Q03": [
+     "1",
+     "Q03-c",
+     "batch-compact"
+    ],
+    "Q04": [
+     "long-lived memory cells",
+     "Q04-a",
+     "batch-compact"
+    ],
+    "Q05": [
+     "Photosynthesis",
+     "Q05-b",
+     "batch-compact"
+    ],
+    "Q06": [
+     "Solar energy",
+     "Q06-c",
+     "batch-compact"
+    ],
+    "Q07": [
+     "An estimated 25 million Chinese and other Asians",
+     "Q07-a",
+     "batch-compact"
+    ],
+    "Q08": [
+     "Saffir-Simpson Scale",
+     "Q08-b",
+     "batch-compact"
+    ],
+    "Q09": [
+     "Catalog everything",
+     "Q09-a",
+     "batch-compact"
+    ],
+    "Q10": [
+     "A decentralized network with multiple paths between any two points; dividing user messages into message blocks (packets); delivery of these messages by store and forward switching",
+     "Q10-b",
+     "single-full"
+    ],
+    "Q11": [
+     "Flax cultivation (supporting the Irish linen industry)",
+     "Q11-b",
+     "single-full"
+    ],
+    "Q12": [
+     "Monday Night Football",
+     "Q12-a",
+     "batch-compact"
+    ],
+    "Q13": [
+     "Cisco Systems",
+     "Q13-c",
+     "batch-compact"
+    ],
+    "Q14": [
+     "Over 100 billion dollars",
+     "Q14-c",
+     "batch-compact"
+    ],
+    "Q15": [
+     "1965",
+     "Q15-c",
+     "batch-compact"
+    ],
+    "Q16": [
+     "Several University of Chicago professors",
+     "Q16-b",
+     "batch-compact"
+    ],
+    "Q17": [
+     "His brutality/butchery (they say it is exaggerated while his positive role is underrated)",
+     "Q17-b",
+     "single-full"
+    ],
+    "Q18": [
+     "On the West Side of Fresno (Fresno Chandler Executive Airport)",
+     "Q18-c",
+     "single-full"
+    ],
+    "Q19": [
+     "An innate force of impetus",
+     "Q19-a",
+     "batch-compact"
+    ],
+    "Q20": [
+     "High-gain S-band antenna",
+     "Q20-b",
+     "batch-compact"
+    ],
+    "Q21": [
+     "all other animals (all other animal phyla)",
+     "Q21-c",
+     "single-full"
+    ],
+    "Q22": [
+     "The principle of cross-cutting relationships",
+     "Q22-b",
+     "batch-compact"
+    ],
+    "Q23": [
+     "Standard & Poor's economists",
+     "Q23-a",
+     "batch-full"
+    ],
+    "Q24": [
+     "He ignored C\u00e9loron's warning and continued trading with the British.",
+     "Q24-a",
+     "single-full"
+    ],
+    "Q25": [
+     "hockey stick graph",
+     "Q25-c",
+     "batch-compact"
+    ],
+    "Q26": [
+     "Between 96,660 and 128,843",
+     "Q26-a",
+     "batch-compact"
+    ],
+    "Q27": [
+     "The Mission Council",
+     "Q27-b",
+     "batch-compact"
+    ],
+    "Q28": [
+     "Five inches",
+     "Q28-b",
+     "batch-compact"
+    ],
+    "Q29": [
+     "Over 200",
+     "Q29-c",
+     "batch-compact"
+    ],
+    "Q30": [
+     "About 13,000 BP",
+     "Q30-a",
+     "batch-compact"
+    ],
+    "Q31": [
+     "Wisdom, Compassion, Justice and Integrity",
+     "Q31-a",
+     "batch-compact"
+    ],
+    "Q32": [
+     "New Holland",
+     "Q32-a",
+     "batch-compact"
+    ],
+    "Q33": [
+     "Proper safety equipment such as harnesses and guardrails and procedures such as securing ladders and inspecting scaffolding",
+     "Q33-b",
+     "single-full"
+    ],
+    "Q34": [
+     "Charging students tuition",
+     "Q34-c",
+     "single-full"
+    ],
+    "Q35": [
+     "3 in 1,000,000",
+     "Q35-a",
+     "batch-compact"
+    ],
+    "Q36": [
+     "Chinese physicians were brought along Mongol military campaigns as the Mongols expanded westward",
+     "Q36-a",
+     "batch-full"
+    ],
+    "Q37": [
+     "quietist/non-political Islam",
+     "Q37-a",
+     "batch-compact"
+    ],
+    "Q38": [
+     "Architectural attraction",
+     "Q38-b",
+     "batch-compact"
+    ],
+    "Q39": [
+     "A postal company",
+     "Q39-c",
+     "batch-compact"
+    ],
+    "Q40": [
+     "Pons Aelius",
+     "Q40-c",
+     "batch-compact"
+    ],
+    "Q41": [
+     "Lessing",
+     "Q41-c",
+     "batch-full"
+    ],
+    "Q42": [
+     "The political weakness of the Mughal state (and its local elites, incorporated economically and administratively)",
+     "Q42-b",
+     "single-full"
+    ],
+    "Q43": [
+     "Embroidery",
+     "Q43-b",
+     "batch-compact"
+    ],
+    "Q44": [
+     "80,000",
+     "Q44-b",
+     "batch-compact"
+    ],
+    "Q45": [
+     "Phowa and siddhi",
+     "Q45-c",
+     "batch-compact"
+    ],
+    "Q46": [
+     "Super Bowl XLVII",
+     "Q46-a",
+     "batch-compact"
+    ],
+    "Q47": [
+     "Economically",
+     "Q47-a",
+     "batch-compact"
+    ],
+    "Q48": [
+     "Antigone",
+     "Q48-a",
+     "batch-compact"
+    ]
+   }
+  },
+  {
+   "route": "carpool k=24",
+   "accepted": "33/48",
+   "calls": 11,
+   "total_tokens": 317462,
+   "uncached+output": 138503,
+   "tokens/accepted": 9620.1,
+   "uncached/accepted": 4197.1,
+   "seconds": 51.07,
+   "usd/accepted": 0.0177,
+   "lenient": "44/48",
+   "wall_seconds": 51.1,
+   "cached_input": 178959,
+   "usd": 0.5843,
+   "regressions": [
+    "Q21"
+   ],
+   "lenient_regressions": [
+    "Q05",
+    "Q36"
+   ],
+   "fallbacks": {
+    "Q10": "verifier: answer not found in cited source",
+    "Q11": "verifier: answer not found in cited source",
+    "Q17": "verifier: answer not found in cited source",
+    "Q18": "verifier: answer not found in cited source",
+    "Q21": "verifier: answer not found in cited source",
+    "Q24": "verifier: answer not found in cited source",
+    "Q33": "verifier: answer not found in cited source",
+    "Q34": "verifier: answer not found in cited source",
+    "Q42": "verifier: answer not found in cited source"
+   },
+   "routes": {
+    "batch-compact": 36,
+    "batch-full": 3,
+    "single-full": 9
+   },
+   "calls_detail": [
+    {
+     "in": 34469,
+     "cached": 15016,
+     "out": 822,
+     "s": 7.99,
+     "usd": 0.08753
+    },
+    {
+     "in": 27168,
+     "cached": 16339,
+     "out": 66,
+     "s": 4.09,
+     "usd": 0.04561
+    },
+    {
+     "in": 27262,
+     "cached": 16434,
+     "out": 37,
+     "s": 3.61,
+     "usd": 0.04532
+    },
+    {
+     "in": 27499,
+     "cached": 16670,
+     "out": 50,
+     "s": 3.93,
+     "usd": 0.04548
+    },
+    {
+     "in": 27731,
+     "cached": 16902,
+     "out": 46,
+     "s": 3.72,
+     "usd": 0.04546
+    },
+    {
+     "in": 27779,
+     "cached": 16950,
+     "out": 33,
+     "s": 4.06,
+     "usd": 0.04534
+    },
+    {
+     "in": 27442,
+     "cached": 16612,
+     "out": 40,
+     "s": 4.35,
+     "usd": 0.04538
+    },
+    {
+     "in": 34524,
+     "cached": 15016,
+     "out": 844,
+     "s": 7.15,
+     "usd": 0.08797
+    },
+    {
+     "in": 27140,
+     "cached": 16310,
+     "out": 60,
+     "s": 3.99,
+     "usd": 0.04555
+    },
+    {
+     "in": 27164,
+     "cached": 16334,
+     "out": 28,
+     "s": 4.13,
+     "usd": 0.04523
+    },
+    {
+     "in": 27206,
+     "cached": 16376,
+     "out": 52,
+     "s": 4.04,
+     "usd": 0.04547
+    }
+   ],
+   "answers": {
+    "Q01": [
+     "5.3%",
+     "Q01-c",
+     "batch-compact"
+    ],
+    "Q02": [
+     "4 kilometers",
+     "Q02-c",
+     "batch-compact"
+    ],
+    "Q03": [
+     "1",
+     "Q03-c",
+     "batch-compact"
+    ],
+    "Q04": [
+     "Long-lived memory cells",
+     "Q04-a",
+     "batch-compact"
+    ],
+    "Q05": [
+     "Photosynthesis",
+     "Q05-b",
+     "batch-compact"
+    ],
+    "Q06": [
+     "Solar energy",
+     "Q06-c",
+     "batch-compact"
+    ],
+    "Q07": [
+     "An estimated 25 million Chinese and other Asians",
+     "Q07-a",
+     "batch-compact"
+    ],
+    "Q08": [
+     "Saffir-Simpson Scale",
+     "Q08-b",
+     "batch-compact"
+    ],
+    "Q09": [
+     "Catalog everything",
+     "Q09-a",
+     "batch-compact"
+    ],
+    "Q10": [
+     "A decentralized network with multiple paths between any two points; dividing user messages into message blocks (packets); delivery of these messages by store and forward switching",
+     "Q10-b",
+     "single-full"
+    ],
+    "Q11": [
+     "Flax cultivation (the Irish linen industry)",
+     "Q11-b",
+     "single-full"
+    ],
+    "Q12": [
+     "Monday Night Football",
+     "Q12-a",
+     "batch-compact"
+    ],
+    "Q13": [
+     "Cisco Systems",
+     "Q13-c",
+     "batch-compact"
+    ],
+    "Q14": [
+     "Over 100 billion dollars",
+     "Q14-c",
+     "batch-compact"
+    ],
+    "Q15": [
+     "1965",
+     "Q15-c",
+     "batch-compact"
+    ],
+    "Q16": [
+     "Several University of Chicago professors",
+     "Q16-b",
+     "batch-compact"
+    ],
+    "Q17": [
+     "His butchery (brutality); they feel it is exaggerated, while his positive role is underrated.",
+     "Q17-b",
+     "single-full"
+    ],
+    "Q18": [
+     "On the West Side of Fresno (Fresno Chandler Executive Airport)",
+     "Q18-c",
+     "single-full"
+    ],
+    "Q19": [
+     "An innate force of impetus",
+     "Q19-a",
+     "batch-compact"
+    ],
+    "Q20": [
+     "High-gain S-band antenna",
+     "Q20-b",
+     "batch-compact"
+    ],
+    "Q21": [
+     "All other animals (all other animal phyla)",
+     "Q21-c",
+     "single-full"
+    ],
+    "Q22": [
+     "The principle of cross-cutting relationships",
+     "Q22-b",
+     "batch-compact"
+    ],
+    "Q23": [
+     "Standard & Poor's economists",
+     "Q23-a",
+     "batch-full"
+    ],
+    "Q24": [
+     "He ignored C\u00e9loron's warning and continued trading with the British.",
+     "Q24-a",
+     "single-full"
+    ],
+    "Q25": [
+     "hockey stick graph",
+     "Q25-c",
+     "batch-compact"
+    ],
+    "Q26": [
+     "Between 96,660 and 128,843",
+     "Q26-a",
+     "batch-compact"
+    ],
+    "Q27": [
+     "The Mission Council",
+     "Q27-b",
+     "batch-compact"
+    ],
+    "Q28": [
+     "Five inches",
+     "Q28-b",
+     "batch-compact"
+    ],
+    "Q29": [
+     "Over 200",
+     "Q29-c",
+     "batch-compact"
+    ],
+    "Q30": [
+     "About 13,000 BP",
+     "Q30-a",
+     "batch-compact"
+    ],
+    "Q31": [
+     "Wisdom, Compassion, Justice and Integrity",
+     "Q31-a",
+     "batch-compact"
+    ],
+    "Q32": [
+     "New Holland",
+     "Q32-a",
+     "batch-compact"
+    ],
+    "Q33": [
+     "Proper safety equipment such as harnesses and guardrails and procedures such as securing ladders and inspecting scaffolding",
+     "Q33-b",
+     "single-full"
+    ],
+    "Q34": [
+     "Charging their students tuition",
+     "Q34-c",
+     "single-full"
+    ],
+    "Q35": [
+     "3 in 1,000,000",
+     "Q35-a",
+     "batch-compact"
+    ],
+    "Q36": [
+     "Chinese physicians were brought along Mongol military campaigns as the Mongols expanded westward, transmitting techniques to the Middle East and the rest of the empire",
+     "Q36-a",
+     "batch-full"
+    ],
+    "Q37": [
+     "Quietist/non-political Islam",
+     "Q37-a",
+     "batch-compact"
+    ],
+    "Q38": [
+     "Architectural attraction",
+     "Q38-b",
+     "batch-compact"
+    ],
+    "Q39": [
+     "A postal company",
+     "Q39-c",
+     "batch-compact"
+    ],
+    "Q40": [
+     "Pons Aelius",
+     "Q40-c",
+     "batch-compact"
+    ],
+    "Q41": [
+     "Lessing (1755)",
+     "Q41-c",
+     "batch-full"
+    ],
+    "Q42": [
+     "The political weakness of the Mughal state (and its local elites, who were economically and administratively incorporated)",
+     "Q42-b",
+     "single-full"
+    ],
+    "Q43": [
+     "Embroidery",
+     "Q43-b",
+     "batch-compact"
+    ],
+    "Q44": [
+     "80,000",
+     "Q44-b",
+     "batch-compact"
+    ],
+    "Q45": [
+     "Phowa and siddhi",
+     "Q45-c",
+     "batch-compact"
+    ],
+    "Q46": [
+     "Super Bowl XLVII",
+     "Q46-a",
+     "batch-compact"
+    ],
+    "Q47": [
+     "Economically",
+     "Q47-a",
+     "batch-compact"
+    ],
+    "Q48": [
+     "Antigone",
+     "Q48-a",
+     "batch-compact"
+    ]
+   }
+  }
+ ],
+ "finished": "2026-11-26T23:24:35"
+}

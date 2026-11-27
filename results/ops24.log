@@ -1,0 +1,9 @@
+{"route": "baseline", "accepted": "24/24", "lenient": "24/24", "calls": 24, "total_tokens": 640189, "uncached+output": 279805, "usd": 1.1587, "wall_seconds": 24.3, "regressions": null}
+{"route": "compact-only", "accepted": "24/24", "lenient": "24/24", "calls": 24, "total_tokens": 639207, "uncached+output": 272383, "usd": 1.1296, "wall_seconds": 24.0, "regressions": []}
+{"route": "batch-only#1", "accepted": "24/24", "lenient": "24/24", "calls": 1, "total_tokens": 30970, "uncached+output": 15954, "usd": 0.0692, "wall_seconds": 7.9, "regressions": []}
+{"route": "carpool#1", "accepted": "24/24", "lenient": "24/24", "calls": 1, "total_tokens": 29977, "uncached+output": 14961, "usd": 0.0652, "wall_seconds": 6.5, "regressions": []}
+{"route": "batch-only#2", "accepted": "24/24", "lenient": "24/24", "calls": 1, "total_tokens": 30969, "uncached+output": 11471, "usd": 0.0517, "wall_seconds": 7.2, "regressions": []}
+{"route": "carpool#2", "accepted": "24/24", "lenient": "24/24", "calls": 1, "total_tokens": 29996, "uncached+output": 11488, "usd": 0.0517, "wall_seconds": 7.6, "regressions": []}
+{"route": "batch-only#3", "accepted": "24/24", "lenient": "24/24", "calls": 1, "total_tokens": 30969, "uncached+output": 11471, "usd": 0.0517, "wall_seconds": 8.6, "regressions": []}
+{"route": "carpool#3", "accepted": "24/24", "lenient": "24/24", "calls": 1, "total_tokens": 29978, "uncached+output": 11470, "usd": 0.0516, "wall_seconds": 6.8, "regressions": []}
+saved results/ops24-claude-code.json

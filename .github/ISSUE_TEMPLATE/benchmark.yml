@@ -1,0 +1,29 @@
+name: Benchmark result
+description: Share a carpool run on a client, model or task set we haven't measured
+labels: ["benchmark"]
+body:
+  - type: input
+    id: backend
+    attributes:
+      label: Backend and model
+      placeholder: "codex, gpt-x / ollama:qwen3:8b / gemini-cli ..."
+    validations:
+      required: true
+  - type: input
+    id: tasks
+    attributes:
+      label: Task set
+      placeholder: "bench/data/squad48-holdout.jsonl"
+    validations:
+      required: true
+  - type: textarea
+    id: stats
+    attributes:
+      label: Output of `carpool stats <results file>`
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything surprising? (failures welcome)

@@ -1,0 +1,5 @@
+{"route": "baseline", "accepted": "18/24", "lenient": "24/24", "calls": 24, "total_tokens": 5654, "uncached+output": 5654, "usd": 0.0, "wall_seconds": 44.8, "regressions": null}
+{"route": "compact-only", "accepted": "21/24", "lenient": "24/24", "calls": 27, "total_tokens": 5688, "uncached+output": 5688, "usd": 0.0, "wall_seconds": 48.4, "regressions": []}
+{"route": "batch-only", "accepted": "16/24", "lenient": "16/24", "calls": 1, "total_tokens": 3336, "uncached+output": 3336, "usd": 0.0, "wall_seconds": 57.6, "regressions": ["C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08"]}
+{"route": "carpool", "accepted": "16/24", "lenient": "16/24", "calls": 1, "total_tokens": 2787, "uncached+output": 2787, "usd": 0.0, "wall_seconds": 66.0, "regressions": ["C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08"]}
+saved results/ops24-ollama-qwen2.5-1.5b.json

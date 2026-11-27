@@ -1,0 +1,20 @@
+{
+ "promoted": false,
+ "reason": "precision 86.1% is below 95%; 95% lower bound 71.3% is below 85%",
+ "fn": "solve",
+ "task": "answer a question about a site's equipment from short evidence passages",
+ "n_train": 84,
+ "n_held_out": 36,
+ "answered": 36,
+ "agreed": 31,
+ "coverage": 1.0,
+ "precision": 0.8611111111111112,
+ "lower_bound": 0.7134014871960682,
+ "cost_usd": 0.11329,
+ "calls": 3,
+ "gate": {
+  "min_precision": 0.95,
+  "min_lower_bound": 0.85,
+  "min_coverage": 0.1
+ }
+}

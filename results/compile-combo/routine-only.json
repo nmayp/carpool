@@ -1,0 +1,61 @@
+{
+ "tasks": 24,
+ "runs": [
+  {
+   "arm": "carpool + compiled",
+   "calls": 1,
+   "strict": "24/24",
+   "lenient": "24/24",
+   "usd": 0.0108,
+   "total_tokens": 2396,
+   "cached_input": 0,
+   "routes": {
+    "compiled": 16,
+    "batch-compact": 8
+   },
+   "fallbacks": {}
+  },
+  {
+   "arm": "carpool",
+   "calls": 1,
+   "strict": "24/24",
+   "lenient": "24/24",
+   "usd": 0.0097,
+   "total_tokens": 4967,
+   "cached_input": 3671,
+   "routes": {
+    "batch-compact": 16,
+    "batch-full": 8
+   },
+   "fallbacks": {}
+  },
+  {
+   "arm": "carpool",
+   "calls": 1,
+   "strict": "24/24",
+   "lenient": "24/24",
+   "usd": 0.0097,
+   "total_tokens": 4968,
+   "cached_input": 3671,
+   "routes": {
+    "batch-compact": 16,
+    "batch-full": 8
+   },
+   "fallbacks": {}
+  },
+  {
+   "arm": "carpool + compiled",
+   "calls": 1,
+   "strict": "24/24",
+   "lenient": "24/24",
+   "usd": 0.0046,
+   "total_tokens": 2397,
+   "cached_input": 1588,
+   "routes": {
+    "compiled": 16,
+    "batch-compact": 8
+   },
+   "fallbacks": {}
+  }
+ ]
+}

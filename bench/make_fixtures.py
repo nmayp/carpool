@@ -4,6 +4,8 @@
     python bench/make_fixtures.py > carpool/data/ops24.jsonl
     python bench/make_fixtures.py fresh > bench/data/ops24-fresh.jsonl    # disjoint names and numbers
     python bench/make_fixtures.py fresh2 > bench/data/ops24-fresh2.jsonl  # a third disjoint set
+    python bench/make_fixtures.py fresh3 > bench/data/ops24-fresh3.jsonl  # fresh3..fresh7: more disjoint sets,
+                                                                           # the logged calls for `carpool compile`
 """
 import json
 import sys
@@ -78,24 +80,77 @@ FRESH2 = {
               "Holloway Integrity Team", "Carrick Field Group", "Mardale Controls Board", "Tavener Assets Cell"],
 }
 
+FRESH3 = {
+    "SITES": ["Aldwick Cove", "Bexley Mere", "Clunton", "Denholm Ford", "Eastry Gate", "Farnley Moor", "Garsby", "Hollin Rise"],
+    "SYSTEMS": ["glycol chiller", "emergency lighting inverter", "pressure relief valve", "dust extractor",
+                "gas detector panel", "water softener", "conveyor drive", "ventilation damper"],
+    "TEAMS": ["Oakley Process Group", "Pinewood Support Desk", "Quenby Facilities Crew", "Redmayne Safety Unit",
+              "Sutton Verification Office", "Thornley Electrical Cell", "Upton Mechanical Team", "Vickery Standards Board"],
+}
+
+FRESH4 = {
+    "SITES": ["Ivelet Bridge", "Jesmond Cross", "Kelham", "Lowther Fell", "Marlow Spit", "Nether Wick", "Ormside", "Pickering Gate"],
+    "SYSTEMS": ["flow meter skid", "fuel transfer pump", "stack monitor", "hydraulic lift", "cable tray fan",
+                "process boiler", "seal oil unit", "sump pump"],
+    "TEAMS": ["Wexcombe Service Crew", "Yarrow Systems Team", "Zennor Reliability Desk", "Abbott Plant Unit",
+              "Barlow Controls Cell", "Cheshunt Integrity Group", "Dalby Maintenance Office", "Everley Utilities Board"],
+}
+
+FRESH5 = {
+    "SITES": ["Quarndon", "Ripley Staithe", "Stainmore", "Thirlby", "Unthank", "Vexford", "Wenhaston", "Yoxall"],
+    "SYSTEMS": ["lube oil cooler", "pH dosing pump", "nitrogen header", "scrubber fan", "air handling unit",
+                "level transmitter", "gearbox heater", "effluent screen"],
+    "TEAMS": ["Fairlight Process Crew", "Gisburn Assets Desk", "Harlow Safety Cell", "Ingleby Field Unit",
+              "Jarrow Electrical Group", "Kimble Standards Team", "Lanner Controls Office", "Morven Reliability Board"],
+}
+
+FRESH6 = {
+    "SITES": ["Ainsty Wharf", "Bolton Carr", "Cowling", "Dunstan Reach", "Embsay", "Flaxby", "Grassby Moor", "Hepple"],
+    "SYSTEMS": ["cooling water pump", "switchgear heater", "fire damper", "nitrogen generator", "lube skid",
+                "condenser fan", "oil mist separator", "boiler economiser"],
+    "TEAMS": ["Ashby Standards Crew", "Beckett Plant Desk", "Cranwell Assets Unit", "Dorrien Safety Group",
+              "Elmstead Controls Office", "Fordham Process Cell", "Garrow Reliability Team", "Halsey Systems Board"],
+}
+
+FRESH7 = {
+    "SITES": ["Ilkley Holme", "Jevington", "Kirkby Fell", "Lamport", "Melbury Quay", "Nunthorpe", "Oxcombe", "Pelham Cross"],
+    "SYSTEMS": ["steam header", "chlorine analyser", "transformer cooler", "belt scale", "vent stack damper",
+                "glycol heater", "feed screw", "jockey pump"],
+    "TEAMS": ["Ivor Mechanical Group", "Jessop Support Crew", "Kendal Facilities Desk", "Lyndhurst Electrical Unit",
+              "Marwood Integrity Cell", "Newbold Safety Office", "Orford Controls Team", "Penrose Operations Board"],
+}
+
+VARIANTS = {"fresh": (FRESH, "F"), "fresh2": (FRESH2, "G"), "fresh3": (FRESH3, "H"),
+            "fresh4": (FRESH4, "I"), "fresh5": (FRESH5, "J"), "fresh6": (FRESH6, "K"), "fresh7": (FRESH7, "L")}
+
+
+def numbers(variant, i):
+    """(days to sign-off, old interval, approved interval) for task i of a variant."""
+    if variant == "fresh":
+        return 3 + i * 3, 20 + 2 * i, 60 + 5 * i
+    if variant == "fresh2":
+        return 4 + i * 4, 14 + 3 * i, 50 + 7 * i
+    k = int(variant[-1])  # fresh3 .. fresh7
+    return 2 + i * k, 12 + k + 2 * i, 40 + 3 * k + (k + 3) * i
+
+
 if __name__ == "__main__":
     variant = sys.argv[1] if len(sys.argv) > 1 else ""
-    if variant == "fresh2":
-        FRESH = FRESH2
-    if variant in ("fresh", "fresh2"):
-        SITES, SYSTEMS, TEAMS = FRESH["SITES"], FRESH["SYSTEMS"], FRESH["TEAMS"]
+    if variant in VARIANTS:
+        names, tag = VARIANTS[variant]
+        SITES, SYSTEMS, TEAMS = names["SITES"], names["SYSTEMS"], names["TEAMS"]
         _cross, _stale = cross, stale
 
         def cross(i):  # different day counts
             d = _cross(i)
-            days = (3 + i * 3) if variant == "fresh" else (4 + i * 4)
+            days = numbers(variant, i)[0]
             d["sources"][0]["text"] = d["sources"][0]["text"].replace(f"{5 + i * 2} days", f"{days} days")
             d["answers"] = [f"{days} days", str(days)]
             return d
 
         def stale(i):  # different intervals
             d = _stale(i)
-            old, new = (20 + 2 * i, 60 + 5 * i) if variant == "fresh" else (14 + 3 * i, 50 + 7 * i)
+            old, new = numbers(variant, i)[1:]
             d["sources"][0]["text"] = d["sources"][0]["text"].replace(f"is {30 + i} days", f"is {old} days")
             d["sources"][1]["text"] = d["sources"][1]["text"].replace(f"is {45 + i} days", f"is {new} days")
             d["answers"] = [f"{new} days", str(new)]
@@ -103,7 +158,6 @@ if __name__ == "__main__":
     for i in range(8):
         for make in (single, cross, stale):
             row = make(i)
-            if variant in ("fresh", "fresh2"):
-                tag = "F" if variant == "fresh" else "G"
+            if variant in VARIANTS:
                 row = json.loads(json.dumps(row).replace(f'"{row["id"]}', f'"{tag}{row["id"]}'))
             print(json.dumps(row))

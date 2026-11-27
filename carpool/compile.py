@@ -11,6 +11,7 @@ runaway loop; it is not a security sandbox. Read a compiled file before you depl
 """
 from __future__ import annotations
 
+import ast
 import importlib.util
 import json
 import math
@@ -24,6 +25,8 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any, Callable, Optional
 
+from .compact import normalize
+
 MIN_HELD_OUT = 30  # fewer held-out calls than this cannot clear a 95% lower bound of 85% anyway
 
 
@@ -36,6 +39,21 @@ def wilson_lower(k: int, n: int, z: float = 1.96) -> float:
     c = p + z * z / (2 * n)
     a = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))
     return (c - a) / d
+
+
+def same_answer(a: Any, b: Any, mode: str = "exact") -> bool:
+    """Do two answers agree?  "exact": identical. "loose": same after normalising case, spacing, punctuation and a
+    leading article; or, for answers with numbers, the same numbers and one side's words are a subset of the
+    other's ("7" agrees with "7 days"; "7 days" does not agree with "7 weeks" or "17 days")."""
+    if a == b:
+        return True
+    if mode == "exact" or not isinstance(a, str) or not isinstance(b, str):
+        return False
+    if normalize(a) == normalize(b):
+        return True
+    na, nb = re.findall(r"\d+(?:[.,]\d+)?", normalize(a)), re.findall(r"\d+(?:[.,]\d+)?", normalize(b))
+    wa, wb = set(re.findall(r"[^\W\d_]+", normalize(a))), set(re.findall(r"[^\W\d_]+", normalize(b)))
+    return bool(na) and na == nb and (wa <= wb or wb <= wa)
 
 
 @dataclass
@@ -64,6 +82,8 @@ class CompileResult:
     cost_usd: float
     calls: int
     gate: dict = field(default_factory=dict)
+    match: str = "exact"
+    split: str = "internal split of the log"
 
     def report(self) -> dict:
         d = asdict(self)
@@ -158,18 +178,26 @@ def run_code(code: str, fn: str, inputs: list, timeout: int = 120) -> list:
 # ------------------------------------------------------------------- compile
 def compile_log(pairs: list, backend: Callable, task: str, *, fn: str = "solve", context: str = "",
                 val_frac: float = 0.3, seed: int = 1, repairs: int = 2, gate: Optional[Gate] = None,
-                timeout: int = 120) -> CompileResult:
+                timeout: int = 120, match: str = "exact", held_out: Optional[list] = None) -> CompileResult:
     """pairs: logged (input, output) pairs. backend: any carpool backend (a callable prompt -> Completion).
 
-    Learns from the training part, repairs against the training part only, and judges on the held-out part."""
+    Learns from the training part, repairs against the training part only, and judges on the held-out part.
+    By default the held-out part is a random share of `pairs`; pass `held_out` (more logged pairs, for example
+    from a later period) to judge on calls that were kept apart from the start. `match` is how an answer is
+    compared with the logged one: "exact" or "loose" (see `same_answer`)."""
     gate = gate or Gate()
+    if match not in ("exact", "loose"):
+        raise ValueError("match must be 'exact' or 'loose'")
     pairs = [(x, y) for x, y in pairs]
-    if any(y is None for _, y in pairs):
+    if any(y is None for _, y in pairs + list(held_out or [])):
         raise ValueError("logged outputs must not be null: None is how the function abstains")
-    rng = random.Random(seed)
-    rng.shuffle(pairs)
-    n_val = max(1, round(len(pairs) * val_frac))
-    val, train = pairs[:n_val], pairs[n_val:]
+    if held_out is None:
+        rng = random.Random(seed)
+        rng.shuffle(pairs)
+        n_val = max(1, round(len(pairs) * val_frac))
+        val, train = pairs[:n_val], pairs[n_val:]
+    else:
+        val, train = [(x, y) for x, y in held_out], pairs
     if len(val) < MIN_HELD_OUT:
         raise ValueError(f"need at least {MIN_HELD_OUT} held-out calls to judge a function, got {len(val)}; "
                          "log more calls or raise --val")
@@ -186,7 +214,7 @@ def compile_log(pairs: list, backend: Callable, task: str, *, fn: str = "solve",
     code = extract_code(ask(synth_prompt(task, sig, context, train)))
     for _ in range(repairs):
         res = run_code(code, fn, [x for x, _ in train], timeout)
-        wrong = [(x, y, p) for (x, y), p in zip(train, res) if p is not None and p != y][:25]
+        wrong = [(x, y, p) for (x, y), p in zip(train, res) if p is not None and not same_answer(p, y, match)][:25]
         abstained = [(x, y) for (x, y), p in zip(train, res) if p is None][:15]
         if not wrong and len(abstained) <= 0.1 * len(train):
             break
@@ -194,7 +222,7 @@ def compile_log(pairs: list, backend: Callable, task: str, *, fn: str = "solve",
 
     outs = run_code(code, fn, [x for x, _ in val], timeout)
     answered = [i for i, o in enumerate(outs) if o is not None]
-    agreed = sum(1 for i in answered if outs[i] == val[i][1])
+    agreed = sum(1 for i in answered if same_answer(outs[i], val[i][1], match))
     coverage = len(answered) / len(val)
     precision = agreed / len(answered) if answered else None
     lb = wilson_lower(agreed, len(answered))
@@ -208,7 +236,8 @@ def compile_log(pairs: list, backend: Callable, task: str, *, fn: str = "solve",
     return CompileResult(
         code=code, promoted=not reasons, reason="passed the gate" if not reasons else "; ".join(reasons),
         fn=fn, task=task, n_train=len(train), n_held_out=len(val), answered=len(answered), agreed=agreed,
-        coverage=coverage, precision=precision, lower_bound=lb, cost_usd=cost, calls=calls, gate=asdict(gate))
+        coverage=coverage, precision=precision, lower_bound=lb, cost_usd=cost, calls=calls, gate=asdict(gate),
+        match=match, split="internal split of the log" if held_out is None else "held-out calls supplied separately")
 
 
 def render(result: CompileResult) -> str:
@@ -218,8 +247,8 @@ def render(result: CompileResult) -> str:
     p = "n/a" if result.precision is None else f"{result.precision:.1%}"
     head = (f'"""Compiled by carpool {__version__} from {result.n_train + result.n_held_out} logged calls.\n'
             f"Task: {result.task}\n"
-            f"Held-out check: answered {result.answered} of {result.n_held_out}; {result.agreed} matched the logged "
-            f"output (precision {p}, 95% lower bound {result.lower_bound:.1%}).\n"
+            f"Held-out check ({result.split}, {result.match} match): answered {result.answered} of {result.n_held_out}; "
+            f"{result.agreed} matched the logged output (precision {p}, 95% lower bound {result.lower_bound:.1%}).\n"
             f"Returns None when unsure: send those inputs to the model.\n"
             f'Read this file before you deploy it: it runs as you.\n"""\n')
     return head + result.code.lstrip("\n")
@@ -254,3 +283,44 @@ class Cascade:
     def coverage(self) -> float:
         n = self.hits + self.misses
         return self.hits / n if n else 0.0
+
+
+# ------------------------------------------------------- compiled code + carpool
+def task_text(task) -> str:
+    """The evidence of a task as one string, for functions that read it. Sources that carpool would not trust
+    (drafts, superseded copies) are marked, so a function can learn to skip them."""
+    return "\n".join(("[untrusted] " if not s.trusted else "") + s.text for s in task.sources)
+
+
+# Added to the prompt when the examples are carpool tasks (`carpool compile --answers`).
+TASK_CONTEXT = ("The examples are questions answered from evidence. Argument 2 of the function is the evidence text, "
+                "one passage per line. Passages that start with [untrusted] are drafts or superseded copies: the "
+                "answer must never come from them. Give each answer in the same form as the examples.")
+
+
+def task_input(task, n_args: int):
+    """What a compiled function is called with for a task: the question alone (one argument), or the question and
+    the evidence text (two arguments). This is also how `carpool compile --answers` builds its examples."""
+    return task.question if n_args <= 1 else [task.question, task_text(task)]
+
+
+class CompiledTasks:
+    """A compiled function applied to carpool tasks. Runs in the same subprocess runner as the gate, so a runaway
+    function costs a timeout, not a hang. Returns None for every task it abstains on."""
+
+    def __init__(self, code: str, fn: str = "solve", timeout: int = 120):
+        self.code, self.fn, self.timeout = code, fn, timeout
+        try:  # read the signature without running the code
+            node = next(n for n in ast.parse(code).body if isinstance(n, ast.FunctionDef) and n.name == fn)
+        except (StopIteration, SyntaxError) as e:
+            raise ValueError(f"cannot find function '{fn}' in the compiled code") from e
+        params = node.args.posonlyargs + node.args.args
+        self.n_args = max(1, min(len(params), 2))
+
+    @classmethod
+    def from_file(cls, path: str, fn: str = "solve", timeout: int = 120) -> "CompiledTasks":
+        return cls(Path(path).read_text(), fn, timeout)
+
+    def answers(self, tasks: list) -> list:
+        outs = run_code(self.code, self.fn, [task_input(t, self.n_args) for t in tasks], self.timeout)
+        return [None if o is None or not str(o).strip() else str(o) for o in outs]

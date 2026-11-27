@@ -5,9 +5,14 @@ Changelog started 27 November 2026.
 ## Unreleased
 
 - `carpool compile`: a model reads logged calls and writes a plain function that may abstain; it is kept only if it
-  passes a gate on held-out calls, and `Cascade` sends what it abstains on to the model. On HDFS log lines it
+  passes a gate on held-out calls (`--held-out` takes calls kept apart from the start; `--match loose` treats "7" and
+  "7 days" as the same answer). `Cascade` sends what the function abstains on to the model. On HDFS log lines it
   replaced every call at the same accuracy; on banking intents and open-ended questions it did not, and the gate
   said so (`docs/RESULTS.md` §12).
+- Compiled code in front of carpool: `carpool run --compiled FILE`, `carpool bench --compiled FILE`, and
+  `compiled=` on `run_carpool` and `run_adaptive`. `carpool compile --answers` learns from a tasks file and the
+  answers `carpool run` printed. Where code answered two thirds of the tasks, total tokens fell 52% against carpool
+  alone; where it answered 22% there was no measurable saving (`docs/RESULTS.md` §13).
 - README: a Related work section crediting batch prompting and explaining what carpool adds.
 - Fair baseline: one lean call per task (`--backend claude-lean`). carpool still cut cost per accepted answer by
   78–83% on the first run, with 0 regressions; the README now leads with that figure.

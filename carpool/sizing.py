@@ -81,11 +81,16 @@ class CrowdingEstimate:
 
 
 def run_adaptive(tasks: list[Task], backend: Backend, *, start: int = 8, max_size: int = 48,
-                 compact: bool = True) -> tuple[Result, list[int]]:
+                 compact: bool = True, compiled=None) -> tuple[Result, list[int]]:
     """Process tasks in rounds, re-estimating the best group size after each round.
-    Returns the combined result and the group sizes used."""
+    Returns the combined result and the group sizes used. `compiled` answers its share first, no model call."""
     est, sizes = CrowdingEstimate(), []
     ledger, answers = Ledger(), {}
+    if compiled is not None:
+        from .router import apply_compiled
+
+        answers, tasks, secs = apply_compiled(tasks, compiled)
+        ledger.local_seconds += secs
     k, i = max(1, start), 0
     while i < len(tasks):
         chunk = tasks[i: i + k]

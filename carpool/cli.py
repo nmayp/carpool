@@ -88,44 +88,85 @@ def cmd_stats(a):
         print(f"\ntotal spend in this file: ${spent:.2f} (list price)")
 
 
+def _compiled(a):
+    if not getattr(a, "compiled", None):
+        return None
+    from .compile import CompiledTasks
+
+    try:
+        return CompiledTasks.from_file(a.compiled, a.compiled_fn)
+    except (OSError, ValueError) as e:
+        sys.exit(f"carpool: --compiled: {e}")
+
+
 def cmd_run(a):
     tasks = load_tasks(a.tasks)
+    compiled = _compiled(a)
     if a.adaptive:
         from .sizing import run_adaptive
 
         res, sizes = run_adaptive(tasks, make_backend(a.backend), start=min(8, a.max_batch),
-                                  max_size=a.max_batch, compact=not a.full)
+                                  max_size=a.max_batch, compact=not a.full, compiled=compiled)
         print(f"group sizes used: {sizes}", file=sys.stderr)
     else:
-        res = run_carpool(tasks, make_backend(a.backend), compact=not a.full, max_batch=a.max_batch)
+        res = run_carpool(tasks, make_backend(a.backend), compact=not a.full, max_batch=a.max_batch,
+                          compiled=compiled)
     for t in tasks:
         ans = res.answers[t.id]
         print(json.dumps({"id": t.id, "answer": ans.answer, "source": ans.source_id,
                           "route": ans.route, "fallback": ans.fallback_reason}))
     L = res.ledger
     est = " (estimated)" if L.estimated else ""
-    print(f"\n{len(tasks)} tasks, {L.n_calls} calls, {L.total_tokens:,} tokens{est}", file=sys.stderr)
+    n_code = sum(1 for x in res.answers.values() if x.route == "compiled")
+    code = f" ({n_code} answered by compiled code)" if compiled is not None else ""
+    print(f"\n{len(tasks)} tasks{code}, {L.n_calls} calls, {L.total_tokens:,} tokens{est}", file=sys.stderr)
+
+
+def _load_pairs(log, answers, a):
+    """Logged (input, output) pairs from a JSONL log, or from a tasks file plus the answers `carpool run` printed."""
+    pairs = []
+    if answers:
+        from .compile import task_input
+
+        given = {}
+        for line in Path(answers).read_text().splitlines():
+            if line.strip():
+                d = json.loads(line)
+                if d.get("id") is not None and str(d.get("answer", "")).strip():
+                    given[str(d["id"])] = d["answer"]
+        pairs = [(task_input(t, 2), given[t.id]) for t in load_tasks(log) if t.id in given]
+        print(f"{len(pairs)} of the tasks in {log} have a logged answer", file=sys.stderr)
+    else:
+        for n, line in enumerate(Path(log).read_text().splitlines(), 1):
+            if line.strip():
+                d = json.loads(line)
+                if a.input_key not in d or a.output_key not in d:
+                    sys.exit(f"{log}:{n}: each line needs \"{a.input_key}\" and \"{a.output_key}\" keys")
+                pairs.append((d[a.input_key], d[a.output_key]))
+    return pairs
 
 
 def cmd_compile(a):
     from .compile import Gate, compile_log, render
 
-    pairs = []
-    for n, line in enumerate(Path(a.log).read_text().splitlines(), 1):
-        if line.strip():
-            d = json.loads(line)
-            if a.input_key not in d or a.output_key not in d:
-                sys.exit(f"{a.log}:{n}: each line needs \"{a.input_key}\" and \"{a.output_key}\" keys")
-            pairs.append((d[a.input_key], d[a.output_key]))
+    match = a.match or ("loose" if a.answers else "exact")
+    pairs = _load_pairs(a.log, a.answers, a)
+    held = None
+    if a.held_out:
+        held = _load_pairs(a.held_out, a.held_out_answers if a.answers else None, a)
     context = Path(a.context_file).read_text() if a.context_file else ""
+    if a.answers and not context:
+        from .compile import TASK_CONTEXT
+
+        context = TASK_CONTEXT
     gate = Gate(a.min_precision, a.min_lower_bound, a.min_coverage)
     try:
         r = compile_log(pairs, make_backend(a.backend), a.task, fn=a.func, context=context,
-                        val_frac=a.val, seed=a.seed, gate=gate)
+                        val_frac=a.val, seed=a.seed, gate=gate, match=match, held_out=held)
     except ValueError as e:
         sys.exit(f"carpool compile: {e}")
     p = "n/a" if r.precision is None else f"{r.precision:.1%}"
-    print(f"learned from {r.n_train} logged calls, checked on {r.n_held_out} it had not seen")
+    print(f"learned from {r.n_train} logged calls, checked on {r.n_held_out} it had not seen ({r.split}; {r.match} match)")
     print(f"answers {r.coverage:.0%} of calls; {r.agreed}/{r.answered} match the logged output "
           f"(precision {p}, 95% lower bound {r.lower_bound:.1%})")
     print(f"cost to compile: ${r.cost_usd:.3f} in {r.calls} calls" if r.cost_usd else f"{r.calls} model calls to compile")
@@ -154,7 +195,10 @@ def cmd_bench(a):
     pool = run_carpool(tasks, backend, compact=not a.full, max_batch=a.max_batch)
     r0 = score("one call per task", tasks, base.answers, base.ledger)
     r1 = score("carpool", tasks, pool.answers, pool.ledger)
-    _table([r0.row(), r1.row()])
+    compiled = _compiled(a)
+    both = run_carpool(tasks, backend, compact=not a.full, max_batch=a.max_batch, compiled=compiled) if compiled else None
+    r2 = score("carpool + compiled", tasks, both.answers, both.ledger) if both else None
+    _table([r0.row(), r1.row()] + ([r2.row()] if r2 else []))
     regs = regressions(tasks, base.answers, pool.answers)
     d_tot = pct_change(r0.per_accepted(base.ledger.total_tokens), r1.per_accepted(pool.ledger.total_tokens))
     d_unc = pct_change(r0.per_accepted(base.ledger.uncached_tokens), r1.per_accepted(pool.ledger.uncached_tokens))
@@ -164,11 +208,22 @@ def cmd_bench(a):
     print(f"\ntokens per accepted answer: {d_tot:+.1f}%   uncached+output per accepted: {d_unc:+.1f}%")
     print(f"paired regressions: {len(regs)} {regs if regs else ''}")
     print(f"carpool routes: {routes}   fallbacks: {pool.fallbacks or 'none'}")
+    if both:
+        regs2 = regressions(tasks, base.answers, both.answers)
+        d2 = pct_change(r0.per_accepted(base.ledger.total_tokens), r2.per_accepted(both.ledger.total_tokens))
+        routes2 = {}
+        for ans in both.answers.values():
+            routes2[ans.route] = routes2.get(ans.route, 0) + 1
+        print(f"with compiled code first: tokens per accepted answer {d2:+.1f}% against one call per task; "
+              f"paired regressions: {len(regs2)} {regs2 if regs2 else ''}; routes: {routes2}")
     if base.ledger.estimated:
         print("note: token counts are estimated (chars/4 + per-call overhead). Run with a real backend for real numbers.")
     if a.json:
-        Path(a.json).write_text(json.dumps({"baseline": r0.row(), "carpool": r1.row(),
-                                            "regressions": regs}, indent=2))
+        out = {"baseline": r0.row(), "carpool": r1.row(), "regressions": regs}
+        if both:
+            out["carpool_compiled"] = r2.row()
+            out["regressions_compiled"] = regressions(tasks, base.answers, both.answers)
+        Path(a.json).write_text(json.dumps(out, indent=2))
 
 
 def main(argv=None):
@@ -193,6 +248,8 @@ def main(argv=None):
     s.add_argument("--max-batch", type=int, default=24)
     s.add_argument("--adaptive", action="store_true", help="learn the group size from observed redo rates")
     s.add_argument("--full", action="store_true")
+    s.add_argument("--compiled", help="a file made by `carpool compile`: tasks it answers skip the model")
+    s.add_argument("--compiled-fn", default="solve")
     s.set_defaults(fn=cmd_run)
 
     s = sub.add_parser("stats", help="summarise a saved benchmark results file")
@@ -206,6 +263,13 @@ def main(argv=None):
     s.add_argument("--backend", default="claude-lean", help="the model that writes the function (any carpool backend)")
     s.add_argument("--fn", dest="func", default="solve", help="name of the generated function")
     s.add_argument("--context-file", help="text added to the prompt, such as the list of allowed answers")
+    s.add_argument("--answers", help="treat LOG as a tasks file and read the logged answers from this file "
+                   "(JSONL with id and answer, as `carpool run` prints)")
+    s.add_argument("--match", choices=["exact", "loose"],
+                   help='how an answer is compared with the logged one (default: loose with --answers, else exact; '
+                        '"loose" ignores case, articles and a unit word: "7" agrees with "7 days")')
+    s.add_argument("--held-out", help="judge on these calls (same format as LOG) instead of a random share of LOG")
+    s.add_argument("--held-out-answers", help="with --answers: the answers file for --held-out")
     s.add_argument("--input-key", default="input")
     s.add_argument("--output-key", default="output")
     s.add_argument("--val", type=float, default=0.3, help="share of logged calls held out to judge the function")
@@ -223,6 +287,8 @@ def main(argv=None):
     s.add_argument("--overhead", type=int, default=16_000, help="mock per-call harness tokens")
     s.add_argument("--max-batch", type=int, default=24)
     s.add_argument("--full", action="store_true")
+    s.add_argument("--compiled", help="also run carpool with this compiled file answering first")
+    s.add_argument("--compiled-fn", default="solve")
     s.add_argument("--json")
     s.set_defaults(fn=cmd_bench)
 

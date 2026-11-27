@@ -74,6 +74,16 @@ def call_many(backend: Backend, prompts: list[str]) -> list:
     return [backend(p) for p in prompts]
 
 
+def apply_compiled(tasks: list[Task], compiled) -> tuple[dict[str, Answer], list[Task], float]:
+    """Answer what compiled code can answer (no model call) and return the rest. Compiled answers are not
+    re-verified: the function was checked against logged calls when it was compiled."""
+    t0 = time.perf_counter()
+    outs = compiled.answers(tasks)
+    done = {t.id: Answer(t.id, o, "", "compiled") for t, o in zip(tasks, outs) if o is not None}
+    rest = [t for t in tasks if t.id not in done]
+    return done, rest, time.perf_counter() - t0
+
+
 def run_carpool(
     tasks: list[Task],
     backend: Backend,
@@ -81,8 +91,13 @@ def run_carpool(
     compact: bool = True,
     margin: float = 0.40,
     max_batch: int = 24,
+    compiled=None,
 ) -> Result:
+    """`compiled`: a carpool.compile.CompiledTasks. Tasks it answers skip the model; the rest are carpooled."""
     ledger, answers = Ledger(), {}
+    if compiled is not None:
+        answers, tasks, secs = apply_compiled(tasks, compiled)
+        ledger.local_seconds += secs
 
     # Phase 1: build every group prompt (preflight decides compact vs full evidence).
     t0 = time.perf_counter()

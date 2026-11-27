@@ -136,6 +136,25 @@ It works on regular text and doesn't on anything that needs meaning. One run, sm
 [details and caveats](docs/RESULTS.md#12-compiling-logged-calls-into-code-carpool-compile). The generated file runs
 as you, so read it before you deploy it.
 
+**With carpool.** Tasks the compiled file answers skip the model; carpool groups the rest. The loop:
+
+```bash
+carpool run tasks.jsonl --backend claude-code > answers.jsonl
+```
+
+```bash
+carpool compile tasks.jsonl --answers answers.jsonl --task "answer a question from its evidence" --out compiled/solve.py
+```
+
+```bash
+carpool run new-tasks.jsonl --backend claude-code --compiled compiled/solve.py
+```
+
+`carpool bench --compiled compiled/solve.py` adds a third row to the comparison. Where the code answered two thirds
+of the tasks, total tokens fell 52% against carpool alone; where it answered 22%, there was no measurable saving
+([§13](docs/RESULTS.md#13-compiled-code-in-front-of-carpool)). The first compile on that data was refused by the
+gate, over a format mismatch in the log, and the write-up says what was changed afterwards.
+
 ### Any other agent (Codex, Cursor, Gemini CLI, Windsurf, Aider…)
 
 Paste the five rules in [`integrations/AGENTS.md`](integrations/AGENTS.md) into your `AGENTS.md`, `.cursorrules`, `GEMINI.md` or system prompt.

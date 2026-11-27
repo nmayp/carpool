@@ -1,0 +1,48 @@
+{"id": "KS01", "answer": "Ashby Standards Crew", "source": "KS01-a", "route": "batch-compact", "fallback": null}
+{"id": "KX01", "answer": "2", "source": "KX01-a", "route": "batch-compact", "fallback": null}
+{"id": "KC01", "answer": "58 days", "source": "KC01-b", "route": "batch-full", "fallback": null}
+{"id": "KS02", "answer": "Beckett Plant Desk", "source": "KS02-a", "route": "batch-compact", "fallback": null}
+{"id": "KX02", "answer": "8", "source": "KX02-a", "route": "batch-compact", "fallback": null}
+{"id": "KC02", "answer": "67 days", "source": "KC02-b", "route": "batch-full", "fallback": null}
+{"id": "KS03", "answer": "Cranwell Assets Unit", "source": "KS03-a", "route": "batch-compact", "fallback": null}
+{"id": "KX03", "answer": "14", "source": "KX03-a", "route": "batch-compact", "fallback": null}
+{"id": "KC03", "answer": "76 days", "source": "KC03-b", "route": "batch-full", "fallback": null}
+{"id": "KS04", "answer": "Dorrien Safety Group", "source": "KS04-a", "route": "batch-compact", "fallback": null}
+{"id": "KX04", "answer": "20", "source": "KX04-a", "route": "batch-compact", "fallback": null}
+{"id": "KC04", "answer": "85 days", "source": "KC04-b", "route": "batch-full", "fallback": null}
+{"id": "KS05", "answer": "Elmstead Controls Office", "source": "KS05-a", "route": "batch-compact", "fallback": null}
+{"id": "KX05", "answer": "26", "source": "KX05-a", "route": "batch-compact", "fallback": null}
+{"id": "KC05", "answer": "94 days", "source": "KC05-b", "route": "batch-full", "fallback": null}
+{"id": "KS06", "answer": "Fordham Process Cell", "source": "KS06-a", "route": "batch-compact", "fallback": null}
+{"id": "KX06", "answer": "32", "source": "KX06-a", "route": "batch-compact", "fallback": null}
+{"id": "KC06", "answer": "103 days", "source": "KC06-b", "route": "batch-full", "fallback": null}
+{"id": "KS07", "answer": "Garrow Reliability Team", "source": "KS07-a", "route": "batch-compact", "fallback": null}
+{"id": "KX07", "answer": "38", "source": "KX07-a", "route": "batch-compact", "fallback": null}
+{"id": "KC07", "answer": "112 days", "source": "KC07-b", "route": "batch-full", "fallback": null}
+{"id": "KS08", "answer": "Halsey Systems Board", "source": "KS08-a", "route": "batch-compact", "fallback": null}
+{"id": "KX08", "answer": "44", "source": "KX08-a", "route": "batch-compact", "fallback": null}
+{"id": "KC08", "answer": "121 days", "source": "KC08-b", "route": "batch-full", "fallback": null}
+{"id": "LS01", "answer": "Ivor Mechanical Group", "source": "LS01-a", "route": "batch-compact", "fallback": null}
+{"id": "LX01", "answer": "2", "source": "LX01-a", "route": "batch-compact", "fallback": null}
+{"id": "LC01", "answer": "61 days", "source": "LC01-b", "route": "batch-full", "fallback": null}
+{"id": "LS02", "answer": "Jessop Support Crew", "source": "LS02-a", "route": "batch-compact", "fallback": null}
+{"id": "LX02", "answer": "9", "source": "LX02-a", "route": "batch-compact", "fallback": null}
+{"id": "LC02", "answer": "71 days", "source": "LC02-b", "route": "batch-full", "fallback": null}
+{"id": "LS03", "answer": "Kendal Facilities Desk", "source": "LS03-a", "route": "batch-compact", "fallback": null}
+{"id": "LX03", "answer": "16", "source": "LX03-a", "route": "batch-compact", "fallback": null}
+{"id": "LC03", "answer": "81 days", "source": "LC03-b", "route": "batch-full", "fallback": null}
+{"id": "LS04", "answer": "Lyndhurst Electrical Unit", "source": "LS04-a", "route": "batch-compact", "fallback": null}
+{"id": "LX04", "answer": "23", "source": "LX04-a", "route": "batch-compact", "fallback": null}
+{"id": "LC04", "answer": "91 days", "source": "LC04-b", "route": "batch-full", "fallback": null}
+{"id": "LS05", "answer": "Marwood Integrity Cell", "source": "LS05-a", "route": "batch-compact", "fallback": null}
+{"id": "LX05", "answer": "30", "source": "LX05-a", "route": "batch-compact", "fallback": null}
+{"id": "LC05", "answer": "101 days", "source": "LC05-b", "route": "batch-full", "fallback": null}
+{"id": "LS06", "answer": "Newbold Safety Office", "source": "LS06-a", "route": "batch-compact", "fallback": null}
+{"id": "LX06", "answer": "37", "source": "LX06-a", "route": "batch-compact", "fallback": null}
+{"id": "LC06", "answer": "111 days", "source": "LC06-b", "route": "batch-full", "fallback": null}
+{"id": "LS07", "answer": "Orford Controls Team", "source": "LS07-a", "route": "batch-compact", "fallback": null}
+{"id": "LX07", "answer": "44", "source": "LX07-a", "route": "batch-compact", "fallback": null}
+{"id": "LC07", "answer": "121 days", "source": "LC07-b", "route": "batch-full", "fallback": null}
+{"id": "LS08", "answer": "Penrose Operations Board", "source": "LS08-a", "route": "batch-compact", "fallback": null}
+{"id": "LX08", "answer": "51", "source": "LX08-a", "route": "batch-compact", "fallback": null}
+{"id": "LC08", "answer": "131 days", "source": "LC08-b", "route": "batch-full", "fallback": null}

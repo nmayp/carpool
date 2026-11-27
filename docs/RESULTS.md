@@ -7,7 +7,7 @@ Every number below comes from a raw JSON file in [`results/`](../results/) and c
 Each call is a fresh, non-persisted session in an empty directory, so it pays the full agent harness
 (system prompt, tool definitions), about 26k input tokens even for a one-word reply. Token counts and USD come
 from Claude Code's own usage report. USD is the list price the CLI reports, not an invoice.
-Baseline calls ran 4 at a time. Total spend for everything on this page: $43.53.
+Baseline calls ran 4 at a time. Total spend for everything on this page: $44.38.
 
 **Scoring.** *Strict* means normalized exact match against the answer key (Unicode, case, whitespace, final
 punctuation and a leading article are normalized). *Equivalent* also accepts an answer that contains the key or
@@ -323,6 +323,67 @@ Caveats, all of which matter:
   replaced call is larger, but this isn't measured here.
 - `Gate.min_coverage` (default 10%) was added after the run and isn't part of these results. It doesn't change
   them: hdfs passes it, and bank and squad already fail on precision.
+
+## 13. Compiled code in front of carpool
+
+Question: if compiled code answers the routine tasks first and carpool gets the rest, is the total cheaper? Script:
+`bench/compile_combo.py`. Results, the generated code and spend: `results/compile-combo/`. Total spend $0.85,
+Claude Sonnet 5.5 through `claude-lean`.
+
+**Making the function.** Carpool answered 120 routine ops tasks (ops24 and four disjoint variants) in 5 calls, 120 of
+120 correct, $0.12. Those answers are the "logged calls".
+
+1. *First attempt.* A model wrote a function from 84 of them; the other 36 were held out and answers had to match
+   the logged ones exactly. The gate **rejected** it: 31 of 36 matched (86.1%, lower bound 71.3%). All five misses
+   were the same thing, `"7"` against `"7 days"`. The log itself used both forms for the "how many days" question
+   (16 answers with "days", 24 without), and both are correct.
+2. *What I changed, after seeing that.* Added `--match loose` (same numbers, and one side's words are a subset of
+   the other's, so "7" agrees with "7 days" but not with "7 weeks" or "17 days") and `--held-out` (judge on calls
+   supplied separately). This was a response to the rejection, not decided beforehand, so I did not re-use the
+   36 calls. I logged 48 new calls from two more disjoint fixtures (48 of 48 correct, $0.05) and judged on those.
+3. *Second attempt.* Learned from all 120, judged on the 48 new calls: **promoted**. It answered 32 of 48 (67%) and
+   all 32 matched (lower bound 89.3%); $0.14 and 3 model calls. It abstained on every "how many days" question,
+   and a comment in the file says why: the format in the examples was inconsistent.
+
+**Mixed workload.** 24 routine tasks (`ops24-fresh2`, never used above) and the 48 SQuAD holdout questions from §3.
+The SQuAD half of the first row is the saved lean run from §11, not repeated.
+
+| arm | calls | accepted (strict / lenient) | cost | total tokens |
+|---|---|---|---|---|
+| one call per task | 72 | 66/72 · 72/72 | $0.959 | 134,888 |
+| carpool | 5 | 68/72 · 72/72 | $0.125 | 31,191 |
+| carpool + compiled | 6 | 67/72 · 72/72 | $0.133 | 30,581 |
+
+- The code answered 16 of 72 tasks, all routine and all correct. It answered none of the 48 SQuAD questions.
+- **No measurable saving here** (tokens −2%, cost +6%). The grouped calls alone were about 10% smaller (22,563 against
+  24,647 input tokens), but the compiled arm also had one more individual fallback (a SQuAD question) and ran
+  first, so its fallback calls paid cold-cache prices ($0.008 to $0.010 against $0.003). The two strict regressions
+  (H17, H28) are SQuAD questions the code never touched; there are 0 lenient regressions.
+- Code can save at most what carpool still charges for the tasks it answers. Here that is about $0.0017 a task, and
+  it answered 22% of them.
+
+**Routine tasks only** (the same 24, code answers 16 of them), arms run in the order compiled, carpool, carpool,
+compiled so cache state favours neither:
+
+| arm | run | calls | accepted | total tokens | cost |
+|---|---|---|---|---|---|
+| carpool + compiled | 1, 4 | 1, 1 | 24/24, 24/24 | 2,396 and 2,397 | $0.0108 and $0.0046 |
+| carpool | 2, 3 | 1, 1 | 24/24, 24/24 | 4,967 and 4,968 | $0.0097 and $0.0097 |
+
+Tokens fell **52%** and repeat runs agreed to within a token. Cost fell 21% on average ($0.0077 against $0.0097), but
+cost depends on cache state, so rely on the token figure.
+
+What this shows: the two stack and the compiled file never changed an answer it gave. The saving over carpool
+alone is about the share of tasks the code answers, and only becomes real when that share is large.
+
+Caveats:
+
+- One workload family, written by us, with three question templates; the function covers two of them.
+- One run per arm on the mixed workload, two per arm on the routine-only one.
+- The "one call per task" cost for the 24 routine tasks was $0.142 here and $0.281 for the original ops24 in §11,
+  from different cache states and different tasks.
+- Choosing `loose` matching was a reaction to the first rejection. Its result is on new calls, but the choice
+  was not fixed beforehand.
 
 ## Limits
 

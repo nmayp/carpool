@@ -1,0 +1,278 @@
+{
+ "route": "carpool (held-out run)",
+ "accepted": "48/48",
+ "calls": 2,
+ "total_tokens": 9757,
+ "uncached+output": 9757,
+ "tokens/accepted": 203.3,
+ "uncached/accepted": 203.3,
+ "seconds": 14.41,
+ "usd/accepted": 0.001,
+ "lenient": "48/48",
+ "wall_seconds": null,
+ "cached_input": 0,
+ "usd": 0.0473,
+ "fallbacks": {},
+ "routes": {
+  "batch-compact": 32,
+  "batch-full": 16
+ },
+ "calls_detail": [
+  {
+   "in": 4187,
+   "cached": 0,
+   "out": 691,
+   "s": 8.43,
+   "usd": 0.02365
+  },
+  {
+   "in": 4185,
+   "cached": 0,
+   "out": 694,
+   "s": 5.98,
+   "usd": 0.02368
+  }
+ ],
+ "answers": {
+  "KC01": [
+   "58 days",
+   "KC01-b",
+   "batch-full"
+  ],
+  "KC02": [
+   "67 days",
+   "KC02-b",
+   "batch-full"
+  ],
+  "KC03": [
+   "76 days",
+   "KC03-b",
+   "batch-full"
+  ],
+  "KC04": [
+   "85 days",
+   "KC04-b",
+   "batch-full"
+  ],
+  "KC05": [
+   "94 days",
+   "KC05-b",
+   "batch-full"
+  ],
+  "KC06": [
+   "103 days",
+   "KC06-b",
+   "batch-full"
+  ],
+  "KC07": [
+   "112 days",
+   "KC07-b",
+   "batch-full"
+  ],
+  "KC08": [
+   "121 days",
+   "KC08-b",
+   "batch-full"
+  ],
+  "KS01": [
+   "Ashby Standards Crew",
+   "KS01-a",
+   "batch-compact"
+  ],
+  "KS02": [
+   "Beckett Plant Desk",
+   "KS02-a",
+   "batch-compact"
+  ],
+  "KS03": [
+   "Cranwell Assets Unit",
+   "KS03-a",
+   "batch-compact"
+  ],
+  "KS04": [
+   "Dorrien Safety Group",
+   "KS04-a",
+   "batch-compact"
+  ],
+  "KS05": [
+   "Elmstead Controls Office",
+   "KS05-a",
+   "batch-compact"
+  ],
+  "KS06": [
+   "Fordham Process Cell",
+   "KS06-a",
+   "batch-compact"
+  ],
+  "KS07": [
+   "Garrow Reliability Team",
+   "KS07-a",
+   "batch-compact"
+  ],
+  "KS08": [
+   "Halsey Systems Board",
+   "KS08-a",
+   "batch-compact"
+  ],
+  "KX01": [
+   "2",
+   "KX01-a",
+   "batch-compact"
+  ],
+  "KX02": [
+   "8",
+   "KX02-a",
+   "batch-compact"
+  ],
+  "KX03": [
+   "14",
+   "KX03-a",
+   "batch-compact"
+  ],
+  "KX04": [
+   "20",
+   "KX04-a",
+   "batch-compact"
+  ],
+  "KX05": [
+   "26",
+   "KX05-a",
+   "batch-compact"
+  ],
+  "KX06": [
+   "32",
+   "KX06-a",
+   "batch-compact"
+  ],
+  "KX07": [
+   "38",
+   "KX07-a",
+   "batch-compact"
+  ],
+  "KX08": [
+   "44",
+   "KX08-a",
+   "batch-compact"
+  ],
+  "LC01": [
+   "61 days",
+   "LC01-b",
+   "batch-full"
+  ],
+  "LC02": [
+   "71 days",
+   "LC02-b",
+   "batch-full"
+  ],
+  "LC03": [
+   "81 days",
+   "LC03-b",
+   "batch-full"
+  ],
+  "LC04": [
+   "91 days",
+   "LC04-b",
+   "batch-full"
+  ],
+  "LC05": [
+   "101 days",
+   "LC05-b",
+   "batch-full"
+  ],
+  "LC06": [
+   "111 days",
+   "LC06-b",
+   "batch-full"
+  ],
+  "LC07": [
+   "121 days",
+   "LC07-b",
+   "batch-full"
+  ],
+  "LC08": [
+   "131 days",
+   "LC08-b",
+   "batch-full"
+  ],
+  "LS01": [
+   "Ivor Mechanical Group",
+   "LS01-a",
+   "batch-compact"
+  ],
+  "LS02": [
+   "Jessop Support Crew",
+   "LS02-a",
+   "batch-compact"
+  ],
+  "LS03": [
+   "Kendal Facilities Desk",
+   "LS03-a",
+   "batch-compact"
+  ],
+  "LS04": [
+   "Lyndhurst Electrical Unit",
+   "LS04-a",
+   "batch-compact"
+  ],
+  "LS05": [
+   "Marwood Integrity Cell",
+   "LS05-a",
+   "batch-compact"
+  ],
+  "LS06": [
+   "Newbold Safety Office",
+   "LS06-a",
+   "batch-compact"
+  ],
+  "LS07": [
+   "Orford Controls Team",
+   "LS07-a",
+   "batch-compact"
+  ],
+  "LS08": [
+   "Penrose Operations Board",
+   "LS08-a",
+   "batch-compact"
+  ],
+  "LX01": [
+   "2",
+   "LX01-a",
+   "batch-compact"
+  ],
+  "LX02": [
+   "9",
+   "LX02-a",
+   "batch-compact"
+  ],
+  "LX03": [
+   "16",
+   "LX03-a",
+   "batch-compact"
+  ],
+  "LX04": [
+   "23",
+   "LX04-a",
+   "batch-compact"
+  ],
+  "LX05": [
+   "30",
+   "LX05-a",
+   "batch-compact"
+  ],
+  "LX06": [
+   "37",
+   "LX06-a",
+   "batch-compact"
+  ],
+  "LX07": [
+   "44",
+   "LX07-a",
+   "batch-compact"
+  ],
+  "LX08": [
+   "51",
+   "LX08-a",
+   "batch-compact"
+  ]
+ }
+}

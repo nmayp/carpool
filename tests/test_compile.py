@@ -6,7 +6,7 @@ import pytest
 
 from carpool import Cascade, Completion, Gate, compile_log, load_compiled
 from carpool.cli import main
-from carpool.compile import extract_code, fix_prompt, render, run_code, signature, synth_prompt, wilson_lower
+from carpool.compile import extract_code, fix_prompt, render, run_code, same_answer, signature, synth_prompt, wilson_lower
 
 # A toy recurring "model call": read the block id out of an HDFS-style log line.
 LINES = [f"Receiving block blk_{1000 + i} src: /10.0.0.{i % 9}:50010 dest: /10.0.0.{(i + 3) % 9}:50010" for i in range(120)]
@@ -129,3 +129,57 @@ def test_cli_end_to_end_writes_the_file_only_when_promoted(tmp_path, capsys):
     code = main(["compile", str(log), "--task", "read the block id", "--out", str(out2), "--backend", f"cmd:cat {reply}"])
     assert code == 2 and not out2.exists()
     assert "NOT PROMOTED" in capsys.readouterr().out
+
+
+# --- matching and a separate held-out set ----------------------------------------------
+
+@pytest.mark.parametrize("a,b,loose", [
+    ("7", "7 days", True),            # a unit word on one side only
+    ("The Design Assurance Team", "design assurance team.", True),
+    ("7 days", "7 weeks", False),     # a different unit is a different answer
+    ("7", "17 days", False),          # different number
+    ("5 days", "5 days and 3 hours", False),
+    ("Crew A1", "Crew A", False),
+    ("blk_7", "blk_70", False),
+    ("", "x", False),
+])
+def test_loose_matching_cases(a, b, loose):
+    assert same_answer(a, b, "loose") is loose
+    assert same_answer(a, b, "exact") is (a == b)
+
+
+def test_loose_match_rescues_a_format_only_disagreement():
+    # the log says "1003 days" for what the function returns as "1003"
+    code = ("```python\nimport re\ndef solve(text):\n    m = re.search(r'blk_(\\d+)', text)\n"
+            "    return m.group(1) if m else None\n```")
+    logged = [(line, f"{1000 + i} days") for i, line in enumerate(LINES)]
+    strict = compile_log(logged, Fake(code), "x", match="exact", repairs=0)
+    easy = compile_log(logged, Fake(code), "x", match="loose", repairs=0)
+    assert not strict.promoted and "precision" in strict.reason
+    assert easy.promoted and easy.match == "loose"
+
+
+def test_loose_match_still_rejects_a_different_unit():
+    code = ("```python\nimport re\ndef solve(text):\n    m = re.search(r'blk_(\\d+)', text)\n"
+            "    return m.group(1) + ' weeks' if m else None\n```")
+    logged = [(line, f"{1000 + i} days") for i, line in enumerate(LINES)]
+    assert not compile_log(logged, Fake(code), "x", match="loose", repairs=0).promoted
+
+
+def test_unknown_match_mode_is_refused():
+    with pytest.raises(ValueError, match="match"):
+        compile_log(PAIRS, Fake(GOOD), "x", match="fuzzy")
+
+
+def test_a_separate_held_out_set_is_used_as_given():
+    train, held = PAIRS[:60], PAIRS[60:100]
+    r = compile_log(train, Fake(GOOD), "read the block id", held_out=held)
+    assert r.n_train == 60 and r.n_held_out == 40 and r.promoted and "separately" in r.split
+    with pytest.raises(ValueError, match="held-out"):
+        compile_log(train, Fake(GOOD), "x", held_out=PAIRS[60:70])  # 10 is too few to judge on
+
+
+def test_header_names_how_the_function_was_checked():
+    r = compile_log(PAIRS[:60], Fake(GOOD), "x", held_out=PAIRS[60:100], match="loose")
+    head = render(r).split('"""')[1]
+    assert "held-out calls supplied separately, loose match" in head

@@ -1,0 +1,22 @@
+{
+ "promoted": true,
+ "reason": "passed the gate",
+ "fn": "solve",
+ "task": "answer a question about a site's equipment from short evidence passages",
+ "n_train": 120,
+ "n_held_out": 48,
+ "answered": 32,
+ "agreed": 32,
+ "coverage": 0.6666666666666666,
+ "precision": 1.0,
+ "lower_bound": 0.8928172849426365,
+ "cost_usd": 0.13864600000000002,
+ "calls": 3,
+ "gate": {
+  "min_precision": 0.95,
+  "min_lower_bound": 0.85,
+  "min_coverage": 0.1
+ },
+ "match": "loose",
+ "split": "held-out calls supplied separately"
+}

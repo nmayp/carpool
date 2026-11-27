@@ -1,0 +1,49 @@
+{
+ "hdfs": {
+  "gate_val_accepted": 100,
+  "gate_val_agree_teacher": 100,
+  "gate_val_precision_teacher": 1.0,
+  "gate_val_wilson_lb": 0.963005192523998,
+  "test_n": 200,
+  "coverage": 1.0,
+  "precision_gold_on_accepted": 1.0,
+  "precision_gold_wilson_lb": 0.9811539940816792,
+  "llm_acc_gold": 1.0,
+  "cascade_acc_gold": 1.0,
+  "teacher_label_usd": 0.091056,
+  "synth_usd": 0.03755,
+  "train_n": 100,
+  "single_per_call": 0.0068843333333333335,
+  "single_acc_12": 1.0
+ },
+ "bank": {
+  "gate_val_accepted": 17,
+  "gate_val_agree_teacher": 16,
+  "gate_val_precision_teacher": 0.9411764705882353,
+  "gate_val_wilson_lb": 0.730174547964372,
+  "test_n": 150,
+  "coverage": 0.04666666666666667,
+  "precision_gold_on_accepted": 1.0,
+  "precision_gold_wilson_lb": 0.6456611570247934,
+  "llm_acc_gold": 0.78,
+  "cascade_acc_gold": 0.78,
+  "teacher_label_usd": 0.32494400000000007,
+  "synth_usd": 0.276586,
+  "train_n": 300,
+  "single_per_call": 0.007899,
+  "single_acc_12": 0.75
+ },
+ "squad": {
+  "test_n": 48,
+  "coverage": 0.16666666666666666,
+  "precision_gold_on_accepted": 0.5,
+  "precision_gold_wilson_lb": 0.2152125268244419,
+  "llm_acc_gold": 0.9583333333333334,
+  "cascade_acc_gold": 0.875,
+  "teacher_label_usd": 0.0,
+  "synth_usd": 0.792234,
+  "train_n": 40,
+  "single_per_call": 0.01701875,
+  "single_acc_12": null
+ }
+}

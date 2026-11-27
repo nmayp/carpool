@@ -1,0 +1,120 @@
+{"id": "S01", "answer": "Design Assurance Team", "source": "S01-a", "route": "batch-compact", "fallback": null}
+{"id": "X01", "answer": "5 days", "source": "X01-a", "route": "batch-compact", "fallback": null}
+{"id": "C01", "answer": "45 days", "source": "C01-b", "route": "batch-full", "fallback": null}
+{"id": "S02", "answer": "Northline Maintenance Crew", "source": "S02-a", "route": "batch-compact", "fallback": null}
+{"id": "X02", "answer": "7 days", "source": "X02-a", "route": "batch-compact", "fallback": null}
+{"id": "C02", "answer": "46 days", "source": "C02-b", "route": "batch-full", "fallback": null}
+{"id": "S03", "answer": "Halvard Controls Group", "source": "S03-a", "route": "batch-compact", "fallback": null}
+{"id": "X03", "answer": "9 days", "source": "X03-a", "route": "batch-compact", "fallback": null}
+{"id": "C03", "answer": "47 days", "source": "C03-b", "route": "batch-full", "fallback": null}
+{"id": "S04", "answer": "Ferrow Reliability Unit", "source": "S04-a", "route": "batch-compact", "fallback": null}
+{"id": "X04", "answer": "11 days", "source": "X04-a", "route": "batch-compact", "fallback": null}
+{"id": "C04", "answer": "48 days", "source": "C04-b", "route": "batch-full", "fallback": null}
+{"id": "S05", "answer": "Quill Systems Office", "source": "S05-a", "route": "batch-compact", "fallback": null}
+{"id": "X05", "answer": "13 days", "source": "X05-a", "route": "batch-compact", "fallback": null}
+{"id": "C05", "answer": "49 days", "source": "C05-b", "route": "batch-full", "fallback": null}
+{"id": "S06", "answer": "Tamsin Field Services", "source": "S06-a", "route": "batch-compact", "fallback": null}
+{"id": "X06", "answer": "15 days", "source": "X06-a", "route": "batch-compact", "fallback": null}
+{"id": "C06", "answer": "50 days", "source": "C06-b", "route": "batch-full", "fallback": null}
+{"id": "S07", "answer": "Orrin Integrity Board", "source": "S07-a", "route": "batch-compact", "fallback": null}
+{"id": "X07", "answer": "17 days", "source": "X07-a", "route": "batch-compact", "fallback": null}
+{"id": "C07", "answer": "51 days", "source": "C07-b", "route": "batch-full", "fallback": null}
+{"id": "S08", "answer": "Kestrel Operations Cell", "source": "S08-a", "route": "batch-compact", "fallback": null}
+{"id": "X08", "answer": "19 days", "source": "X08-a", "route": "batch-compact", "fallback": null}
+{"id": "C08", "answer": "52 days", "source": "C08-b", "route": "batch-full", "fallback": null}
+{"id": "FS01", "answer": "Westmere Plant Group", "source": "FS01-a", "route": "batch-compact", "fallback": null}
+{"id": "FX01", "answer": "3", "source": "FX01-a", "route": "batch-compact", "fallback": null}
+{"id": "FC01", "answer": "60 days", "source": "FC01-b", "route": "batch-full", "fallback": null}
+{"id": "FS02", "answer": "Ironbridge Service Desk", "source": "FS02-a", "route": "batch-compact", "fallback": null}
+{"id": "FX02", "answer": "6", "source": "FX02-a", "route": "batch-compact", "fallback": null}
+{"id": "FC02", "answer": "65 days", "source": "FC02-b", "route": "batch-full", "fallback": null}
+{"id": "FS03", "answer": "Calloway Facilities Unit", "source": "FS03-a", "route": "batch-compact", "fallback": null}
+{"id": "FX03", "answer": "9", "source": "FX03-a", "route": "batch-compact", "fallback": null}
+{"id": "FC03", "answer": "70 days", "source": "FC03-b", "route": "batch-full", "fallback": null}
+{"id": "FS04", "answer": "Harker Mechanical Crew", "source": "FS04-a", "route": "batch-compact", "fallback": null}
+{"id": "FX04", "answer": "12", "source": "FX04-a", "route": "batch-compact", "fallback": null}
+{"id": "FC04", "answer": "75 days", "source": "FC04-b", "route": "batch-full", "fallback": null}
+{"id": "FS05", "answer": "Linden Compliance Office", "source": "FS05-a", "route": "batch-compact", "fallback": null}
+{"id": "FX05", "answer": "15", "source": "FX05-a", "route": "batch-compact", "fallback": null}
+{"id": "FC05", "answer": "80 days", "source": "FC05-b", "route": "batch-full", "fallback": null}
+{"id": "FS06", "answer": "Rowan Electrical Team", "source": "FS06-a", "route": "batch-compact", "fallback": null}
+{"id": "FX06", "answer": "18", "source": "FX06-a", "route": "batch-compact", "fallback": null}
+{"id": "FC06", "answer": "85 days", "source": "FC06-b", "route": "batch-full", "fallback": null}
+{"id": "FS07", "answer": "Pemberton Safety Cell", "source": "FS07-a", "route": "batch-compact", "fallback": null}
+{"id": "FX07", "answer": "21", "source": "FX07-a", "route": "batch-compact", "fallback": null}
+{"id": "FC07", "answer": "90 days", "source": "FC07-b", "route": "batch-full", "fallback": null}
+{"id": "FS08", "answer": "Ashdown Asset Board", "source": "FS08-a", "route": "batch-compact", "fallback": null}
+{"id": "FX08", "answer": "24", "source": "FX08-a", "route": "batch-compact", "fallback": null}
+{"id": "FC08", "answer": "95 days", "source": "FC08-b", "route": "batch-full", "fallback": null}
+{"id": "HS01", "answer": "Oakley Process Group", "source": "HS01-a", "route": "batch-compact", "fallback": null}
+{"id": "HX01", "answer": "2 days", "source": "HX01-a", "route": "batch-compact", "fallback": null}
+{"id": "HC01", "answer": "49 days", "source": "HC01-b", "route": "batch-full", "fallback": null}
+{"id": "HS02", "answer": "Pinewood Support Desk", "source": "HS02-a", "route": "batch-compact", "fallback": null}
+{"id": "HX02", "answer": "5 days", "source": "HX02-a", "route": "batch-compact", "fallback": null}
+{"id": "HC02", "answer": "55 days", "source": "HC02-b", "route": "batch-full", "fallback": null}
+{"id": "HS03", "answer": "Quenby Facilities Crew", "source": "HS03-a", "route": "batch-compact", "fallback": null}
+{"id": "HX03", "answer": "8 days", "source": "HX03-a", "route": "batch-compact", "fallback": null}
+{"id": "HC03", "answer": "61 days", "source": "HC03-b", "route": "batch-full", "fallback": null}
+{"id": "HS04", "answer": "Redmayne Safety Unit", "source": "HS04-a", "route": "batch-compact", "fallback": null}
+{"id": "HX04", "answer": "11 days", "source": "HX04-a", "route": "batch-compact", "fallback": null}
+{"id": "HC04", "answer": "67 days", "source": "HC04-b", "route": "batch-full", "fallback": null}
+{"id": "HS05", "answer": "Sutton Verification Office", "source": "HS05-a", "route": "batch-compact", "fallback": null}
+{"id": "HX05", "answer": "14 days", "source": "HX05-a", "route": "batch-compact", "fallback": null}
+{"id": "HC05", "answer": "73 days", "source": "HC05-b", "route": "batch-full", "fallback": null}
+{"id": "HS06", "answer": "Thornley Electrical Cell", "source": "HS06-a", "route": "batch-compact", "fallback": null}
+{"id": "HX06", "answer": "17 days", "source": "HX06-a", "route": "batch-compact", "fallback": null}
+{"id": "HC06", "answer": "79 days", "source": "HC06-b", "route": "batch-full", "fallback": null}
+{"id": "HS07", "answer": "Upton Mechanical Team", "source": "HS07-a", "route": "batch-compact", "fallback": null}
+{"id": "HX07", "answer": "20 days", "source": "HX07-a", "route": "batch-compact", "fallback": null}
+{"id": "HC07", "answer": "85 days", "source": "HC07-b", "route": "batch-full", "fallback": null}
+{"id": "HS08", "answer": "Vickery Standards Board", "source": "HS08-a", "route": "batch-compact", "fallback": null}
+{"id": "HX08", "answer": "23 days", "source": "HX08-a", "route": "batch-compact", "fallback": null}
+{"id": "HC08", "answer": "91 days", "source": "HC08-b", "route": "batch-full", "fallback": null}
+{"id": "IS01", "answer": "Wexcombe Service Crew", "source": "IS01-a", "route": "batch-compact", "fallback": null}
+{"id": "IX01", "answer": "2", "source": "IX01-a", "route": "batch-compact", "fallback": null}
+{"id": "IC01", "answer": "52 days", "source": "IC01-b", "route": "batch-full", "fallback": null}
+{"id": "IS02", "answer": "Yarrow Systems Team", "source": "IS02-a", "route": "batch-compact", "fallback": null}
+{"id": "IX02", "answer": "6", "source": "IX02-a", "route": "batch-compact", "fallback": null}
+{"id": "IC02", "answer": "59 days", "source": "IC02-b", "route": "batch-full", "fallback": null}
+{"id": "IS03", "answer": "Zennor Reliability Desk", "source": "IS03-a", "route": "batch-compact", "fallback": null}
+{"id": "IX03", "answer": "10", "source": "IX03-a", "route": "batch-compact", "fallback": null}
+{"id": "IC03", "answer": "66 days", "source": "IC03-b", "route": "batch-full", "fallback": null}
+{"id": "IS04", "answer": "Abbott Plant Unit", "source": "IS04-a", "route": "batch-compact", "fallback": null}
+{"id": "IX04", "answer": "14", "source": "IX04-a", "route": "batch-compact", "fallback": null}
+{"id": "IC04", "answer": "73 days", "source": "IC04-b", "route": "batch-full", "fallback": null}
+{"id": "IS05", "answer": "Barlow Controls Cell", "source": "IS05-a", "route": "batch-compact", "fallback": null}
+{"id": "IX05", "answer": "18", "source": "IX05-a", "route": "batch-compact", "fallback": null}
+{"id": "IC05", "answer": "80 days", "source": "IC05-b", "route": "batch-full", "fallback": null}
+{"id": "IS06", "answer": "Cheshunt Integrity Group", "source": "IS06-a", "route": "batch-compact", "fallback": null}
+{"id": "IX06", "answer": "22", "source": "IX06-a", "route": "batch-compact", "fallback": null}
+{"id": "IC06", "answer": "87 days", "source": "IC06-b", "route": "batch-full", "fallback": null}
+{"id": "IS07", "answer": "Dalby Maintenance Office", "source": "IS07-a", "route": "batch-compact", "fallback": null}
+{"id": "IX07", "answer": "26", "source": "IX07-a", "route": "batch-compact", "fallback": null}
+{"id": "IC07", "answer": "94 days", "source": "IC07-b", "route": "batch-full", "fallback": null}
+{"id": "IS08", "answer": "Everley Utilities Board", "source": "IS08-a", "route": "batch-compact", "fallback": null}
+{"id": "IX08", "answer": "30", "source": "IX08-a", "route": "batch-compact", "fallback": null}
+{"id": "IC08", "answer": "101 days", "source": "IC08-b", "route": "batch-full", "fallback": null}
+{"id": "JS01", "answer": "Fairlight Process Crew", "source": "JS01-a", "route": "batch-compact", "fallback": null}
+{"id": "JX01", "answer": "2", "source": "JX01-a", "route": "batch-compact", "fallback": null}
+{"id": "JC01", "answer": "55 days", "source": "JC01-b", "route": "batch-full", "fallback": null}
+{"id": "JS02", "answer": "Gisburn Assets Desk", "source": "JS02-a", "route": "batch-compact", "fallback": null}
+{"id": "JX02", "answer": "7", "source": "JX02-a", "route": "batch-compact", "fallback": null}
+{"id": "JC02", "answer": "63 days", "source": "JC02-b", "route": "batch-full", "fallback": null}
+{"id": "JS03", "answer": "Harlow Safety Cell", "source": "JS03-a", "route": "batch-compact", "fallback": null}
+{"id": "JX03", "answer": "12", "source": "JX03-a", "route": "batch-compact", "fallback": null}
+{"id": "JC03", "answer": "71 days", "source": "JC03-b", "route": "batch-full", "fallback": null}
+{"id": "JS04", "answer": "Ingleby Field Unit", "source": "JS04-a", "route": "batch-compact", "fallback": null}
+{"id": "JX04", "answer": "17", "source": "JX04-a", "route": "batch-compact", "fallback": null}
+{"id": "JC04", "answer": "79 days", "source": "JC04-b", "route": "batch-full", "fallback": null}
+{"id": "JS05", "answer": "Jarrow Electrical Group", "source": "JS05-a", "route": "batch-compact", "fallback": null}
+{"id": "JX05", "answer": "22", "source": "JX05-a", "route": "batch-compact", "fallback": null}
+{"id": "JC05", "answer": "87 days", "source": "JC05-b", "route": "batch-full", "fallback": null}
+{"id": "JS06", "answer": "Kimble Standards Team", "source": "JS06-a", "route": "batch-compact", "fallback": null}
+{"id": "JX06", "answer": "27", "source": "JX06-a", "route": "batch-compact", "fallback": null}
+{"id": "JC06", "answer": "95 days", "source": "JC06-b", "route": "batch-full", "fallback": null}
+{"id": "JS07", "answer": "Lanner Controls Office", "source": "JS07-a", "route": "batch-compact", "fallback": null}
+{"id": "JX07", "answer": "32", "source": "JX07-a", "route": "batch-compact", "fallback": null}
+{"id": "JC07", "answer": "103 days", "source": "JC07-b", "route": "batch-full", "fallback": null}
+{"id": "JS08", "answer": "Morven Reliability Board", "source": "JS08-a", "route": "batch-compact", "fallback": null}
+{"id": "JX08", "answer": "37", "source": "JX08-a", "route": "batch-compact", "fallback": null}
+{"id": "JC08", "answer": "111 days", "source": "JC08-b", "route": "batch-full", "fallback": null}

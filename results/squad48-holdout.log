@@ -1,0 +1,6 @@
+{"route": "baseline", "accepted": "40/48", "lenient": "48/48", "calls": 48, "total_tokens": 1313117, "uncached+output": 592349, "usd": 2.4491, "wall_seconds": 47.6, "regressions": null}
+{"route": "batch-only#1", "accepted": "45/48", "lenient": "48/48", "calls": 1, "total_tokens": 67072, "uncached+output": 52056, "usd": 0.2183, "wall_seconds": 10.9, "regressions": []}
+{"route": "carpool#1", "accepted": "44/48", "lenient": "48/48", "calls": 2, "total_tokens": 73017, "uncached+output": 41534, "usd": 0.1777, "wall_seconds": 14.2, "regressions": []}
+{"route": "batch-only#2", "accepted": "45/48", "lenient": "48/48", "calls": 1, "total_tokens": 67025, "uncached+output": 12203, "usd": 0.0625, "wall_seconds": 9.9, "regressions": []}
+{"route": "carpool#2", "accepted": "45/48", "lenient": "48/48", "calls": 2, "total_tokens": 73060, "uncached+output": 23111, "usd": 0.1061, "wall_seconds": 13.5, "regressions": []}
+saved results/squad48-holdout-claude-code.json

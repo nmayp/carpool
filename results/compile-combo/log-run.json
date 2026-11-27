@@ -1,0 +1,659 @@
+{
+ "route": "carpool (the log run)",
+ "accepted": "120/120",
+ "calls": 5,
+ "total_tokens": 24396,
+ "uncached+output": 24396,
+ "tokens/accepted": 203.3,
+ "uncached/accepted": 203.3,
+ "seconds": 37.55,
+ "usd/accepted": 0.001,
+ "lenient": "120/120",
+ "wall_seconds": null,
+ "cached_input": 0,
+ "usd": 0.1185,
+ "fallbacks": {},
+ "routes": {
+  "batch-compact": 80,
+  "batch-full": 40
+ },
+ "calls_detail": [
+  {
+   "in": 4095,
+   "cached": 0,
+   "out": 658,
+   "s": 7.68,
+   "usd": 0.02296
+  },
+  {
+   "in": 4175,
+   "cached": 0,
+   "out": 717,
+   "s": 7.73,
+   "usd": 0.02387
+  },
+  {
+   "in": 4238,
+   "cached": 0,
+   "out": 707,
+   "s": 7.82,
+   "usd": 0.02402
+  },
+  {
+   "in": 4238,
+   "cached": 0,
+   "out": 719,
+   "s": 6.63,
+   "usd": 0.02414
+  },
+  {
+   "in": 4158,
+   "cached": 0,
+   "out": 691,
+   "s": 7.67,
+   "usd": 0.02354
+  }
+ ],
+ "answers": {
+  "C01": [
+   "45 days",
+   "C01-b",
+   "batch-full"
+  ],
+  "C02": [
+   "46 days",
+   "C02-b",
+   "batch-full"
+  ],
+  "C03": [
+   "47 days",
+   "C03-b",
+   "batch-full"
+  ],
+  "C04": [
+   "48 days",
+   "C04-b",
+   "batch-full"
+  ],
+  "C05": [
+   "49 days",
+   "C05-b",
+   "batch-full"
+  ],
+  "C06": [
+   "50 days",
+   "C06-b",
+   "batch-full"
+  ],
+  "C07": [
+   "51 days",
+   "C07-b",
+   "batch-full"
+  ],
+  "C08": [
+   "52 days",
+   "C08-b",
+   "batch-full"
+  ],
+  "FC01": [
+   "60 days",
+   "FC01-b",
+   "batch-full"
+  ],
+  "FC02": [
+   "65 days",
+   "FC02-b",
+   "batch-full"
+  ],
+  "FC03": [
+   "70 days",
+   "FC03-b",
+   "batch-full"
+  ],
+  "FC04": [
+   "75 days",
+   "FC04-b",
+   "batch-full"
+  ],
+  "FC05": [
+   "80 days",
+   "FC05-b",
+   "batch-full"
+  ],
+  "FC06": [
+   "85 days",
+   "FC06-b",
+   "batch-full"
+  ],
+  "FC07": [
+   "90 days",
+   "FC07-b",
+   "batch-full"
+  ],
+  "FC08": [
+   "95 days",
+   "FC08-b",
+   "batch-full"
+  ],
+  "FS01": [
+   "Westmere Plant Group",
+   "FS01-a",
+   "batch-compact"
+  ],
+  "FS02": [
+   "Ironbridge Service Desk",
+   "FS02-a",
+   "batch-compact"
+  ],
+  "FS03": [
+   "Calloway Facilities Unit",
+   "FS03-a",
+   "batch-compact"
+  ],
+  "FS04": [
+   "Harker Mechanical Crew",
+   "FS04-a",
+   "batch-compact"
+  ],
+  "FS05": [
+   "Linden Compliance Office",
+   "FS05-a",
+   "batch-compact"
+  ],
+  "FS06": [
+   "Rowan Electrical Team",
+   "FS06-a",
+   "batch-compact"
+  ],
+  "FS07": [
+   "Pemberton Safety Cell",
+   "FS07-a",
+   "batch-compact"
+  ],
+  "FS08": [
+   "Ashdown Asset Board",
+   "FS08-a",
+   "batch-compact"
+  ],
+  "FX01": [
+   "3",
+   "FX01-a",
+   "batch-compact"
+  ],
+  "FX02": [
+   "6",
+   "FX02-a",
+   "batch-compact"
+  ],
+  "FX03": [
+   "9",
+   "FX03-a",
+   "batch-compact"
+  ],
+  "FX04": [
+   "12",
+   "FX04-a",
+   "batch-compact"
+  ],
+  "FX05": [
+   "15",
+   "FX05-a",
+   "batch-compact"
+  ],
+  "FX06": [
+   "18",
+   "FX06-a",
+   "batch-compact"
+  ],
+  "FX07": [
+   "21",
+   "FX07-a",
+   "batch-compact"
+  ],
+  "FX08": [
+   "24",
+   "FX08-a",
+   "batch-compact"
+  ],
+  "HC01": [
+   "49 days",
+   "HC01-b",
+   "batch-full"
+  ],
+  "HC02": [
+   "55 days",
+   "HC02-b",
+   "batch-full"
+  ],
+  "HC03": [
+   "61 days",
+   "HC03-b",
+   "batch-full"
+  ],
+  "HC04": [
+   "67 days",
+   "HC04-b",
+   "batch-full"
+  ],
+  "HC05": [
+   "73 days",
+   "HC05-b",
+   "batch-full"
+  ],
+  "HC06": [
+   "79 days",
+   "HC06-b",
+   "batch-full"
+  ],
+  "HC07": [
+   "85 days",
+   "HC07-b",
+   "batch-full"
+  ],
+  "HC08": [
+   "91 days",
+   "HC08-b",
+   "batch-full"
+  ],
+  "HS01": [
+   "Oakley Process Group",
+   "HS01-a",
+   "batch-compact"
+  ],
+  "HS02": [
+   "Pinewood Support Desk",
+   "HS02-a",
+   "batch-compact"
+  ],
+  "HS03": [
+   "Quenby Facilities Crew",
+   "HS03-a",
+   "batch-compact"
+  ],
+  "HS04": [
+   "Redmayne Safety Unit",
+   "HS04-a",
+   "batch-compact"
+  ],
+  "HS05": [
+   "Sutton Verification Office",
+   "HS05-a",
+   "batch-compact"
+  ],
+  "HS06": [
+   "Thornley Electrical Cell",
+   "HS06-a",
+   "batch-compact"
+  ],
+  "HS07": [
+   "Upton Mechanical Team",
+   "HS07-a",
+   "batch-compact"
+  ],
+  "HS08": [
+   "Vickery Standards Board",
+   "HS08-a",
+   "batch-compact"
+  ],
+  "HX01": [
+   "2 days",
+   "HX01-a",
+   "batch-compact"
+  ],
+  "HX02": [
+   "5 days",
+   "HX02-a",
+   "batch-compact"
+  ],
+  "HX03": [
+   "8 days",
+   "HX03-a",
+   "batch-compact"
+  ],
+  "HX04": [
+   "11 days",
+   "HX04-a",
+   "batch-compact"
+  ],
+  "HX05": [
+   "14 days",
+   "HX05-a",
+   "batch-compact"
+  ],
+  "HX06": [
+   "17 days",
+   "HX06-a",
+   "batch-compact"
+  ],
+  "HX07": [
+   "20 days",
+   "HX07-a",
+   "batch-compact"
+  ],
+  "HX08": [
+   "23 days",
+   "HX08-a",
+   "batch-compact"
+  ],
+  "IC01": [
+   "52 days",
+   "IC01-b",
+   "batch-full"
+  ],
+  "IC02": [
+   "59 days",
+   "IC02-b",
+   "batch-full"
+  ],
+  "IC03": [
+   "66 days",
+   "IC03-b",
+   "batch-full"
+  ],
+  "IC04": [
+   "73 days",
+   "IC04-b",
+   "batch-full"
+  ],
+  "IC05": [
+   "80 days",
+   "IC05-b",
+   "batch-full"
+  ],
+  "IC06": [
+   "87 days",
+   "IC06-b",
+   "batch-full"
+  ],
+  "IC07": [
+   "94 days",
+   "IC07-b",
+   "batch-full"
+  ],
+  "IC08": [
+   "101 days",
+   "IC08-b",
+   "batch-full"
+  ],
+  "IS01": [
+   "Wexcombe Service Crew",
+   "IS01-a",
+   "batch-compact"
+  ],
+  "IS02": [
+   "Yarrow Systems Team",
+   "IS02-a",
+   "batch-compact"
+  ],
+  "IS03": [
+   "Zennor Reliability Desk",
+   "IS03-a",
+   "batch-compact"
+  ],
+  "IS04": [
+   "Abbott Plant Unit",
+   "IS04-a",
+   "batch-compact"
+  ],
+  "IS05": [
+   "Barlow Controls Cell",
+   "IS05-a",
+   "batch-compact"
+  ],
+  "IS06": [
+   "Cheshunt Integrity Group",
+   "IS06-a",
+   "batch-compact"
+  ],
+  "IS07": [
+   "Dalby Maintenance Office",
+   "IS07-a",
+   "batch-compact"
+  ],
+  "IS08": [
+   "Everley Utilities Board",
+   "IS08-a",
+   "batch-compact"
+  ],
+  "IX01": [
+   "2",
+   "IX01-a",
+   "batch-compact"
+  ],
+  "IX02": [
+   "6",
+   "IX02-a",
+   "batch-compact"
+  ],
+  "IX03": [
+   "10",
+   "IX03-a",
+   "batch-compact"
+  ],
+  "IX04": [
+   "14",
+   "IX04-a",
+   "batch-compact"
+  ],
+  "IX05": [
+   "18",
+   "IX05-a",
+   "batch-compact"
+  ],
+  "IX06": [
+   "22",
+   "IX06-a",
+   "batch-compact"
+  ],
+  "IX07": [
+   "26",
+   "IX07-a",
+   "batch-compact"
+  ],
+  "IX08": [
+   "30",
+   "IX08-a",
+   "batch-compact"
+  ],
+  "JC01": [
+   "55 days",
+   "JC01-b",
+   "batch-full"
+  ],
+  "JC02": [
+   "63 days",
+   "JC02-b",
+   "batch-full"
+  ],
+  "JC03": [
+   "71 days",
+   "JC03-b",
+   "batch-full"
+  ],
+  "JC04": [
+   "79 days",
+   "JC04-b",
+   "batch-full"
+  ],
+  "JC05": [
+   "87 days",
+   "JC05-b",
+   "batch-full"
+  ],
+  "JC06": [
+   "95 days",
+   "JC06-b",
+   "batch-full"
+  ],
+  "JC07": [
+   "103 days",
+   "JC07-b",
+   "batch-full"
+  ],
+  "JC08": [
+   "111 days",
+   "JC08-b",
+   "batch-full"
+  ],
+  "JS01": [
+   "Fairlight Process Crew",
+   "JS01-a",
+   "batch-compact"
+  ],
+  "JS02": [
+   "Gisburn Assets Desk",
+   "JS02-a",
+   "batch-compact"
+  ],
+  "JS03": [
+   "Harlow Safety Cell",
+   "JS03-a",
+   "batch-compact"
+  ],
+  "JS04": [
+   "Ingleby Field Unit",
+   "JS04-a",
+   "batch-compact"
+  ],
+  "JS05": [
+   "Jarrow Electrical Group",
+   "JS05-a",
+   "batch-compact"
+  ],
+  "JS06": [
+   "Kimble Standards Team",
+   "JS06-a",
+   "batch-compact"
+  ],
+  "JS07": [
+   "Lanner Controls Office",
+   "JS07-a",
+   "batch-compact"
+  ],
+  "JS08": [
+   "Morven Reliability Board",
+   "JS08-a",
+   "batch-compact"
+  ],
+  "JX01": [
+   "2",
+   "JX01-a",
+   "batch-compact"
+  ],
+  "JX02": [
+   "7",
+   "JX02-a",
+   "batch-compact"
+  ],
+  "JX03": [
+   "12",
+   "JX03-a",
+   "batch-compact"
+  ],
+  "JX04": [
+   "17",
+   "JX04-a",
+   "batch-compact"
+  ],
+  "JX05": [
+   "22",
+   "JX05-a",
+   "batch-compact"
+  ],
+  "JX06": [
+   "27",
+   "JX06-a",
+   "batch-compact"
+  ],
+  "JX07": [
+   "32",
+   "JX07-a",
+   "batch-compact"
+  ],
+  "JX08": [
+   "37",
+   "JX08-a",
+   "batch-compact"
+  ],
+  "S01": [
+   "Design Assurance Team",
+   "S01-a",
+   "batch-compact"
+  ],
+  "S02": [
+   "Northline Maintenance Crew",
+   "S02-a",
+   "batch-compact"
+  ],
+  "S03": [
+   "Halvard Controls Group",
+   "S03-a",
+   "batch-compact"
+  ],
+  "S04": [
+   "Ferrow Reliability Unit",
+   "S04-a",
+   "batch-compact"
+  ],
+  "S05": [
+   "Quill Systems Office",
+   "S05-a",
+   "batch-compact"
+  ],
+  "S06": [
+   "Tamsin Field Services",
+   "S06-a",
+   "batch-compact"
+  ],
+  "S07": [
+   "Orrin Integrity Board",
+   "S07-a",
+   "batch-compact"
+  ],
+  "S08": [
+   "Kestrel Operations Cell",
+   "S08-a",
+   "batch-compact"
+  ],
+  "X01": [
+   "5 days",
+   "X01-a",
+   "batch-compact"
+  ],
+  "X02": [
+   "7 days",
+   "X02-a",
+   "batch-compact"
+  ],
+  "X03": [
+   "9 days",
+   "X03-a",
+   "batch-compact"
+  ],
+  "X04": [
+   "11 days",
+   "X04-a",
+   "batch-compact"
+  ],
+  "X05": [
+   "13 days",
+   "X05-a",
+   "batch-compact"
+  ],
+  "X06": [
+   "15 days",
+   "X06-a",
+   "batch-compact"
+  ],
+  "X07": [
+   "17 days",
+   "X07-a",
+   "batch-compact"
+  ],
+  "X08": [
+   "19 days",
+   "X08-a",
+   "batch-compact"
+  ]
+ }
+}

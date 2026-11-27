@@ -1,0 +1,127 @@
+{
+ "task": "Review each of the 10 modules in ./src for bugs. Each module contains exactly one bug.\nThe modules are independent of each other, so you may use subagents (the Agent tool) to review\nthem in parallel if that helps.\nWrite ./review.json as a JSON array: [{\"file\": \"<file name>\", \"line\": <line number>, \"bug\": \"<one sentence>\"}]\nwith one entry per module. Do not ask questions; just do it.",
+ "arms": [
+  "plain",
+  "skill",
+  "hook"
+ ],
+ "runs": [
+  {
+   "arm": "plain",
+   "seed": 200,
+   "seconds": 21.2,
+   "usd": 0.20550380000000001,
+   "turns": 4,
+   "subagents": 0,
+   "input": 125751,
+   "cached": 106599,
+   "output": 1550,
+   "bugs_found": 10,
+   "n": 10
+  },
+  {
+   "arm": "skill",
+   "seed": 200,
+   "seconds": 21.0,
+   "usd": 0.1961076,
+   "turns": 4,
+   "subagents": 0,
+   "input": 126984,
+   "cached": 109258,
+   "output": 1624,
+   "bugs_found": 10,
+   "n": 10
+  },
+  {
+   "arm": "hook",
+   "seed": 200,
+   "seconds": 20.5,
+   "usd": 0.1834528,
+   "turns": 3,
+   "subagents": 0,
+   "input": 96838,
+   "cached": 79624,
+   "output": 1492,
+   "bugs_found": 10,
+   "n": 10
+  },
+  {
+   "arm": "skill",
+   "seed": 201,
+   "seconds": 20.4,
+   "usd": 0.187975,
+   "turns": 3,
+   "subagents": 0,
+   "input": 97586,
+   "cached": 79955,
+   "output": 1548,
+   "bugs_found": 10,
+   "n": 10
+  },
+  {
+   "arm": "hook",
+   "seed": 201,
+   "seconds": 20.4,
+   "usd": 0.1902696,
+   "turns": 4,
+   "subagents": 0,
+   "input": 125843,
+   "cached": 108508,
+   "output": 1496,
+   "bugs_found": 10,
+   "n": 10
+  },
+  {
+   "arm": "plain",
+   "seed": 201,
+   "seconds": 22.4,
+   "usd": 0.19790380000000002,
+   "turns": 5,
+   "subagents": 0,
+   "input": 126270,
+   "cached": 108639,
+   "output": 1758,
+   "bugs_found": 10,
+   "n": 10
+  },
+  {
+   "arm": "hook",
+   "seed": 202,
+   "seconds": 23.5,
+   "usd": 0.19599840000000002,
+   "turns": 4,
+   "subagents": 0,
+   "input": 126207,
+   "cached": 108652,
+   "output": 1693,
+   "bugs_found": 10,
+   "n": 10
+  },
+  {
+   "arm": "plain",
+   "seed": 202,
+   "seconds": 20.4,
+   "usd": 0.19134099999999998,
+   "turns": 4,
+   "subagents": 0,
+   "input": 125865,
+   "cached": 108465,
+   "output": 1524,
+   "bugs_found": 10,
+   "n": 10
+  },
+  {
+   "arm": "skill",
+   "seed": 202,
+   "seconds": 18.9,
+   "usd": 0.1828622,
+   "turns": 3,
+   "subagents": 0,
+   "input": 97029,
+   "cached": 79711,
+   "output": 1420,
+   "bugs_found": 10,
+   "n": 10
+  }
+ ]
+}

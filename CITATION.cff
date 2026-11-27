@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use carpool or its measurements, please cite it as below."
+title: "carpool: many agent tasks, one verified request"
+authors:
+  - name: "carpool contributors"
+type: software
+license: MIT
+repository-code: "https://github.com/nmayp/carpool"
+date-released: "2026-11-27"
+version: "0.3.0"
+keywords:
+  - llm
+  - agents
+  - token cost
+  - batching
+  - claude code
+  - mcp
+abstract: >-
+  carpool puts independent LLM tasks into one request with stable IDs, checks every answer against its
+  cited source, and redoes only the failures. On Claude it measured about 80% lower cost per accepted answer
+  than one lean call per task (93-96% lower than one agent call per task), with zero regressions on two task sets.

@@ -1,0 +1,8 @@
+{"arm": "v1", "scenario": "large", "seed": 300, "seconds": 41.2, "usd": 0.2386348, "turns": 8, "subagents": 0, "input": 248222, "cached": 231974, "output": 3116, "bugs_found": 10, "n": 10}
+{"arm": "v2", "scenario": "large", "seed": 300, "seconds": 44.6, "usd": 0.24239860000000002, "turns": 8, "subagents": 0, "input": 250971, "cached": 234593, "output": 3226, "bugs_found": 10, "n": 10}
+{"arm": "v2", "scenario": "large", "seed": 301, "seconds": 29.9, "usd": 0.2027994, "turns": 5, "subagents": 0, "input": 154404, "cached": 138817, "output": 2519, "bugs_found": 10, "n": 10}
+{"arm": "v1", "scenario": "large", "seed": 301, "seconds": 32.0, "usd": 0.2068222, "turns": 5, "subagents": 0, "input": 154323, "cached": 138331, "output": 2563, "bugs_found": 10, "n": 10}
+{"arm": "v1", "scenario": "large", "seed": 302, "seconds": 36.8, "usd": 0.22148639999999997, "turns": 6, "subagents": 0, "input": 187198, "cached": 170732, "output": 2783, "bugs_found": 10, "n": 10}
+{"arm": "v2", "scenario": "large", "seed": 302, "seconds": 38.3, "usd": 0.22020019999999998, "turns": 6, "subagents": 0, "input": 185922, "cached": 170001, "output": 2944, "bugs_found": 10, "n": 10}
+{"arm": "v2", "scenario": "large", "seed": 303, "seconds": 37.8, "usd": 0.23032919999999998, "turns": 7, "subagents": 0, "input": 217580, "cached": 200866, "output": 2825, "bugs_found": 10, "n": 10}
+{"arm": "v1", "scenario": "large", "seed": 303, "seconds": 38.8, "usd": 0.23225339999999997, "turns": 7, "subagents": 0, "input": 219470, "cached": 202627, "output": 2852, "bugs_found": 10, "n": 10}

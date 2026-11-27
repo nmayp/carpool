@@ -1,0 +1,2 @@
+{"route": "baseline", "accepted": "18/48", "lenient": "30/48", "calls": 48, "total_tokens": 32677, "uncached+output": 32677, "usd": 0.0, "wall_seconds": 184.0, "regressions": null}
+{"route": "batch-only", "accepted": "20/48", "lenient": "28/48", "calls": 48, "total_tokens": 58001, "uncached+output": 58001, "usd": 0.0, "wall_seconds": 459.1, "regressions": ["H01"]}

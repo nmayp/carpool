@@ -1,0 +1,11 @@
+{
+  "name": "carpool",
+  "owner": { "name": "nmayp" },
+  "plugins": [
+    {
+      "name": "carpool",
+      "source": "./",
+      "description": "Many agent tasks, one ride: same answers, a fraction of the tokens."
+    }
+  ]
+}

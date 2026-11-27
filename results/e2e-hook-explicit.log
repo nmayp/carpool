@@ -1,0 +1,4 @@
+{"arm": "skill", "scenario": "explicit", "seed": 200, "seconds": 46.1, "usd": 1.2215606, "turns": 3, "subagents": 10, "input": 124957, "cached": 123135, "output": 1412, "bugs_found": 10, "n": 10}
+{"arm": "hook", "scenario": "explicit", "seed": 200, "seconds": 40.9, "usd": 1.1874542, "turns": 2, "subagents": 10, "input": 81918, "cached": 79996, "output": 1269, "bugs_found": 10, "n": 10}
+{"arm": "hook", "scenario": "explicit", "seed": 201, "seconds": 42.9, "usd": 1.1868485999999996, "turns": 2, "subagents": 10, "input": 82323, "cached": 80346, "output": 1351, "bugs_found": 10, "n": 10}
+{"arm": "skill", "scenario": "explicit", "seed": 201, "seconds": 44.9, "usd": 1.2048859999999997, "turns": 3, "subagents": 10, "input": 123210, "cached": 120783, "output": 1462, "bugs_found": 10, "n": 10}

@@ -1,0 +1,6 @@
+{"arm": "plain", "scenario": "large", "seed": 200, "seconds": 32.7, "usd": 0.2151642, "turns": 6, "subagents": 0, "input": 185736, "cached": 169561, "output": 2595, "bugs_found": 10, "n": 10}
+{"arm": "skill", "scenario": "large", "seed": 200, "seconds": 53.1, "usd": 1.3125682000000007, "turns": 19, "subagents": 10, "input": 381113, "cached": 355914, "output": 4390, "bugs_found": 10, "n": 10}
+{"arm": "hook", "scenario": "large", "seed": 200, "seconds": 37.2, "usd": 0.310267, "turns": 7, "subagents": 0, "input": 246904, "cached": 220355, "output": 2693, "bugs_found": 10, "n": 10}
+{"arm": "skill", "scenario": "large", "seed": 201, "seconds": 43.9, "usd": 1.2158875999999998, "turns": 3, "subagents": 10, "input": 124681, "cached": 121422, "output": 1583, "bugs_found": 10, "n": 10}
+{"arm": "hook", "scenario": "large", "seed": 201, "seconds": 31.7, "usd": 0.1967382, "turns": 5, "subagents": 0, "input": 153094, "cached": 138071, "output": 2449, "bugs_found": 10, "n": 10}
+{"arm": "plain", "scenario": "large", "seed": 201, "seconds": 41.6, "usd": 0.9030968000000001, "turns": 5, "subagents": 5, "input": 180675, "cached": 174942, "output": 1868, "bugs_found": 10, "n": 10}

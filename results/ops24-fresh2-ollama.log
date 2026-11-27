@@ -1,0 +1,4 @@
+{"route": "baseline", "accepted": "19/24", "lenient": "24/24", "calls": 24, "total_tokens": 5835, "uncached+output": 5835, "usd": 0.0, "wall_seconds": 47.8, "regressions": null}
+{"route": "batch-only", "accepted": "24/24", "lenient": "24/24", "calls": 1, "total_tokens": 3518, "uncached+output": 3518, "usd": 0.0, "wall_seconds": 62.6, "regressions": []}
+{"route": "carpool", "accepted": "24/24", "lenient": "24/24", "calls": 9, "total_tokens": 5029, "uncached+output": 5029, "usd": 0.0, "wall_seconds": 93.9, "regressions": []}
+saved results/ops24-fresh2-ollama-qwen2.5-1.5b.json

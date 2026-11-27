@@ -1,0 +1,28 @@
+{
+  "description": "carpool: suggest one shared pass when a request covers many independent items (at prompt time) or when many small subagents are launched",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}\"/hooks/prompt_hint.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Agent|Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}\"/hooks/fanout_hint.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

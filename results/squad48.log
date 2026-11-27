@@ -1,0 +1,11 @@
+{"route": "baseline", "accepted": "26/48", "lenient": "45/48", "calls": 48, "total_tokens": 1311995, "uncached+output": 591227, "usd": 2.4464, "wall_seconds": 49.2, "regressions": null}
+{"route": "compact-only", "accepted": "29/48", "lenient": "45/48", "calls": 60, "total_tokens": 1618114, "uncached+output": 694769, "usd": 2.8837, "wall_seconds": 62.8, "regressions": []}
+{"route": "batch-only#1", "accepted": "33/48", "lenient": "46/48", "calls": 1, "total_tokens": 66881, "uncached+output": 51865, "usd": 0.2187, "wall_seconds": 12.0, "regressions": []}
+{"route": "carpool#1", "accepted": "34/48", "lenient": "46/48", "calls": 8, "total_tokens": 235975, "uncached+output": 105223, "usd": 0.446, "wall_seconds": 39.7, "regressions": []}
+{"route": "batch-only#2", "accepted": "33/48", "lenient": "46/48", "calls": 1, "total_tokens": 66934, "uncached+output": 12512, "usd": 0.0656, "wall_seconds": 13.1, "regressions": []}
+{"route": "carpool#2", "accepted": "34/48", "lenient": "45/48", "calls": 11, "total_tokens": 318172, "uncached+output": 121200, "usd": 0.5169, "wall_seconds": 50.3, "regressions": []}
+{"route": "carpool k=1", "accepted": "33/48", "lenient": "46/48", "calls": 58, "total_tokens": 1566979, "uncached+output": 680839, "usd": 2.8264, "wall_seconds": 220.6, "regressions": ["Q21"]}
+{"route": "carpool k=4", "accepted": "34/48", "lenient": "45/48", "calls": 20, "total_tokens": 555906, "uncached+output": 243097, "usd": 1.0159, "wall_seconds": 84.7, "regressions": []}
+{"route": "carpool k=12", "accepted": "33/48", "lenient": "44/48", "calls": 13, "total_tokens": 370564, "uncached+output": 161573, "usd": 0.6795, "wall_seconds": 59.3, "regressions": ["Q21"]}
+{"route": "carpool k=24", "accepted": "33/48", "lenient": "44/48", "calls": 11, "total_tokens": 317462, "uncached+output": 138503, "usd": 0.5843, "wall_seconds": 51.1, "regressions": ["Q21"]}
+saved results/squad48-claude-code.json

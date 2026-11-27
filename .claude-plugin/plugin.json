@@ -1,0 +1,7 @@
+{
+  "name": "carpool",
+  "version": "0.1.0",
+  "description": "Many agent tasks, one ride. Exact work as code, independent tasks in one verified request, compact evidence only when safe, retry only the failures.",
+  "keywords": ["tokens", "cost", "batching", "agents", "efficiency"],
+  "license": "MIT"
+}

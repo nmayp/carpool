@@ -1,0 +1,2 @@
+{"arm": "v2", "scenario": "explicit", "seed": 300, "seconds": 46.1, "usd": 1.3293610000000002, "turns": 18, "subagents": 10, "input": 346215, "cached": 319771, "output": 3995, "bugs_found": 10, "n": 10}
+{"arm": "v2", "scenario": "explicit", "seed": 301, "seconds": 46.2, "usd": 1.2193336000000006, "turns": 17, "subagents": 10, "input": 301199, "cached": 275878, "output": 4127, "bugs_found": 10, "n": 10}

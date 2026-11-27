@@ -1,0 +1,489 @@
+{
+ "backend": "ollama:qwen2.5:1.5b",
+ "tasks": "bench/data/ops24-fresh.jsonl",
+ "n": 24,
+ "started": "2026-11-27T08:53:15",
+ "runs": [
+  {
+   "route": "baseline",
+   "accepted": "17/24",
+   "calls": 24,
+   "total_tokens": 5775,
+   "uncached+output": 5775,
+   "tokens/accepted": 339.7,
+   "uncached/accepted": 339.7,
+   "seconds": 52.13,
+   "usd/accepted": 0.0,
+   "lenient": "24/24",
+   "wall_seconds": 52.1,
+   "cached_input": 0,
+   "usd": 0.0,
+   "fallbacks": {},
+   "routes": {
+    "single-full": 24
+   },
+   "calls_detail": [
+    {
+     "in": 212,
+     "cached": 0,
+     "out": 39,
+     "s": 3.35,
+     "usd": 0.0
+    },
+    {
+     "in": 222,
+     "cached": 0,
+     "out": 25,
+     "s": 2.17,
+     "usd": 0.0
+    },
+    {
+     "in": 219,
+     "cached": 0,
+     "out": 26,
+     "s": 1.83,
+     "usd": 0.0
+    },
+    {
+     "in": 203,
+     "cached": 0,
+     "out": 28,
+     "s": 2.79,
+     "usd": 0.0
+    },
+    {
+     "in": 220,
+     "cached": 0,
+     "out": 25,
+     "s": 1.91,
+     "usd": 0.0
+    },
+    {
+     "in": 214,
+     "cached": 0,
+     "out": 26,
+     "s": 2.18,
+     "usd": 0.0
+    },
+    {
+     "in": 197,
+     "cached": 0,
+     "out": 37,
+     "s": 2.93,
+     "usd": 0.0
+    },
+    {
+     "in": 217,
+     "cached": 0,
+     "out": 25,
+     "s": 1.8,
+     "usd": 0.0
+    },
+    {
+     "in": 207,
+     "cached": 0,
+     "out": 26,
+     "s": 1.93,
+     "usd": 0.0
+    },
+    {
+     "in": 200,
+     "cached": 0,
+     "out": 35,
+     "s": 2.28,
+     "usd": 0.0
+    },
+    {
+     "in": 211,
+     "cached": 0,
+     "out": 26,
+     "s": 1.89,
+     "usd": 0.0
+    },
+    {
+     "in": 205,
+     "cached": 0,
+     "out": 26,
+     "s": 1.99,
+     "usd": 0.0
+    },
+    {
+     "in": 204,
+     "cached": 0,
+     "out": 36,
+     "s": 2.65,
+     "usd": 0.0
+    },
+    {
+     "in": 223,
+     "cached": 0,
+     "out": 26,
+     "s": 2.06,
+     "usd": 0.0
+    },
+    {
+     "in": 217,
+     "cached": 0,
+     "out": 26,
+     "s": 1.78,
+     "usd": 0.0
+    },
+    {
+     "in": 198,
+     "cached": 0,
+     "out": 36,
+     "s": 2.51,
+     "usd": 0.0
+    },
+    {
+     "in": 220,
+     "cached": 0,
+     "out": 26,
+     "s": 1.99,
+     "usd": 0.0
+    },
+    {
+     "in": 208,
+     "cached": 0,
+     "out": 26,
+     "s": 2.05,
+     "usd": 0.0
+    },
+    {
+     "in": 206,
+     "cached": 0,
+     "out": 37,
+     "s": 2.62,
+     "usd": 0.0
+    },
+    {
+     "in": 217,
+     "cached": 0,
+     "out": 26,
+     "s": 1.75,
+     "usd": 0.0
+    },
+    {
+     "in": 212,
+     "cached": 0,
+     "out": 26,
+     "s": 1.8,
+     "usd": 0.0
+    },
+    {
+     "in": 205,
+     "cached": 0,
+     "out": 37,
+     "s": 2.22,
+     "usd": 0.0
+    },
+    {
+     "in": 223,
+     "cached": 0,
+     "out": 26,
+     "s": 1.99,
+     "usd": 0.0
+    },
+    {
+     "in": 217,
+     "cached": 0,
+     "out": 26,
+     "s": 1.68,
+     "usd": 0.0
+    }
+   ],
+   "answers": {
+    "FC01": [
+     "60 days",
+     "FC01-b",
+     "single-full"
+    ],
+    "FC02": [
+     "65 days",
+     "FC02-b",
+     "single-full"
+    ],
+    "FC03": [
+     "70 days",
+     "FC03-b",
+     "single-full"
+    ],
+    "FC04": [
+     "75 days",
+     "FC04-b",
+     "single-full"
+    ],
+    "FC05": [
+     "80 days",
+     "FC05-b",
+     "single-full"
+    ],
+    "FC06": [
+     "85 days",
+     "FC06-b",
+     "single-full"
+    ],
+    "FC07": [
+     "90 days",
+     "FC07-b",
+     "single-full"
+    ],
+    "FC08": [
+     "95 days",
+     "FC08-b",
+     "single-full"
+    ],
+    "FS01": [
+     "The Westmere Plant Group maintains the sprinkler riser at Ardley Wharf.",
+     "FS01-a",
+     "single-full"
+    ],
+    "FS02": [
+     "The Ironbridge Service Desk",
+     "FS02-a",
+     "single-full"
+    ],
+    "FS03": [
+     "The Calloway Facilities Unit maintains the glycol pump at Treval.",
+     "FS03-a",
+     "single-full"
+    ],
+    "FS04": [
+     "The Harker Mechanical Crew maintains the steam trap at Moss Lane.",
+     "FS04-a",
+     "single-full"
+    ],
+    "FS05": [
+     "The Linden Compliance Office maintains the fuel day tank at Gorran Point.",
+     "FS05-a",
+     "single-full"
+    ],
+    "FS06": [
+     "The Rowan Electrical Team maintains the chilled beam at Ulverby.",
+     "FS06-a",
+     "single-full"
+    ],
+    "FS07": [
+     "The Pemberton Safety Cell maintains the dock leveller at Kinver Edge.",
+     "FS07-a",
+     "single-full"
+    ],
+    "FS08": [
+     "The Ashdown Asset Board maintains the smoke damper at Selsey Down.",
+     "FS08-a",
+     "single-full"
+    ],
+    "FX01": [
+     "3 days",
+     "FX01-a",
+     "single-full"
+    ],
+    "FX02": [
+     "6 days",
+     "FX02-a",
+     "single-full"
+    ],
+    "FX03": [
+     "9 days",
+     "FX03-a",
+     "single-full"
+    ],
+    "FX04": [
+     "12 days",
+     "FX04-a",
+     "single-full"
+    ],
+    "FX05": [
+     "15 days",
+     "FX05-a",
+     "single-full"
+    ],
+    "FX06": [
+     "18 days",
+     "FX06-a",
+     "single-full"
+    ],
+    "FX07": [
+     "21 days",
+     "FX07-a",
+     "single-full"
+    ],
+    "FX08": [
+     "24 days",
+     "FX08-a",
+     "single-full"
+    ]
+   }
+  },
+  {
+   "route": "batch-only",
+   "accepted": "16/24",
+   "calls": 1,
+   "total_tokens": 3276,
+   "uncached+output": 3276,
+   "tokens/accepted": 204.8,
+   "uncached/accepted": 204.8,
+   "seconds": 51.84,
+   "usd/accepted": 0.0,
+   "lenient": "16/24",
+   "wall_seconds": 51.8,
+   "cached_input": 0,
+   "usd": 0.0,
+   "regressions": [
+    "FC01",
+    "FC02",
+    "FC03",
+    "FC04",
+    "FC05",
+    "FC06",
+    "FC07",
+    "FC08"
+   ],
+   "lenient_regressions": [
+    "FC01",
+    "FC02",
+    "FC03",
+    "FC04",
+    "FC05",
+    "FC06",
+    "FC07",
+    "FC08"
+   ],
+   "fallbacks": {},
+   "routes": {
+    "batch-full": 24
+   },
+   "calls_detail": [
+    {
+     "in": 2666,
+     "cached": 0,
+     "out": 610,
+     "s": 51.84,
+     "usd": 0.0
+    }
+   ],
+   "answers": {
+    "FC01": [
+     "20 days",
+     "FC01-b",
+     "batch-full"
+    ],
+    "FC02": [
+     "22 days",
+     "FC02-b",
+     "batch-full"
+    ],
+    "FC03": [
+     "24 days",
+     "FC03-b",
+     "batch-full"
+    ],
+    "FC04": [
+     "26 days",
+     "FC04-b",
+     "batch-full"
+    ],
+    "FC05": [
+     "28 days",
+     "FC05-b",
+     "batch-full"
+    ],
+    "FC06": [
+     "30 days",
+     "FC06-b",
+     "batch-full"
+    ],
+    "FC07": [
+     "32 days",
+     "FC07-b",
+     "batch-full"
+    ],
+    "FC08": [
+     "34 days",
+     "FC08-b",
+     "batch-full"
+    ],
+    "FS01": [
+     "Westmere Plant Group",
+     "FS01-a",
+     "batch-full"
+    ],
+    "FS02": [
+     "Ironbridge Service Desk",
+     "FS02-a",
+     "batch-full"
+    ],
+    "FS03": [
+     "Calloway Facilities Unit",
+     "FS03-a",
+     "batch-full"
+    ],
+    "FS04": [
+     "Harker Mechanical Crew",
+     "FS04-a",
+     "batch-full"
+    ],
+    "FS05": [
+     "Linden Compliance Office",
+     "FS05-a",
+     "batch-full"
+    ],
+    "FS06": [
+     "Rowan Electrical Team",
+     "FS06-a",
+     "batch-full"
+    ],
+    "FS07": [
+     "Pemberton Safety Cell",
+     "FS07-a",
+     "batch-full"
+    ],
+    "FS08": [
+     "Ashdown Asset Board",
+     "FS08-a",
+     "batch-full"
+    ],
+    "FX01": [
+     "3 days",
+     "FX01-a",
+     "batch-full"
+    ],
+    "FX02": [
+     "6 days",
+     "FX02-a",
+     "batch-full"
+    ],
+    "FX03": [
+     "9 days",
+     "FX03-a",
+     "batch-full"
+    ],
+    "FX04": [
+     "12 days",
+     "FX04-a",
+     "batch-full"
+    ],
+    "FX05": [
+     "15 days",
+     "FX05-a",
+     "batch-full"
+    ],
+    "FX06": [
+     "18 days",
+     "FX06-a",
+     "batch-full"
+    ],
+    "FX07": [
+     "21 days",
+     "FX07-a",
+     "batch-full"
+    ],
+    "FX08": [
+     "24 days",
+     "FX08-a",
+     "batch-full"
+    ]
+   }
+  }
+ ]
+}

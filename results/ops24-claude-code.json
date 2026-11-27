@@ -1,0 +1,1549 @@
+{
+ "backend": "claude-code",
+ "tasks": "carpool/data/ops24.jsonl",
+ "n": 24,
+ "started": "2026-11-26T23:12:19",
+ "runs": [
+  {
+   "route": "baseline",
+   "accepted": "24/24",
+   "calls": 24,
+   "total_tokens": 640189,
+   "uncached+output": 279805,
+   "tokens/accepted": 26674.5,
+   "uncached/accepted": 11658.5,
+   "seconds": 94.26,
+   "usd/accepted": 0.0483,
+   "lenient": "24/24",
+   "wall_seconds": 24.3,
+   "cached_input": 360384,
+   "usd": 1.1587,
+   "fallbacks": {},
+   "routes": {
+    "single-full": 24
+   },
+   "calls_detail": [
+    {
+     "in": 26648,
+     "cached": 15016,
+     "out": 22,
+     "s": 4.17,
+     "usd": 0.04825
+    },
+    {
+     "in": 26656,
+     "cached": 15016,
+     "out": 22,
+     "s": 4.17,
+     "usd": 0.04828
+    },
+    {
+     "in": 26643,
+     "cached": 15016,
+     "out": 27,
+     "s": 4.26,
+     "usd": 0.04828
+    },
+    {
+     "in": 26651,
+     "cached": 15016,
+     "out": 30,
+     "s": 4.5,
+     "usd": 0.04834
+    },
+    {
+     "in": 26656,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.54,
+     "usd": 0.04828
+    },
+    {
+     "in": 26665,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.72,
+     "usd": 0.04831
+    },
+    {
+     "in": 26633,
+     "cached": 15016,
+     "out": 28,
+     "s": 4.09,
+     "usd": 0.04825
+    },
+    {
+     "in": 26653,
+     "cached": 15016,
+     "out": 22,
+     "s": 4.16,
+     "usd": 0.04827
+    },
+    {
+     "in": 26642,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.46,
+     "usd": 0.04822
+    },
+    {
+     "in": 26648,
+     "cached": 15016,
+     "out": 31,
+     "s": 3.75,
+     "usd": 0.04834
+    },
+    {
+     "in": 26659,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.85,
+     "usd": 0.04829
+    },
+    {
+     "in": 26650,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.79,
+     "usd": 0.04825
+    },
+    {
+     "in": 26645,
+     "cached": 15016,
+     "out": 27,
+     "s": 3.72,
+     "usd": 0.04828
+    },
+    {
+     "in": 26663,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.86,
+     "usd": 0.04831
+    },
+    {
+     "in": 26654,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.9,
+     "usd": 0.04827
+    },
+    {
+     "in": 26634,
+     "cached": 15016,
+     "out": 28,
+     "s": 3.67,
+     "usd": 0.04825
+    },
+    {
+     "in": 26653,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.89,
+     "usd": 0.04827
+    },
+    {
+     "in": 26641,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.82,
+     "usd": 0.04822
+    },
+    {
+     "in": 26661,
+     "cached": 15016,
+     "out": 22,
+     "s": 4.01,
+     "usd": 0.0483
+    },
+    {
+     "in": 26648,
+     "cached": 15016,
+     "out": 29,
+     "s": 4.07,
+     "usd": 0.04832
+    },
+    {
+     "in": 26652,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.81,
+     "usd": 0.04826
+    },
+    {
+     "in": 26644,
+     "cached": 15016,
+     "out": 30,
+     "s": 4.19,
+     "usd": 0.04831
+    },
+    {
+     "in": 26659,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.77,
+     "usd": 0.04829
+    },
+    {
+     "in": 26649,
+     "cached": 15016,
+     "out": 22,
+     "s": 4.1,
+     "usd": 0.04825
+    }
+   ],
+   "answers": {
+    "C01": [
+     "45 days",
+     "C01-b",
+     "single-full"
+    ],
+    "C02": [
+     "46 days",
+     "C02-b",
+     "single-full"
+    ],
+    "C03": [
+     "47 days",
+     "C03-b",
+     "single-full"
+    ],
+    "C04": [
+     "48 days",
+     "C04-b",
+     "single-full"
+    ],
+    "C05": [
+     "49 days",
+     "C05-b",
+     "single-full"
+    ],
+    "C06": [
+     "50 days",
+     "C06-b",
+     "single-full"
+    ],
+    "C07": [
+     "51 days",
+     "C07-b",
+     "single-full"
+    ],
+    "C08": [
+     "52 days",
+     "C08-b",
+     "single-full"
+    ],
+    "S01": [
+     "Design Assurance Team",
+     "S01-a",
+     "single-full"
+    ],
+    "S02": [
+     "Northline Maintenance Crew",
+     "S02-a",
+     "single-full"
+    ],
+    "S03": [
+     "Halvard Controls Group",
+     "S03-a",
+     "single-full"
+    ],
+    "S04": [
+     "Ferrow Reliability Unit",
+     "S04-a",
+     "single-full"
+    ],
+    "S05": [
+     "Quill Systems Office",
+     "S05-a",
+     "single-full"
+    ],
+    "S06": [
+     "Tamsin Field Services",
+     "S06-a",
+     "single-full"
+    ],
+    "S07": [
+     "Orrin Integrity Board",
+     "S07-a",
+     "single-full"
+    ],
+    "S08": [
+     "Kestrel Operations Cell",
+     "S08-a",
+     "single-full"
+    ],
+    "X01": [
+     "5 days",
+     "X01-a",
+     "single-full"
+    ],
+    "X02": [
+     "7 days",
+     "X02-a",
+     "single-full"
+    ],
+    "X03": [
+     "9 days",
+     "X03-a",
+     "single-full"
+    ],
+    "X04": [
+     "11 days",
+     "X04-a",
+     "single-full"
+    ],
+    "X05": [
+     "13 days",
+     "X05-a",
+     "single-full"
+    ],
+    "X06": [
+     "15 days",
+     "X06-a",
+     "single-full"
+    ],
+    "X07": [
+     "17 days",
+     "X07-a",
+     "single-full"
+    ],
+    "X08": [
+     "19 days",
+     "X08-a",
+     "single-full"
+    ]
+   }
+  },
+  {
+   "route": "compact-only",
+   "accepted": "24/24",
+   "calls": 24,
+   "total_tokens": 639207,
+   "uncached+output": 272383,
+   "tokens/accepted": 26633.6,
+   "uncached/accepted": 11349.3,
+   "seconds": 93.15,
+   "usd/accepted": 0.0471,
+   "lenient": "24/24",
+   "wall_seconds": 24.0,
+   "cached_input": 366824,
+   "usd": 1.1296,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {},
+   "routes": {
+    "single-compact": 16,
+    "single-full": 8
+   },
+   "calls_detail": [
+    {
+     "in": 26581,
+     "cached": 15016,
+     "out": 27,
+     "s": 3.73,
+     "usd": 0.04803
+    },
+    {
+     "in": 26648,
+     "cached": 15820,
+     "out": 22,
+     "s": 3.73,
+     "usd": 0.04511
+    },
+    {
+     "in": 26583,
+     "cached": 15016,
+     "out": 30,
+     "s": 4.11,
+     "usd": 0.04807
+    },
+    {
+     "in": 26596,
+     "cached": 15016,
+     "out": 22,
+     "s": 4.2,
+     "usd": 0.04804
+    },
+    {
+     "in": 26656,
+     "cached": 15827,
+     "out": 22,
+     "s": 3.54,
+     "usd": 0.04511
+    },
+    {
+     "in": 26600,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.92,
+     "usd": 0.04805
+    },
+    {
+     "in": 26577,
+     "cached": 15016,
+     "out": 28,
+     "s": 3.69,
+     "usd": 0.04802
+    },
+    {
+     "in": 26591,
+     "cached": 15016,
+     "out": 22,
+     "s": 4.16,
+     "usd": 0.04802
+    },
+    {
+     "in": 26642,
+     "cached": 15813,
+     "out": 22,
+     "s": 3.71,
+     "usd": 0.04511
+    },
+    {
+     "in": 26600,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.59,
+     "usd": 0.04805
+    },
+    {
+     "in": 26585,
+     "cached": 15016,
+     "out": 31,
+     "s": 4.1,
+     "usd": 0.04808
+    },
+    {
+     "in": 26651,
+     "cached": 15823,
+     "out": 22,
+     "s": 3.69,
+     "usd": 0.04511
+    },
+    {
+     "in": 26582,
+     "cached": 15016,
+     "out": 27,
+     "s": 3.6,
+     "usd": 0.04803
+    },
+    {
+     "in": 26599,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.77,
+     "usd": 0.04805
+    },
+    {
+     "in": 26655,
+     "cached": 15826,
+     "out": 22,
+     "s": 3.72,
+     "usd": 0.04511
+    },
+    {
+     "in": 26577,
+     "cached": 15016,
+     "out": 28,
+     "s": 3.98,
+     "usd": 0.04802
+    },
+    {
+     "in": 26593,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.9,
+     "usd": 0.04803
+    },
+    {
+     "in": 26642,
+     "cached": 15813,
+     "out": 22,
+     "s": 3.82,
+     "usd": 0.04511
+    },
+    {
+     "in": 26584,
+     "cached": 15016,
+     "out": 29,
+     "s": 3.96,
+     "usd": 0.04806
+    },
+    {
+     "in": 26600,
+     "cached": 15016,
+     "out": 22,
+     "s": 4.22,
+     "usd": 0.04805
+    },
+    {
+     "in": 26653,
+     "cached": 15824,
+     "out": 22,
+     "s": 4.06,
+     "usd": 0.04511
+    },
+    {
+     "in": 26583,
+     "cached": 15016,
+     "out": 30,
+     "s": 4.26,
+     "usd": 0.04807
+    },
+    {
+     "in": 26597,
+     "cached": 15016,
+     "out": 22,
+     "s": 3.89,
+     "usd": 0.04804
+    },
+    {
+     "in": 26650,
+     "cached": 15822,
+     "out": 22,
+     "s": 3.78,
+     "usd": 0.04511
+    }
+   ],
+   "answers": {
+    "C01": [
+     "45 days",
+     "C01-b",
+     "single-full"
+    ],
+    "C02": [
+     "46 days",
+     "C02-b",
+     "single-full"
+    ],
+    "C03": [
+     "47 days",
+     "C03-b",
+     "single-full"
+    ],
+    "C04": [
+     "48 days",
+     "C04-b",
+     "single-full"
+    ],
+    "C05": [
+     "49 days",
+     "C05-b",
+     "single-full"
+    ],
+    "C06": [
+     "50 days",
+     "C06-b",
+     "single-full"
+    ],
+    "C07": [
+     "51 days",
+     "C07-b",
+     "single-full"
+    ],
+    "C08": [
+     "52 days",
+     "C08-b",
+     "single-full"
+    ],
+    "S01": [
+     "Design Assurance Team",
+     "S01-a",
+     "single-compact"
+    ],
+    "S02": [
+     "Northline Maintenance Crew",
+     "S02-a",
+     "single-compact"
+    ],
+    "S03": [
+     "Halvard Controls Group",
+     "S03-a",
+     "single-compact"
+    ],
+    "S04": [
+     "Ferrow Reliability Unit",
+     "S04-a",
+     "single-compact"
+    ],
+    "S05": [
+     "Quill Systems Office",
+     "S05-a",
+     "single-compact"
+    ],
+    "S06": [
+     "Tamsin Field Services",
+     "S06-a",
+     "single-compact"
+    ],
+    "S07": [
+     "Orrin Integrity Board",
+     "S07-a",
+     "single-compact"
+    ],
+    "S08": [
+     "Kestrel Operations Cell",
+     "S08-a",
+     "single-compact"
+    ],
+    "X01": [
+     "5 days",
+     "X01-a",
+     "single-compact"
+    ],
+    "X02": [
+     "7 days",
+     "X02-a",
+     "single-compact"
+    ],
+    "X03": [
+     "9 days",
+     "X03-a",
+     "single-compact"
+    ],
+    "X04": [
+     "11 days",
+     "X04-a",
+     "single-compact"
+    ],
+    "X05": [
+     "13 days",
+     "X05-a",
+     "single-compact"
+    ],
+    "X06": [
+     "15 days",
+     "X06-a",
+     "single-compact"
+    ],
+    "X07": [
+     "17 days",
+     "X07-a",
+     "single-compact"
+    ],
+    "X08": [
+     "19 days",
+     "X08-a",
+     "single-compact"
+    ]
+   }
+  },
+  {
+   "route": "batch-only#1",
+   "accepted": "24/24",
+   "calls": 1,
+   "total_tokens": 30970,
+   "uncached+output": 15954,
+   "tokens/accepted": 1290.4,
+   "uncached/accepted": 664.8,
+   "seconds": 7.88,
+   "usd/accepted": 0.0029,
+   "lenient": "24/24",
+   "wall_seconds": 7.9,
+   "cached_input": 15016,
+   "usd": 0.0692,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {},
+   "routes": {
+    "batch-full": 24
+   },
+   "calls_detail": [
+    {
+     "in": 30328,
+     "cached": 15016,
+     "out": 642,
+     "s": 7.88,
+     "usd": 0.06917
+    }
+   ],
+   "answers": {
+    "C01": [
+     "45 days",
+     "C01-b",
+     "batch-full"
+    ],
+    "C02": [
+     "46 days",
+     "C02-b",
+     "batch-full"
+    ],
+    "C03": [
+     "47 days",
+     "C03-b",
+     "batch-full"
+    ],
+    "C04": [
+     "48 days",
+     "C04-b",
+     "batch-full"
+    ],
+    "C05": [
+     "49 days",
+     "C05-b",
+     "batch-full"
+    ],
+    "C06": [
+     "50 days",
+     "C06-b",
+     "batch-full"
+    ],
+    "C07": [
+     "51 days",
+     "C07-b",
+     "batch-full"
+    ],
+    "C08": [
+     "52 days",
+     "C08-b",
+     "batch-full"
+    ],
+    "S01": [
+     "Design Assurance Team",
+     "S01-a",
+     "batch-full"
+    ],
+    "S02": [
+     "Northline Maintenance Crew",
+     "S02-a",
+     "batch-full"
+    ],
+    "S03": [
+     "Halvard Controls Group",
+     "S03-a",
+     "batch-full"
+    ],
+    "S04": [
+     "Ferrow Reliability Unit",
+     "S04-a",
+     "batch-full"
+    ],
+    "S05": [
+     "Quill Systems Office",
+     "S05-a",
+     "batch-full"
+    ],
+    "S06": [
+     "Tamsin Field Services",
+     "S06-a",
+     "batch-full"
+    ],
+    "S07": [
+     "Orrin Integrity Board",
+     "S07-a",
+     "batch-full"
+    ],
+    "S08": [
+     "Kestrel Operations Cell",
+     "S08-a",
+     "batch-full"
+    ],
+    "X01": [
+     "5",
+     "X01-a",
+     "batch-full"
+    ],
+    "X02": [
+     "7",
+     "X02-a",
+     "batch-full"
+    ],
+    "X03": [
+     "9",
+     "X03-a",
+     "batch-full"
+    ],
+    "X04": [
+     "11",
+     "X04-a",
+     "batch-full"
+    ],
+    "X05": [
+     "13",
+     "X05-a",
+     "batch-full"
+    ],
+    "X06": [
+     "15",
+     "X06-a",
+     "batch-full"
+    ],
+    "X07": [
+     "17",
+     "X07-a",
+     "batch-full"
+    ],
+    "X08": [
+     "19",
+     "X08-a",
+     "batch-full"
+    ]
+   }
+  },
+  {
+   "route": "carpool#1",
+   "accepted": "24/24",
+   "calls": 1,
+   "total_tokens": 29977,
+   "uncached+output": 14961,
+   "tokens/accepted": 1249.0,
+   "uncached/accepted": 623.4,
+   "seconds": 6.5,
+   "usd/accepted": 0.0027,
+   "lenient": "24/24",
+   "wall_seconds": 6.5,
+   "cached_input": 15016,
+   "usd": 0.0652,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {},
+   "routes": {
+    "batch-compact": 16,
+    "batch-full": 8
+   },
+   "calls_detail": [
+    {
+     "in": 29335,
+     "cached": 15016,
+     "out": 642,
+     "s": 6.49,
+     "usd": 0.06519
+    }
+   ],
+   "answers": {
+    "C01": [
+     "45 days",
+     "C01-b",
+     "batch-full"
+    ],
+    "C02": [
+     "46 days",
+     "C02-b",
+     "batch-full"
+    ],
+    "C03": [
+     "47 days",
+     "C03-b",
+     "batch-full"
+    ],
+    "C04": [
+     "48 days",
+     "C04-b",
+     "batch-full"
+    ],
+    "C05": [
+     "49 days",
+     "C05-b",
+     "batch-full"
+    ],
+    "C06": [
+     "50 days",
+     "C06-b",
+     "batch-full"
+    ],
+    "C07": [
+     "51 days",
+     "C07-b",
+     "batch-full"
+    ],
+    "C08": [
+     "52 days",
+     "C08-b",
+     "batch-full"
+    ],
+    "S01": [
+     "Design Assurance Team",
+     "S01-a",
+     "batch-compact"
+    ],
+    "S02": [
+     "Northline Maintenance Crew",
+     "S02-a",
+     "batch-compact"
+    ],
+    "S03": [
+     "Halvard Controls Group",
+     "S03-a",
+     "batch-compact"
+    ],
+    "S04": [
+     "Ferrow Reliability Unit",
+     "S04-a",
+     "batch-compact"
+    ],
+    "S05": [
+     "Quill Systems Office",
+     "S05-a",
+     "batch-compact"
+    ],
+    "S06": [
+     "Tamsin Field Services",
+     "S06-a",
+     "batch-compact"
+    ],
+    "S07": [
+     "Orrin Integrity Board",
+     "S07-a",
+     "batch-compact"
+    ],
+    "S08": [
+     "Kestrel Operations Cell",
+     "S08-a",
+     "batch-compact"
+    ],
+    "X01": [
+     "5",
+     "X01-a",
+     "batch-compact"
+    ],
+    "X02": [
+     "7",
+     "X02-a",
+     "batch-compact"
+    ],
+    "X03": [
+     "9",
+     "X03-a",
+     "batch-compact"
+    ],
+    "X04": [
+     "11",
+     "X04-a",
+     "batch-compact"
+    ],
+    "X05": [
+     "13",
+     "X05-a",
+     "batch-compact"
+    ],
+    "X06": [
+     "15",
+     "X06-a",
+     "batch-compact"
+    ],
+    "X07": [
+     "17",
+     "X07-a",
+     "batch-compact"
+    ],
+    "X08": [
+     "19",
+     "X08-a",
+     "batch-compact"
+    ]
+   }
+  },
+  {
+   "route": "batch-only#2",
+   "accepted": "24/24",
+   "calls": 1,
+   "total_tokens": 30969,
+   "uncached+output": 11471,
+   "tokens/accepted": 1290.4,
+   "uncached/accepted": 478.0,
+   "seconds": 7.22,
+   "usd/accepted": 0.0022,
+   "lenient": "24/24",
+   "wall_seconds": 7.2,
+   "cached_input": 19498,
+   "usd": 0.0517,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {},
+   "routes": {
+    "batch-full": 24
+   },
+   "calls_detail": [
+    {
+     "in": 30327,
+     "cached": 19498,
+     "out": 642,
+     "s": 7.22,
+     "usd": 0.05168
+    }
+   ],
+   "answers": {
+    "C01": [
+     "45 days",
+     "C01-b",
+     "batch-full"
+    ],
+    "C02": [
+     "46 days",
+     "C02-b",
+     "batch-full"
+    ],
+    "C03": [
+     "47 days",
+     "C03-b",
+     "batch-full"
+    ],
+    "C04": [
+     "48 days",
+     "C04-b",
+     "batch-full"
+    ],
+    "C05": [
+     "49 days",
+     "C05-b",
+     "batch-full"
+    ],
+    "C06": [
+     "50 days",
+     "C06-b",
+     "batch-full"
+    ],
+    "C07": [
+     "51 days",
+     "C07-b",
+     "batch-full"
+    ],
+    "C08": [
+     "52 days",
+     "C08-b",
+     "batch-full"
+    ],
+    "S01": [
+     "Design Assurance Team",
+     "S01-a",
+     "batch-full"
+    ],
+    "S02": [
+     "Northline Maintenance Crew",
+     "S02-a",
+     "batch-full"
+    ],
+    "S03": [
+     "Halvard Controls Group",
+     "S03-a",
+     "batch-full"
+    ],
+    "S04": [
+     "Ferrow Reliability Unit",
+     "S04-a",
+     "batch-full"
+    ],
+    "S05": [
+     "Quill Systems Office",
+     "S05-a",
+     "batch-full"
+    ],
+    "S06": [
+     "Tamsin Field Services",
+     "S06-a",
+     "batch-full"
+    ],
+    "S07": [
+     "Orrin Integrity Board",
+     "S07-a",
+     "batch-full"
+    ],
+    "S08": [
+     "Kestrel Operations Cell",
+     "S08-a",
+     "batch-full"
+    ],
+    "X01": [
+     "5",
+     "X01-a",
+     "batch-full"
+    ],
+    "X02": [
+     "7",
+     "X02-a",
+     "batch-full"
+    ],
+    "X03": [
+     "9",
+     "X03-a",
+     "batch-full"
+    ],
+    "X04": [
+     "11",
+     "X04-a",
+     "batch-full"
+    ],
+    "X05": [
+     "13",
+     "X05-a",
+     "batch-full"
+    ],
+    "X06": [
+     "15",
+     "X06-a",
+     "batch-full"
+    ],
+    "X07": [
+     "17",
+     "X07-a",
+     "batch-full"
+    ],
+    "X08": [
+     "19",
+     "X08-a",
+     "batch-full"
+    ]
+   }
+  },
+  {
+   "route": "carpool#2",
+   "accepted": "24/24",
+   "calls": 1,
+   "total_tokens": 29996,
+   "uncached+output": 11488,
+   "tokens/accepted": 1249.8,
+   "uncached/accepted": 478.7,
+   "seconds": 7.6,
+   "usd/accepted": 0.0022,
+   "lenient": "24/24",
+   "wall_seconds": 7.6,
+   "cached_input": 18508,
+   "usd": 0.0517,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {},
+   "routes": {
+    "batch-compact": 16,
+    "batch-full": 8
+   },
+   "calls_detail": [
+    {
+     "in": 29338,
+     "cached": 18508,
+     "out": 658,
+     "s": 7.6,
+     "usd": 0.05175
+    }
+   ],
+   "answers": {
+    "C01": [
+     "45 days",
+     "C01-b",
+     "batch-full"
+    ],
+    "C02": [
+     "46 days",
+     "C02-b",
+     "batch-full"
+    ],
+    "C03": [
+     "47 days",
+     "C03-b",
+     "batch-full"
+    ],
+    "C04": [
+     "48 days",
+     "C04-b",
+     "batch-full"
+    ],
+    "C05": [
+     "49 days",
+     "C05-b",
+     "batch-full"
+    ],
+    "C06": [
+     "50 days",
+     "C06-b",
+     "batch-full"
+    ],
+    "C07": [
+     "51 days",
+     "C07-b",
+     "batch-full"
+    ],
+    "C08": [
+     "52 days",
+     "C08-b",
+     "batch-full"
+    ],
+    "S01": [
+     "Design Assurance Team",
+     "S01-a",
+     "batch-compact"
+    ],
+    "S02": [
+     "Northline Maintenance Crew",
+     "S02-a",
+     "batch-compact"
+    ],
+    "S03": [
+     "Halvard Controls Group",
+     "S03-a",
+     "batch-compact"
+    ],
+    "S04": [
+     "Ferrow Reliability Unit",
+     "S04-a",
+     "batch-compact"
+    ],
+    "S05": [
+     "Quill Systems Office",
+     "S05-a",
+     "batch-compact"
+    ],
+    "S06": [
+     "Tamsin Field Services",
+     "S06-a",
+     "batch-compact"
+    ],
+    "S07": [
+     "Orrin Integrity Board",
+     "S07-a",
+     "batch-compact"
+    ],
+    "S08": [
+     "Kestrel Operations Cell",
+     "S08-a",
+     "batch-compact"
+    ],
+    "X01": [
+     "5 days",
+     "X01-a",
+     "batch-compact"
+    ],
+    "X02": [
+     "7 days",
+     "X02-a",
+     "batch-compact"
+    ],
+    "X03": [
+     "9 days",
+     "X03-a",
+     "batch-compact"
+    ],
+    "X04": [
+     "11 days",
+     "X04-a",
+     "batch-compact"
+    ],
+    "X05": [
+     "13 days",
+     "X05-a",
+     "batch-compact"
+    ],
+    "X06": [
+     "15 days",
+     "X06-a",
+     "batch-compact"
+    ],
+    "X07": [
+     "17 days",
+     "X07-a",
+     "batch-compact"
+    ],
+    "X08": [
+     "19 days",
+     "X08-a",
+     "batch-compact"
+    ]
+   }
+  },
+  {
+   "route": "batch-only#3",
+   "accepted": "24/24",
+   "calls": 1,
+   "total_tokens": 30969,
+   "uncached+output": 11471,
+   "tokens/accepted": 1290.4,
+   "uncached/accepted": 478.0,
+   "seconds": 8.61,
+   "usd/accepted": 0.0022,
+   "lenient": "24/24",
+   "wall_seconds": 8.6,
+   "cached_input": 19498,
+   "usd": 0.0517,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {},
+   "routes": {
+    "batch-full": 24
+   },
+   "calls_detail": [
+    {
+     "in": 30327,
+     "cached": 19498,
+     "out": 642,
+     "s": 8.61,
+     "usd": 0.05168
+    }
+   ],
+   "answers": {
+    "C01": [
+     "45 days",
+     "C01-b",
+     "batch-full"
+    ],
+    "C02": [
+     "46 days",
+     "C02-b",
+     "batch-full"
+    ],
+    "C03": [
+     "47 days",
+     "C03-b",
+     "batch-full"
+    ],
+    "C04": [
+     "48 days",
+     "C04-b",
+     "batch-full"
+    ],
+    "C05": [
+     "49 days",
+     "C05-b",
+     "batch-full"
+    ],
+    "C06": [
+     "50 days",
+     "C06-b",
+     "batch-full"
+    ],
+    "C07": [
+     "51 days",
+     "C07-b",
+     "batch-full"
+    ],
+    "C08": [
+     "52 days",
+     "C08-b",
+     "batch-full"
+    ],
+    "S01": [
+     "Design Assurance Team",
+     "S01-a",
+     "batch-full"
+    ],
+    "S02": [
+     "Northline Maintenance Crew",
+     "S02-a",
+     "batch-full"
+    ],
+    "S03": [
+     "Halvard Controls Group",
+     "S03-a",
+     "batch-full"
+    ],
+    "S04": [
+     "Ferrow Reliability Unit",
+     "S04-a",
+     "batch-full"
+    ],
+    "S05": [
+     "Quill Systems Office",
+     "S05-a",
+     "batch-full"
+    ],
+    "S06": [
+     "Tamsin Field Services",
+     "S06-a",
+     "batch-full"
+    ],
+    "S07": [
+     "Orrin Integrity Board",
+     "S07-a",
+     "batch-full"
+    ],
+    "S08": [
+     "Kestrel Operations Cell",
+     "S08-a",
+     "batch-full"
+    ],
+    "X01": [
+     "5",
+     "X01-a",
+     "batch-full"
+    ],
+    "X02": [
+     "7",
+     "X02-a",
+     "batch-full"
+    ],
+    "X03": [
+     "9",
+     "X03-a",
+     "batch-full"
+    ],
+    "X04": [
+     "11",
+     "X04-a",
+     "batch-full"
+    ],
+    "X05": [
+     "13",
+     "X05-a",
+     "batch-full"
+    ],
+    "X06": [
+     "15",
+     "X06-a",
+     "batch-full"
+    ],
+    "X07": [
+     "17",
+     "X07-a",
+     "batch-full"
+    ],
+    "X08": [
+     "19",
+     "X08-a",
+     "batch-full"
+    ]
+   }
+  },
+  {
+   "route": "carpool#3",
+   "accepted": "24/24",
+   "calls": 1,
+   "total_tokens": 29978,
+   "uncached+output": 11470,
+   "tokens/accepted": 1249.1,
+   "uncached/accepted": 477.9,
+   "seconds": 6.82,
+   "usd/accepted": 0.0021,
+   "lenient": "24/24",
+   "wall_seconds": 6.8,
+   "cached_input": 18508,
+   "usd": 0.0516,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {},
+   "routes": {
+    "batch-compact": 16,
+    "batch-full": 8
+   },
+   "calls_detail": [
+    {
+     "in": 29336,
+     "cached": 18508,
+     "out": 642,
+     "s": 6.82,
+     "usd": 0.05158
+    }
+   ],
+   "answers": {
+    "C01": [
+     "45 days",
+     "C01-b",
+     "batch-full"
+    ],
+    "C02": [
+     "46 days",
+     "C02-b",
+     "batch-full"
+    ],
+    "C03": [
+     "47 days",
+     "C03-b",
+     "batch-full"
+    ],
+    "C04": [
+     "48 days",
+     "C04-b",
+     "batch-full"
+    ],
+    "C05": [
+     "49 days",
+     "C05-b",
+     "batch-full"
+    ],
+    "C06": [
+     "50 days",
+     "C06-b",
+     "batch-full"
+    ],
+    "C07": [
+     "51 days",
+     "C07-b",
+     "batch-full"
+    ],
+    "C08": [
+     "52 days",
+     "C08-b",
+     "batch-full"
+    ],
+    "S01": [
+     "Design Assurance Team",
+     "S01-a",
+     "batch-compact"
+    ],
+    "S02": [
+     "Northline Maintenance Crew",
+     "S02-a",
+     "batch-compact"
+    ],
+    "S03": [
+     "Halvard Controls Group",
+     "S03-a",
+     "batch-compact"
+    ],
+    "S04": [
+     "Ferrow Reliability Unit",
+     "S04-a",
+     "batch-compact"
+    ],
+    "S05": [
+     "Quill Systems Office",
+     "S05-a",
+     "batch-compact"
+    ],
+    "S06": [
+     "Tamsin Field Services",
+     "S06-a",
+     "batch-compact"
+    ],
+    "S07": [
+     "Orrin Integrity Board",
+     "S07-a",
+     "batch-compact"
+    ],
+    "S08": [
+     "Kestrel Operations Cell",
+     "S08-a",
+     "batch-compact"
+    ],
+    "X01": [
+     "5",
+     "X01-a",
+     "batch-compact"
+    ],
+    "X02": [
+     "7",
+     "X02-a",
+     "batch-compact"
+    ],
+    "X03": [
+     "9",
+     "X03-a",
+     "batch-compact"
+    ],
+    "X04": [
+     "11",
+     "X04-a",
+     "batch-compact"
+    ],
+    "X05": [
+     "13",
+     "X05-a",
+     "batch-compact"
+    ],
+    "X06": [
+     "15",
+     "X06-a",
+     "batch-compact"
+    ],
+    "X07": [
+     "17",
+     "X07-a",
+     "batch-compact"
+    ],
+    "X08": [
+     "19",
+     "X08-a",
+     "batch-compact"
+    ]
+   }
+  }
+ ],
+ "finished": "2026-11-26T23:13:52"
+}

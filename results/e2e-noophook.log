@@ -1,0 +1,4 @@
+{"arm": "noop", "scenario": "large", "seed": 300, "seconds": 44.6, "usd": 1.2204984, "turns": 17, "subagents": 10, "input": 297781, "cached": 272812, "output": 3924, "bugs_found": 10, "n": 10}
+{"arm": "noop", "scenario": "large", "seed": 301, "seconds": 28.8, "usd": 0.185866, "turns": 4, "subagents": 0, "input": 121312, "cached": 106510, "output": 2309, "bugs_found": 10, "n": 10}
+{"arm": "noop", "scenario": "large", "seed": 302, "seconds": 28.2, "usd": 0.1903898, "turns": 5, "subagents": 0, "input": 151899, "cached": 137349, "output": 2328, "bugs_found": 10, "n": 10}
+{"arm": "noop", "scenario": "large", "seed": 303, "seconds": 31.6, "usd": 0.19949660000000002, "turns": 5, "subagents": 0, "input": 153749, "cached": 138543, "output": 2509, "bugs_found": 10, "n": 10}

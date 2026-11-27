@@ -1,0 +1,1770 @@
+{
+ "backend": "claude-lean",
+ "tasks": "bench/data/squad48-holdout.jsonl",
+ "n": 48,
+ "started": "2026-11-27T10:13:31",
+ "runs": [
+  {
+   "route": "baseline",
+   "accepted": "42/48",
+   "calls": 48,
+   "total_tokens": 100221,
+   "uncached+output": 100221,
+   "tokens/accepted": 2386.2,
+   "uncached/accepted": 2386.2,
+   "seconds": 239.74,
+   "usd/accepted": 0.0194,
+   "lenient": "48/48",
+   "wall_seconds": 60.9,
+   "cached_input": 0,
+   "usd": 0.8169,
+   "fallbacks": {},
+   "routes": {
+    "single-full": 48
+   },
+   "calls_detail": [
+    {
+     "in": 1954,
+     "cached": 0,
+     "out": 24,
+     "s": 4.68,
+     "usd": 0.0161
+    },
+    {
+     "in": 2106,
+     "cached": 0,
+     "out": 22,
+     "s": 4.89,
+     "usd": 0.01728
+    },
+    {
+     "in": 1962,
+     "cached": 0,
+     "out": 26,
+     "s": 5.07,
+     "usd": 0.01621
+    },
+    {
+     "in": 1821,
+     "cached": 0,
+     "out": 41,
+     "s": 5.9,
+     "usd": 0.01538
+    },
+    {
+     "in": 2107,
+     "cached": 0,
+     "out": 25,
+     "s": 5.02,
+     "usd": 0.01735
+    },
+    {
+     "in": 2101,
+     "cached": 0,
+     "out": 30,
+     "s": 5.01,
+     "usd": 0.0174
+    },
+    {
+     "in": 2690,
+     "cached": 0,
+     "out": 32,
+     "s": 5.82,
+     "usd": 0.02215
+    },
+    {
+     "in": 2145,
+     "cached": 0,
+     "out": 24,
+     "s": 4.91,
+     "usd": 0.01763
+    },
+    {
+     "in": 2233,
+     "cached": 0,
+     "out": 22,
+     "s": 4.52,
+     "usd": 0.0183
+    },
+    {
+     "in": 2011,
+     "cached": 0,
+     "out": 27,
+     "s": 5.16,
+     "usd": 0.01662
+    },
+    {
+     "in": 2370,
+     "cached": 0,
+     "out": 25,
+     "s": 5.08,
+     "usd": 0.01945
+    },
+    {
+     "in": 2026,
+     "cached": 0,
+     "out": 27,
+     "s": 5.01,
+     "usd": 0.01674
+    },
+    {
+     "in": 2050,
+     "cached": 0,
+     "out": 21,
+     "s": 4.7,
+     "usd": 0.01681
+    },
+    {
+     "in": 2309,
+     "cached": 0,
+     "out": 32,
+     "s": 4.94,
+     "usd": 0.0191
+    },
+    {
+     "in": 2090,
+     "cached": 0,
+     "out": 23,
+     "s": 4.6,
+     "usd": 0.01717
+    },
+    {
+     "in": 2026,
+     "cached": 0,
+     "out": 25,
+     "s": 4.91,
+     "usd": 0.0167
+    },
+    {
+     "in": 2179,
+     "cached": 0,
+     "out": 21,
+     "s": 4.63,
+     "usd": 0.01784
+    },
+    {
+     "in": 2087,
+     "cached": 0,
+     "out": 24,
+     "s": 4.62,
+     "usd": 0.01717
+    },
+    {
+     "in": 2126,
+     "cached": 0,
+     "out": 23,
+     "s": 4.98,
+     "usd": 0.01746
+    },
+    {
+     "in": 1715,
+     "cached": 0,
+     "out": 25,
+     "s": 5.08,
+     "usd": 0.01421
+    },
+    {
+     "in": 2002,
+     "cached": 0,
+     "out": 21,
+     "s": 4.59,
+     "usd": 0.01643
+    },
+    {
+     "in": 2084,
+     "cached": 0,
+     "out": 30,
+     "s": 5.53,
+     "usd": 0.01726
+    },
+    {
+     "in": 1955,
+     "cached": 0,
+     "out": 28,
+     "s": 5.09,
+     "usd": 0.01619
+    },
+    {
+     "in": 2080,
+     "cached": 0,
+     "out": 33,
+     "s": 5.32,
+     "usd": 0.01729
+    },
+    {
+     "in": 2112,
+     "cached": 0,
+     "out": 23,
+     "s": 4.59,
+     "usd": 0.01735
+    },
+    {
+     "in": 1915,
+     "cached": 0,
+     "out": 28,
+     "s": 6.01,
+     "usd": 0.01587
+    },
+    {
+     "in": 1572,
+     "cached": 0,
+     "out": 21,
+     "s": 4.69,
+     "usd": 0.01299
+    },
+    {
+     "in": 2347,
+     "cached": 0,
+     "out": 28,
+     "s": 5.04,
+     "usd": 0.01933
+    },
+    {
+     "in": 1794,
+     "cached": 0,
+     "out": 29,
+     "s": 5.19,
+     "usd": 0.01492
+    },
+    {
+     "in": 2014,
+     "cached": 0,
+     "out": 27,
+     "s": 4.81,
+     "usd": 0.01664
+    },
+    {
+     "in": 1974,
+     "cached": 0,
+     "out": 26,
+     "s": 4.74,
+     "usd": 0.0163
+    },
+    {
+     "in": 2254,
+     "cached": 0,
+     "out": 26,
+     "s": 5.36,
+     "usd": 0.01854
+    },
+    {
+     "in": 2203,
+     "cached": 0,
+     "out": 33,
+     "s": 5.21,
+     "usd": 0.01828
+    },
+    {
+     "in": 1863,
+     "cached": 0,
+     "out": 29,
+     "s": 4.34,
+     "usd": 0.01548
+    },
+    {
+     "in": 2098,
+     "cached": 0,
+     "out": 23,
+     "s": 4.73,
+     "usd": 0.01724
+    },
+    {
+     "in": 1919,
+     "cached": 0,
+     "out": 29,
+     "s": 5.62,
+     "usd": 0.01592
+    },
+    {
+     "in": 2424,
+     "cached": 0,
+     "out": 23,
+     "s": 4.71,
+     "usd": 0.01984
+    },
+    {
+     "in": 1889,
+     "cached": 0,
+     "out": 24,
+     "s": 4.63,
+     "usd": 0.01558
+    },
+    {
+     "in": 2003,
+     "cached": 0,
+     "out": 24,
+     "s": 4.75,
+     "usd": 0.0165
+    },
+    {
+     "in": 2223,
+     "cached": 0,
+     "out": 27,
+     "s": 4.79,
+     "usd": 0.01832
+    },
+    {
+     "in": 1855,
+     "cached": 0,
+     "out": 24,
+     "s": 4.67,
+     "usd": 0.01531
+    },
+    {
+     "in": 1834,
+     "cached": 0,
+     "out": 34,
+     "s": 4.9,
+     "usd": 0.01534
+    },
+    {
+     "in": 1999,
+     "cached": 0,
+     "out": 27,
+     "s": 5.47,
+     "usd": 0.01652
+    },
+    {
+     "in": 1919,
+     "cached": 0,
+     "out": 46,
+     "s": 5.63,
+     "usd": 0.01626
+    },
+    {
+     "in": 2125,
+     "cached": 0,
+     "out": 21,
+     "s": 5.35,
+     "usd": 0.01741
+    },
+    {
+     "in": 2161,
+     "cached": 0,
+     "out": 23,
+     "s": 4.71,
+     "usd": 0.01774
+    },
+    {
+     "in": 2066,
+     "cached": 0,
+     "out": 36,
+     "s": 5.27,
+     "usd": 0.01724
+    },
+    {
+     "in": 2136,
+     "cached": 0,
+     "out": 31,
+     "s": 4.47,
+     "usd": 0.0177
+    }
+   ],
+   "answers": {
+    "H01": [
+     "CD4",
+     "H01-b",
+     "single-full"
+    ],
+    "H02": [
+     "petrographic microscope",
+     "H02-a",
+     "single-full"
+    ],
+    "H03": [
+     "burning combustible materials with an appropriate supply of air in a closed space",
+     "H03-b",
+     "single-full"
+    ],
+    "H04": [
+     "John Paul II",
+     "H04-a",
+     "single-full"
+    ],
+    "H05": [
+     "a policy of idealism and philanthropy",
+     "H05-a",
+     "single-full"
+    ],
+    "H06": [
+     "Brookhaven",
+     "H06-a",
+     "single-full"
+    ],
+    "H07": [
+     "water disturbances created by the cilia",
+     "H07-c",
+     "single-full"
+    ],
+    "H08": [
+     "in a global sense",
+     "H08-b",
+     "single-full"
+    ],
+    "H09": [
+     "the Ominde Commission",
+     "H09-b",
+     "single-full"
+    ],
+    "H10": [
+     "railroad",
+     "H10-a",
+     "single-full"
+    ],
+    "H11": [
+     "Wahhabism",
+     "H11-b",
+     "single-full"
+    ],
+    "H12": [
+     "Zwickau prophet",
+     "H12-b",
+     "single-full"
+    ],
+    "H13": [
+     "North County",
+     "H13-b",
+     "single-full"
+    ],
+    "H14": [
+     "the private sector, businesses and sponsors",
+     "H14-b",
+     "single-full"
+    ],
+    "H15": [
+     "Donald Davies",
+     "H15-a",
+     "single-full"
+    ],
+    "H16": [
+     "William Booth",
+     "H16-b",
+     "single-full"
+    ],
+    "H17": [
+     "60%",
+     "H17-b",
+     "single-full"
+    ],
+    "H18": [
+     "182 million tons",
+     "H18-a",
+     "single-full"
+    ],
+    "H19": [
+     "In the 1060s",
+     "H19-a",
+     "single-full"
+    ],
+    "H20": [
+     "supplant it",
+     "H20-a",
+     "single-full"
+    ],
+    "H21": [
+     "the oldest street in the United States of America",
+     "H21-c",
+     "single-full"
+    ],
+    "H22": [
+     "2012",
+     "H22-a",
+     "single-full"
+    ],
+    "H23": [
+     "porcelain, cloth and wallpaper",
+     "H23-b",
+     "single-full"
+    ],
+    "H24": [
+     "full independent prescribing authority",
+     "H24-b",
+     "single-full"
+    ],
+    "H25": [
+     "throughout its North American provinces",
+     "H25-c",
+     "single-full"
+    ],
+    "H26": [
+     "September 2007",
+     "H26-b",
+     "single-full"
+    ],
+    "H27": [
+     "from 1294 to 1307",
+     "H27-a",
+     "single-full"
+    ],
+    "H28": [
+     "1926",
+     "H28-c",
+     "single-full"
+    ],
+    "H29": [
+     "best, worst and average case complexity",
+     "H29-b",
+     "single-full"
+    ],
+    "H30": [
+     "WATCH ABC",
+     "H30-c",
+     "single-full"
+    ],
+    "H31": [
+     "the Fermat primality test",
+     "H31-c",
+     "single-full"
+    ],
+    "H32": [
+     "Honorary freemen",
+     "H32-b",
+     "single-full"
+    ],
+    "H33": [
+     "throughout the 14th to 17th centuries",
+     "H33-a",
+     "single-full"
+    ],
+    "H34": [
+     "a noble death",
+     "H34-a",
+     "single-full"
+    ],
+    "H35": [
+     "case law by the Court of Justice",
+     "H35-a",
+     "single-full"
+    ],
+    "H36": [
+     "Ismail El Gizouli",
+     "H36-c",
+     "single-full"
+    ],
+    "H37": [
+     "July 1977",
+     "H37-c",
+     "single-full"
+    ],
+    "H38": [
+     "about twice as much",
+     "H38-c",
+     "single-full"
+    ],
+    "H39": [
+     "early 1950s",
+     "H39-a",
+     "single-full"
+    ],
+    "H40": [
+     "covert lawbreaking",
+     "H40-a",
+     "single-full"
+    ],
+    "H41": [
+     "Around 20%",
+     "H41-a",
+     "single-full"
+    ],
+    "H42": [
+     "food in the form of sugars",
+     "H42-a",
+     "single-full"
+    ],
+    "H43": [
+     "architects, interior designers, engineers and constructors",
+     "H43-a",
+     "single-full"
+    ],
+    "H44": [
+     "These schools tend to produce better academic results than government schools formerly reserved for other race groups",
+     "H44-a",
+     "single-full"
+    ],
+    "H45": [
+     "prices",
+     "H45-b",
+     "single-full"
+    ],
+    "H46": [
+     "KRFX",
+     "H46-c",
+     "single-full"
+    ],
+    "H47": [
+     "sending Apollo 8 to orbit the Moon",
+     "H47-c",
+     "single-full"
+    ],
+    "H48": [
+     "the North Sea in the Netherlands",
+     "H48-a",
+     "single-full"
+    ]
+   }
+  },
+  {
+   "route": "batch-only#1",
+   "accepted": "46/48",
+   "calls": 3,
+   "total_tokens": 46170,
+   "uncached+output": 42998,
+   "tokens/accepted": 1003.7,
+   "uncached/accepted": 934.7,
+   "seconds": 25.34,
+   "usd/accepted": 0.0079,
+   "lenient": "48/48",
+   "wall_seconds": 25.3,
+   "cached_input": 3172,
+   "usd": 0.3616,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {
+    "H12": "verifier: name looks incomplete (source continues with 'Nicholas')",
+    "H27": "verifier: answer passage does not mention the question terms"
+   },
+   "routes": {
+    "batch-full": 46,
+    "single-full": 2
+   },
+   "calls_detail": [
+    {
+     "in": 40380,
+     "cached": 0,
+     "out": 1361,
+     "s": 15.43,
+     "usd": 0.35025
+    },
+    {
+     "in": 2026,
+     "cached": 1426,
+     "out": 27,
+     "s": 5.15,
+     "usd": 0.00562
+    },
+    {
+     "in": 2348,
+     "cached": 1746,
+     "out": 28,
+     "s": 4.75,
+     "usd": 0.00572
+    }
+   ],
+   "answers": {
+    "H01": [
+     "CD4",
+     "H01-b",
+     "batch-full"
+    ],
+    "H02": [
+     "petrographic microscope",
+     "H02-a",
+     "batch-full"
+    ],
+    "H03": [
+     "burning combustible materials",
+     "H03-b",
+     "batch-full"
+    ],
+    "H04": [
+     "John Paul II",
+     "H04-a",
+     "batch-full"
+    ],
+    "H05": [
+     "idealism and philanthropy",
+     "H05-a",
+     "batch-full"
+    ],
+    "H06": [
+     "Brookhaven",
+     "H06-a",
+     "batch-full"
+    ],
+    "H07": [
+     "water disturbances created by the cilia",
+     "H07-c",
+     "batch-full"
+    ],
+    "H08": [
+     "global",
+     "H08-b",
+     "batch-full"
+    ],
+    "H09": [
+     "Ominde Commission",
+     "H09-b",
+     "batch-full"
+    ],
+    "H10": [
+     "railroad",
+     "H10-a",
+     "batch-full"
+    ],
+    "H11": [
+     "Wahhabism",
+     "H11-b",
+     "batch-full"
+    ],
+    "H12": [
+     "Zwickau prophet",
+     "H12-b",
+     "single-full"
+    ],
+    "H13": [
+     "North County",
+     "H13-b",
+     "batch-full"
+    ],
+    "H14": [
+     "private sector, businesses and sponsors",
+     "H14-b",
+     "batch-full"
+    ],
+    "H15": [
+     "Donald Davies",
+     "H15-a",
+     "batch-full"
+    ],
+    "H16": [
+     "William Booth",
+     "H16-b",
+     "batch-full"
+    ],
+    "H17": [
+     "60%",
+     "H17-b",
+     "batch-full"
+    ],
+    "H18": [
+     "182 million tons",
+     "H18-a",
+     "batch-full"
+    ],
+    "H19": [
+     "1060s",
+     "H19-a",
+     "batch-full"
+    ],
+    "H20": [
+     "supplant it",
+     "H20-a",
+     "batch-full"
+    ],
+    "H21": [
+     "the oldest street in the United States of America",
+     "H21-c",
+     "batch-full"
+    ],
+    "H22": [
+     "2012",
+     "H22-a",
+     "batch-full"
+    ],
+    "H23": [
+     "porcelain, cloth and wallpaper",
+     "H23-b",
+     "batch-full"
+    ],
+    "H24": [
+     "full independent prescribing authority",
+     "H24-b",
+     "batch-full"
+    ],
+    "H25": [
+     "throughout its North American provinces",
+     "H25-c",
+     "batch-full"
+    ],
+    "H26": [
+     "September 2007",
+     "H26-b",
+     "batch-full"
+    ],
+    "H27": [
+     "from 1294 to 1307",
+     "H27-a",
+     "single-full"
+    ],
+    "H28": [
+     "1926",
+     "H28-c",
+     "batch-full"
+    ],
+    "H29": [
+     "best, worst and average",
+     "H29-b",
+     "batch-full"
+    ],
+    "H30": [
+     "WATCH ABC",
+     "H30-c",
+     "batch-full"
+    ],
+    "H31": [
+     "Fermat primality test",
+     "H31-c",
+     "batch-full"
+    ],
+    "H32": [
+     "Honorary freemen",
+     "H32-b",
+     "batch-full"
+    ],
+    "H33": [
+     "14th to 17th centuries",
+     "H33-a",
+     "batch-full"
+    ],
+    "H34": [
+     "a noble death",
+     "H34-a",
+     "batch-full"
+    ],
+    "H35": [
+     "case law by the Court of Justice",
+     "H35-a",
+     "batch-full"
+    ],
+    "H36": [
+     "Ismail El Gizouli",
+     "H36-c",
+     "batch-full"
+    ],
+    "H37": [
+     "July 1977",
+     "H37-c",
+     "batch-full"
+    ],
+    "H38": [
+     "about twice as much",
+     "H38-c",
+     "batch-full"
+    ],
+    "H39": [
+     "early 1950s",
+     "H39-a",
+     "batch-full"
+    ],
+    "H40": [
+     "covert lawbreaking",
+     "H40-a",
+     "batch-full"
+    ],
+    "H41": [
+     "Around 20%",
+     "H41-a",
+     "batch-full"
+    ],
+    "H42": [
+     "food in the form of sugars",
+     "H42-a",
+     "batch-full"
+    ],
+    "H43": [
+     "architects, interior designers, engineers and constructors",
+     "H43-a",
+     "batch-full"
+    ],
+    "H44": [
+     "better academic results",
+     "H44-a",
+     "batch-full"
+    ],
+    "H45": [
+     "prices",
+     "H45-b",
+     "batch-full"
+    ],
+    "H46": [
+     "KRFX",
+     "H46-c",
+     "batch-full"
+    ],
+    "H47": [
+     "to orbit the Moon",
+     "H47-c",
+     "batch-full"
+    ],
+    "H48": [
+     "North Sea",
+     "H48-a",
+     "batch-full"
+    ]
+   }
+  },
+  {
+   "route": "carpool#1",
+   "accepted": "46/48",
+   "calls": 3,
+   "total_tokens": 25058,
+   "uncached+output": 21886,
+   "tokens/accepted": 544.7,
+   "uncached/accepted": 475.8,
+   "seconds": 24.99,
+   "usd/accepted": 0.0042,
+   "lenient": "48/48",
+   "wall_seconds": 25.0,
+   "cached_input": 3172,
+   "usd": 0.1954,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {
+    "H12": "verifier: name looks incomplete (source continues with 'Nicholas')",
+    "H27": "verifier: answer passage does not mention the question terms"
+   },
+   "routes": {
+    "batch-compact": 41,
+    "batch-full": 5,
+    "single-full": 2
+   },
+   "calls_detail": [
+    {
+     "in": 19042,
+     "cached": 0,
+     "out": 1587,
+     "s": 15.6,
+     "usd": 0.18407
+    },
+    {
+     "in": 2028,
+     "cached": 1426,
+     "out": 27,
+     "s": 4.65,
+     "usd": 0.00563
+    },
+    {
+     "in": 2346,
+     "cached": 1746,
+     "out": 28,
+     "s": 4.74,
+     "usd": 0.0057
+    }
+   ],
+   "answers": {
+    "H01": [
+     "CD4",
+     "H01-b",
+     "batch-compact"
+    ],
+    "H02": [
+     "petrographic microscope",
+     "H02-a",
+     "batch-compact"
+    ],
+    "H03": [
+     "burning combustible materials",
+     "H03-b",
+     "batch-compact"
+    ],
+    "H04": [
+     "John Paul II",
+     "H04-a",
+     "batch-compact"
+    ],
+    "H05": [
+     "idealism and philanthropy",
+     "H05-a",
+     "batch-full"
+    ],
+    "H06": [
+     "Brookhaven",
+     "H06-a",
+     "batch-compact"
+    ],
+    "H07": [
+     "water disturbances created by the cilia",
+     "H07-c",
+     "batch-compact"
+    ],
+    "H08": [
+     "global sense",
+     "H08-b",
+     "batch-compact"
+    ],
+    "H09": [
+     "Ominde Commission",
+     "H09-b",
+     "batch-compact"
+    ],
+    "H10": [
+     "railroad",
+     "H10-a",
+     "batch-compact"
+    ],
+    "H11": [
+     "Wahhabism",
+     "H11-b",
+     "batch-compact"
+    ],
+    "H12": [
+     "Zwickau prophet",
+     "H12-b",
+     "single-full"
+    ],
+    "H13": [
+     "North County regions",
+     "H13-b",
+     "batch-compact"
+    ],
+    "H14": [
+     "private sector, businesses and sponsors",
+     "H14-b",
+     "batch-compact"
+    ],
+    "H15": [
+     "Donald Davies",
+     "H15-a",
+     "batch-compact"
+    ],
+    "H16": [
+     "William Booth",
+     "H16-b",
+     "batch-compact"
+    ],
+    "H17": [
+     "60%",
+     "H17-b",
+     "batch-compact"
+    ],
+    "H18": [
+     "182 million tons",
+     "H18-a",
+     "batch-compact"
+    ],
+    "H19": [
+     "1060s",
+     "H19-a",
+     "batch-compact"
+    ],
+    "H20": [
+     "supplant it",
+     "H20-a",
+     "batch-compact"
+    ],
+    "H21": [
+     "the oldest street in the United States of America",
+     "H21-c",
+     "batch-compact"
+    ],
+    "H22": [
+     "2012",
+     "H22-a",
+     "batch-compact"
+    ],
+    "H23": [
+     "porcelain, cloth and wallpaper",
+     "H23-b",
+     "batch-compact"
+    ],
+    "H24": [
+     "full independent prescribing authority",
+     "H24-b",
+     "batch-compact"
+    ],
+    "H25": [
+     "throughout its North American provinces",
+     "H25-c",
+     "batch-compact"
+    ],
+    "H26": [
+     "September 2007",
+     "H26-b",
+     "batch-compact"
+    ],
+    "H27": [
+     "from 1294 to 1307",
+     "H27-a",
+     "single-full"
+    ],
+    "H28": [
+     "1926",
+     "H28-c",
+     "batch-full"
+    ],
+    "H29": [
+     "best, worst and average case complexity",
+     "H29-b",
+     "batch-compact"
+    ],
+    "H30": [
+     "WATCH ABC",
+     "H30-c",
+     "batch-compact"
+    ],
+    "H31": [
+     "Fermat primality test",
+     "H31-c",
+     "batch-compact"
+    ],
+    "H32": [
+     "Honorary freemen",
+     "H32-b",
+     "batch-compact"
+    ],
+    "H33": [
+     "throughout the 14th to 17th centuries",
+     "H33-a",
+     "batch-full"
+    ],
+    "H34": [
+     "a noble death",
+     "H34-a",
+     "batch-compact"
+    ],
+    "H35": [
+     "case law by the Court of Justice",
+     "H35-a",
+     "batch-compact"
+    ],
+    "H36": [
+     "Ismail El Gizouli",
+     "H36-c",
+     "batch-compact"
+    ],
+    "H37": [
+     "July 1977",
+     "H37-c",
+     "batch-compact"
+    ],
+    "H38": [
+     "about twice as much",
+     "H38-c",
+     "batch-compact"
+    ],
+    "H39": [
+     "early 1950s",
+     "H39-a",
+     "batch-full"
+    ],
+    "H40": [
+     "covert lawbreaking",
+     "H40-a",
+     "batch-compact"
+    ],
+    "H41": [
+     "Around 20%",
+     "H41-a",
+     "batch-compact"
+    ],
+    "H42": [
+     "food in the form of sugars",
+     "H42-a",
+     "batch-compact"
+    ],
+    "H43": [
+     "architects, interior designers, engineers and constructors",
+     "H43-a",
+     "batch-compact"
+    ],
+    "H44": [
+     "better academic results",
+     "H44-a",
+     "batch-compact"
+    ],
+    "H45": [
+     "prices",
+     "H45-b",
+     "batch-compact"
+    ],
+    "H46": [
+     "KRFX",
+     "H46-c",
+     "batch-compact"
+    ],
+    "H47": [
+     "orbit the Moon",
+     "H47-c",
+     "batch-compact"
+    ],
+    "H48": [
+     "North Sea",
+     "H48-a",
+     "batch-full"
+    ]
+   }
+  },
+  {
+   "route": "batch-only#2",
+   "accepted": "46/48",
+   "calls": 3,
+   "total_tokens": 46175,
+   "uncached+output": 3222,
+   "tokens/accepted": 1003.8,
+   "uncached/accepted": 70.0,
+   "seconds": 23.06,
+   "usd/accepted": 0.0011,
+   "lenient": "48/48",
+   "wall_seconds": 23.1,
+   "cached_input": 42953,
+   "usd": 0.0513,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {
+    "H12": "verifier: name looks incomplete (source continues with 'Nicholas')",
+    "H27": "verifier: answer passage does not mention the question terms"
+   },
+   "routes": {
+    "batch-full": 46,
+    "single-full": 2
+   },
+   "calls_detail": [
+    {
+     "in": 40383,
+     "cached": 39781,
+     "out": 1361,
+     "s": 12.83,
+     "usd": 0.03998
+    },
+    {
+     "in": 2028,
+     "cached": 1426,
+     "out": 27,
+     "s": 4.76,
+     "usd": 0.00563
+    },
+    {
+     "in": 2348,
+     "cached": 1746,
+     "out": 28,
+     "s": 5.47,
+     "usd": 0.00572
+    }
+   ],
+   "answers": {
+    "H01": [
+     "CD4",
+     "H01-b",
+     "batch-full"
+    ],
+    "H02": [
+     "petrographic microscope",
+     "H02-a",
+     "batch-full"
+    ],
+    "H03": [
+     "burning combustible materials",
+     "H03-b",
+     "batch-full"
+    ],
+    "H04": [
+     "John Paul II",
+     "H04-a",
+     "batch-full"
+    ],
+    "H05": [
+     "idealism and philanthropy",
+     "H05-a",
+     "batch-full"
+    ],
+    "H06": [
+     "Brookhaven",
+     "H06-a",
+     "batch-full"
+    ],
+    "H07": [
+     "water disturbances created by the cilia",
+     "H07-c",
+     "batch-full"
+    ],
+    "H08": [
+     "global",
+     "H08-b",
+     "batch-full"
+    ],
+    "H09": [
+     "Ominde Commission",
+     "H09-b",
+     "batch-full"
+    ],
+    "H10": [
+     "railroad",
+     "H10-a",
+     "batch-full"
+    ],
+    "H11": [
+     "Wahhabism",
+     "H11-b",
+     "batch-full"
+    ],
+    "H12": [
+     "Zwickau prophet",
+     "H12-b",
+     "single-full"
+    ],
+    "H13": [
+     "North County",
+     "H13-b",
+     "batch-full"
+    ],
+    "H14": [
+     "private sector, businesses and sponsors",
+     "H14-b",
+     "batch-full"
+    ],
+    "H15": [
+     "Donald Davies",
+     "H15-a",
+     "batch-full"
+    ],
+    "H16": [
+     "William Booth",
+     "H16-b",
+     "batch-full"
+    ],
+    "H17": [
+     "60%",
+     "H17-b",
+     "batch-full"
+    ],
+    "H18": [
+     "182 million tons",
+     "H18-a",
+     "batch-full"
+    ],
+    "H19": [
+     "1060s",
+     "H19-a",
+     "batch-full"
+    ],
+    "H20": [
+     "supplant it",
+     "H20-a",
+     "batch-full"
+    ],
+    "H21": [
+     "the oldest street in the United States of America",
+     "H21-c",
+     "batch-full"
+    ],
+    "H22": [
+     "2012",
+     "H22-a",
+     "batch-full"
+    ],
+    "H23": [
+     "porcelain, cloth and wallpaper",
+     "H23-b",
+     "batch-full"
+    ],
+    "H24": [
+     "full independent prescribing authority",
+     "H24-b",
+     "batch-full"
+    ],
+    "H25": [
+     "throughout its North American provinces",
+     "H25-c",
+     "batch-full"
+    ],
+    "H26": [
+     "September 2007",
+     "H26-b",
+     "batch-full"
+    ],
+    "H27": [
+     "from 1294 to 1307",
+     "H27-a",
+     "single-full"
+    ],
+    "H28": [
+     "1926",
+     "H28-c",
+     "batch-full"
+    ],
+    "H29": [
+     "best, worst and average",
+     "H29-b",
+     "batch-full"
+    ],
+    "H30": [
+     "WATCH ABC",
+     "H30-c",
+     "batch-full"
+    ],
+    "H31": [
+     "Fermat primality test",
+     "H31-c",
+     "batch-full"
+    ],
+    "H32": [
+     "Honorary freemen",
+     "H32-b",
+     "batch-full"
+    ],
+    "H33": [
+     "14th to 17th centuries",
+     "H33-a",
+     "batch-full"
+    ],
+    "H34": [
+     "a noble death",
+     "H34-a",
+     "batch-full"
+    ],
+    "H35": [
+     "case law by the Court of Justice",
+     "H35-a",
+     "batch-full"
+    ],
+    "H36": [
+     "Ismail El Gizouli",
+     "H36-c",
+     "batch-full"
+    ],
+    "H37": [
+     "July 1977",
+     "H37-c",
+     "batch-full"
+    ],
+    "H38": [
+     "about twice as much",
+     "H38-c",
+     "batch-full"
+    ],
+    "H39": [
+     "early 1950s",
+     "H39-a",
+     "batch-full"
+    ],
+    "H40": [
+     "covert lawbreaking",
+     "H40-a",
+     "batch-full"
+    ],
+    "H41": [
+     "Around 20%",
+     "H41-a",
+     "batch-full"
+    ],
+    "H42": [
+     "food in the form of sugars",
+     "H42-a",
+     "batch-full"
+    ],
+    "H43": [
+     "architects, interior designers, engineers and constructors",
+     "H43-a",
+     "batch-full"
+    ],
+    "H44": [
+     "better academic results",
+     "H44-a",
+     "batch-full"
+    ],
+    "H45": [
+     "prices",
+     "H45-b",
+     "batch-full"
+    ],
+    "H46": [
+     "KRFX",
+     "H46-c",
+     "batch-full"
+    ],
+    "H47": [
+     "to orbit the Moon",
+     "H47-c",
+     "batch-full"
+    ],
+    "H48": [
+     "North Sea",
+     "H48-a",
+     "batch-full"
+    ]
+   }
+  },
+  {
+   "route": "carpool#2",
+   "accepted": "46/48",
+   "calls": 3,
+   "total_tokens": 25012,
+   "uncached+output": 3399,
+   "tokens/accepted": 543.7,
+   "uncached/accepted": 73.9,
+   "seconds": 24.87,
+   "usd/accepted": 0.0011,
+   "lenient": "48/48",
+   "wall_seconds": 24.9,
+   "cached_input": 21613,
+   "usd": 0.0507,
+   "regressions": [],
+   "lenient_regressions": [],
+   "fallbacks": {
+    "H12": "verifier: name looks incomplete (source continues with 'Nicholas')",
+    "H27": "verifier: answer passage does not mention the question terms"
+   },
+   "routes": {
+    "batch-compact": 41,
+    "batch-full": 5,
+    "single-full": 2
+   },
+   "calls_detail": [
+    {
+     "in": 19042,
+     "cached": 18441,
+     "out": 1542,
+     "s": 15.38,
+     "usd": 0.03933
+    },
+    {
+     "in": 2026,
+     "cached": 1426,
+     "out": 27,
+     "s": 4.83,
+     "usd": 0.00562
+    },
+    {
+     "in": 2347,
+     "cached": 1746,
+     "out": 28,
+     "s": 4.65,
+     "usd": 0.00571
+    }
+   ],
+   "answers": {
+    "H01": [
+     "CD4",
+     "H01-b",
+     "batch-compact"
+    ],
+    "H02": [
+     "petrographic microscope",
+     "H02-a",
+     "batch-compact"
+    ],
+    "H03": [
+     "burning combustible materials",
+     "H03-b",
+     "batch-compact"
+    ],
+    "H04": [
+     "John Paul II",
+     "H04-a",
+     "batch-compact"
+    ],
+    "H05": [
+     "idealism and philanthropy",
+     "H05-a",
+     "batch-full"
+    ],
+    "H06": [
+     "Brookhaven",
+     "H06-a",
+     "batch-compact"
+    ],
+    "H07": [
+     "water disturbances created by the cilia",
+     "H07-c",
+     "batch-compact"
+    ],
+    "H08": [
+     "global",
+     "H08-b",
+     "batch-compact"
+    ],
+    "H09": [
+     "Ominde Commission",
+     "H09-b",
+     "batch-compact"
+    ],
+    "H10": [
+     "railroad",
+     "H10-a",
+     "batch-compact"
+    ],
+    "H11": [
+     "Wahhabism",
+     "H11-b",
+     "batch-compact"
+    ],
+    "H12": [
+     "Zwickau prophet",
+     "H12-b",
+     "single-full"
+    ],
+    "H13": [
+     "North County",
+     "H13-b",
+     "batch-compact"
+    ],
+    "H14": [
+     "private sector, businesses and sponsors",
+     "H14-b",
+     "batch-compact"
+    ],
+    "H15": [
+     "Donald Davies",
+     "H15-a",
+     "batch-compact"
+    ],
+    "H16": [
+     "William Booth",
+     "H16-b",
+     "batch-compact"
+    ],
+    "H17": [
+     "60%",
+     "H17-b",
+     "batch-compact"
+    ],
+    "H18": [
+     "182 million tons",
+     "H18-a",
+     "batch-compact"
+    ],
+    "H19": [
+     "1060s",
+     "H19-a",
+     "batch-compact"
+    ],
+    "H20": [
+     "supplant it",
+     "H20-a",
+     "batch-compact"
+    ],
+    "H21": [
+     "the oldest street in the United States of America",
+     "H21-c",
+     "batch-compact"
+    ],
+    "H22": [
+     "2012",
+     "H22-a",
+     "batch-compact"
+    ],
+    "H23": [
+     "porcelain, cloth and wallpaper",
+     "H23-b",
+     "batch-compact"
+    ],
+    "H24": [
+     "full independent prescribing authority",
+     "H24-b",
+     "batch-compact"
+    ],
+    "H25": [
+     "throughout its North American provinces",
+     "H25-c",
+     "batch-compact"
+    ],
+    "H26": [
+     "September 2007",
+     "H26-b",
+     "batch-compact"
+    ],
+    "H27": [
+     "from 1294 to 1307",
+     "H27-a",
+     "single-full"
+    ],
+    "H28": [
+     "1926",
+     "H28-c",
+     "batch-full"
+    ],
+    "H29": [
+     "best, worst and average",
+     "H29-b",
+     "batch-compact"
+    ],
+    "H30": [
+     "WATCH ABC",
+     "H30-c",
+     "batch-compact"
+    ],
+    "H31": [
+     "Fermat primality test",
+     "H31-c",
+     "batch-compact"
+    ],
+    "H32": [
+     "Honorary freemen",
+     "H32-b",
+     "batch-compact"
+    ],
+    "H33": [
+     "throughout the 14th to 17th centuries",
+     "H33-a",
+     "batch-full"
+    ],
+    "H34": [
+     "a noble death",
+     "H34-a",
+     "batch-compact"
+    ],
+    "H35": [
+     "case law by the Court of Justice",
+     "H35-a",
+     "batch-compact"
+    ],
+    "H36": [
+     "Ismail El Gizouli",
+     "H36-c",
+     "batch-compact"
+    ],
+    "H37": [
+     "July 1977",
+     "H37-c",
+     "batch-compact"
+    ],
+    "H38": [
+     "about twice as much",
+     "H38-c",
+     "batch-compact"
+    ],
+    "H39": [
+     "early 1950s",
+     "H39-a",
+     "batch-full"
+    ],
+    "H40": [
+     "covert lawbreaking",
+     "H40-a",
+     "batch-compact"
+    ],
+    "H41": [
+     "Around 20%",
+     "H41-a",
+     "batch-compact"
+    ],
+    "H42": [
+     "food in the form of sugars",
+     "H42-a",
+     "batch-compact"
+    ],
+    "H43": [
+     "architects, interior designers, engineers and constructors",
+     "H43-a",
+     "batch-compact"
+    ],
+    "H44": [
+     "better academic results",
+     "H44-a",
+     "batch-compact"
+    ],
+    "H45": [
+     "prices",
+     "H45-b",
+     "batch-compact"
+    ],
+    "H46": [
+     "KRFX",
+     "H46-c",
+     "batch-compact"
+    ],
+    "H47": [
+     "orbit the Moon",
+     "H47-c",
+     "batch-compact"
+    ],
+    "H48": [
+     "North Sea",
+     "H48-a",
+     "batch-full"
+    ]
+   }
+  }
+ ],
+ "finished": "2026-11-27T10:16:10"
+}

@@ -1,0 +1,6 @@
+{"route": "baseline", "accepted": "24/24", "lenient": "24/24", "calls": 24, "total_tokens": 34262, "uncached+output": 34262, "usd": 0.2809, "wall_seconds": 37.0, "regressions": null}
+{"route": "batch-only#1", "accepted": "24/24", "lenient": "24/24", "calls": 1, "total_tokens": 5790, "uncached+output": 5790, "usd": 0.0549, "wall_seconds": 10.2, "regressions": []}
+{"route": "carpool#1", "accepted": "24/24", "lenient": "24/24", "calls": 1, "total_tokens": 4801, "uncached+output": 4801, "usd": 0.047, "wall_seconds": 10.3, "regressions": []}
+{"route": "batch-only#2", "accepted": "24/24", "lenient": "24/24", "calls": 1, "total_tokens": 5792, "uncached+output": 1314, "usd": 0.02, "wall_seconds": 9.7, "regressions": []}
+{"route": "carpool#2", "accepted": "24/24", "lenient": "24/24", "calls": 1, "total_tokens": 4732, "uncached+output": 1244, "usd": 0.0183, "wall_seconds": 7.8, "regressions": []}
+saved results/ops24-claude-lean.json

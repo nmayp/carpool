@@ -1,0 +1,1105 @@
+{
+ "backend": "ollama:qwen2.5:1.5b",
+ "tasks": "bench/data/squad48-holdout.jsonl",
+ "n": 48,
+ "started": "2026-11-27T08:59:10",
+ "runs": [
+  {
+   "route": "baseline",
+   "accepted": "21/48",
+   "calls": 48,
+   "total_tokens": 32636,
+   "uncached+output": 32636,
+   "tokens/accepted": 1554.1,
+   "uncached/accepted": 1554.1,
+   "seconds": 93.16,
+   "usd/accepted": 0.0,
+   "lenient": "29/48",
+   "wall_seconds": 93.2,
+   "cached_input": 0,
+   "usd": 0.0,
+   "fallbacks": {},
+   "routes": {
+    "single-full": 48
+   },
+   "calls_detail": [
+    {
+     "in": 669,
+     "cached": 0,
+     "out": 28,
+     "s": 1.62,
+     "usd": 0.0
+    },
+    {
+     "in": 570,
+     "cached": 0,
+     "out": 27,
+     "s": 1.3,
+     "usd": 0.0
+    },
+    {
+     "in": 483,
+     "cached": 0,
+     "out": 37,
+     "s": 1.86,
+     "usd": 0.0
+    },
+    {
+     "in": 596,
+     "cached": 0,
+     "out": 26,
+     "s": 1.32,
+     "usd": 0.0
+    },
+    {
+     "in": 1026,
+     "cached": 0,
+     "out": 51,
+     "s": 3.31,
+     "usd": 0.0
+    },
+    {
+     "in": 668,
+     "cached": 0,
+     "out": 18,
+     "s": 0.95,
+     "usd": 0.0
+    },
+    {
+     "in": 691,
+     "cached": 0,
+     "out": 25,
+     "s": 1.28,
+     "usd": 0.0
+    },
+    {
+     "in": 725,
+     "cached": 0,
+     "out": 52,
+     "s": 3.17,
+     "usd": 0.0
+    },
+    {
+     "in": 608,
+     "cached": 0,
+     "out": 27,
+     "s": 2.1,
+     "usd": 0.0
+    },
+    {
+     "in": 749,
+     "cached": 0,
+     "out": 17,
+     "s": 1.11,
+     "usd": 0.0
+    },
+    {
+     "in": 798,
+     "cached": 0,
+     "out": 27,
+     "s": 1.68,
+     "usd": 0.0
+    },
+    {
+     "in": 648,
+     "cached": 0,
+     "out": 42,
+     "s": 2.58,
+     "usd": 0.0
+    },
+    {
+     "in": 619,
+     "cached": 0,
+     "out": 25,
+     "s": 1.64,
+     "usd": 0.0
+    },
+    {
+     "in": 761,
+     "cached": 0,
+     "out": 27,
+     "s": 1.75,
+     "usd": 0.0
+    },
+    {
+     "in": 643,
+     "cached": 0,
+     "out": 25,
+     "s": 1.32,
+     "usd": 0.0
+    },
+    {
+     "in": 627,
+     "cached": 0,
+     "out": 25,
+     "s": 1.34,
+     "usd": 0.0
+    },
+    {
+     "in": 723,
+     "cached": 0,
+     "out": 25,
+     "s": 1.21,
+     "usd": 0.0
+    },
+    {
+     "in": 666,
+     "cached": 0,
+     "out": 20,
+     "s": 0.93,
+     "usd": 0.0
+    },
+    {
+     "in": 423,
+     "cached": 0,
+     "out": 28,
+     "s": 1.26,
+     "usd": 0.0
+    },
+    {
+     "in": 706,
+     "cached": 0,
+     "out": 26,
+     "s": 1.14,
+     "usd": 0.0
+    },
+    {
+     "in": 662,
+     "cached": 0,
+     "out": 27,
+     "s": 1.36,
+     "usd": 0.0
+    },
+    {
+     "in": 596,
+     "cached": 0,
+     "out": 27,
+     "s": 1.49,
+     "usd": 0.0
+    },
+    {
+     "in": 635,
+     "cached": 0,
+     "out": 36,
+     "s": 1.93,
+     "usd": 0.0
+    },
+    {
+     "in": 515,
+     "cached": 0,
+     "out": 27,
+     "s": 1.52,
+     "usd": 0.0
+    },
+    {
+     "in": 556,
+     "cached": 0,
+     "out": 33,
+     "s": 1.95,
+     "usd": 0.0
+    },
+    {
+     "in": 681,
+     "cached": 0,
+     "out": 50,
+     "s": 2.63,
+     "usd": 0.0
+    },
+    {
+     "in": 826,
+     "cached": 0,
+     "out": 33,
+     "s": 1.92,
+     "usd": 0.0
+    },
+    {
+     "in": 322,
+     "cached": 0,
+     "out": 80,
+     "s": 4.9,
+     "usd": 0.0
+    },
+    {
+     "in": 474,
+     "cached": 0,
+     "out": 44,
+     "s": 2.3,
+     "usd": 0.0
+    },
+    {
+     "in": 786,
+     "cached": 0,
+     "out": 25,
+     "s": 1.25,
+     "usd": 0.0
+    },
+    {
+     "in": 660,
+     "cached": 0,
+     "out": 21,
+     "s": 1.15,
+     "usd": 0.0
+    },
+    {
+     "in": 558,
+     "cached": 0,
+     "out": 27,
+     "s": 1.6,
+     "usd": 0.0
+    },
+    {
+     "in": 1007,
+     "cached": 0,
+     "out": 27,
+     "s": 1.73,
+     "usd": 0.0
+    },
+    {
+     "in": 678,
+     "cached": 0,
+     "out": 18,
+     "s": 1.05,
+     "usd": 0.0
+    },
+    {
+     "in": 554,
+     "cached": 0,
+     "out": 32,
+     "s": 2.14,
+     "usd": 0.0
+    },
+    {
+     "in": 522,
+     "cached": 0,
+     "out": 30,
+     "s": 1.86,
+     "usd": 0.0
+    },
+    {
+     "in": 833,
+     "cached": 0,
+     "out": 29,
+     "s": 1.98,
+     "usd": 0.0
+    },
+    {
+     "in": 622,
+     "cached": 0,
+     "out": 32,
+     "s": 2.4,
+     "usd": 0.0
+    },
+    {
+     "in": 512,
+     "cached": 0,
+     "out": 27,
+     "s": 1.61,
+     "usd": 0.0
+    },
+    {
+     "in": 720,
+     "cached": 0,
+     "out": 34,
+     "s": 1.75,
+     "usd": 0.0
+    },
+    {
+     "in": 497,
+     "cached": 0,
+     "out": 32,
+     "s": 1.66,
+     "usd": 0.0
+    },
+    {
+     "in": 591,
+     "cached": 0,
+     "out": 35,
+     "s": 1.75,
+     "usd": 0.0
+    },
+    {
+     "in": 500,
+     "cached": 0,
+     "out": 34,
+     "s": 1.93,
+     "usd": 0.0
+    },
+    {
+     "in": 575,
+     "cached": 0,
+     "out": 42,
+     "s": 2.63,
+     "usd": 0.0
+    },
+    {
+     "in": 693,
+     "cached": 0,
+     "out": 35,
+     "s": 2.09,
+     "usd": 0.0
+    },
+    {
+     "in": 694,
+     "cached": 0,
+     "out": 29,
+     "s": 1.61,
+     "usd": 0.0
+    },
+    {
+     "in": 615,
+     "cached": 0,
+     "out": 149,
+     "s": 8.64,
+     "usd": 0.0
+    },
+    {
+     "in": 731,
+     "cached": 0,
+     "out": 29,
+     "s": 1.46,
+     "usd": 0.0
+    }
+   ],
+   "answers": {
+    "H01": [
+     "CD4 co-receptor",
+     "H01-b",
+     "single-full"
+    ],
+    "H02": [
+     "Petrographic microscope",
+     "H02-a",
+     "single-full"
+    ],
+    "H03": [
+     "Combustible materials with an appropriate supply of air in a closed space",
+     "H03-b",
+     "single-full"
+    ],
+    "H04": [
+     "John Paul II",
+     "H04-a",
+     "single-full"
+    ],
+    "H05": [
+     "imperialism was a natural extension of capitalism that arose from the need for capitalist economies to constantly expand investment, material resources, and manpower in such a way that necessitated colonial expansion",
+     "H05-a",
+     "single-full"
+    ],
+    "H06": [
+     "Brookhaven",
+     "H06-b",
+     "single-full"
+    ],
+    "H07": [
+     "cilia",
+     "H07-c",
+     "single-full"
+    ],
+    "H08": [
+     "In GR, objects move in straight lines through curved space-time, and the curvature of space-time is observed and inferred from the object's curved path.",
+     "H08-b",
+     "single-full"
+    ],
+    "H09": [
+     "Ominde Commission",
+     "H09-b",
+     "single-full"
+    ],
+    "H10": [
+     "railroad",
+     "H10-a",
+     "single-full"
+    ],
+    "H11": [
+     "Wahhabism",
+     "H11-b",
+     "single-full"
+    ],
+    "H12": [
+     "Nicholas Storch was a preacher who helped instigate the German Peasants' War of 1524\u201325.",
+     "H12-b",
+     "single-full"
+    ],
+    "H13": [
+     "Southern California",
+     "H13-c",
+     "single-full"
+    ],
+    "H14": [
+     "Teaching in Canada requires a post-secondary degree Bachelor's Degree.",
+     "H14-b",
+     "single-full"
+    ],
+    "H15": [
+     "Donald Davies",
+     "H15-a",
+     "single-full"
+    ],
+    "H16": [
+     "William Booth",
+     "H16-b",
+     "single-full"
+    ],
+    "H17": [
+     "60%",
+     "H17-b",
+     "single-full"
+    ],
+    "H18": [
+     "132 million tons",
+     "H18-a",
+     "single-full"
+    ],
+    "H19": [
+     "1060s",
+     "H19-a",
+     "single-full"
+    ],
+    "H20": [
+     "supplant it",
+     "H20-a",
+     "single-full"
+    ],
+    "H21": [
+     "Huguenots",
+     "H21-c",
+     "single-full"
+    ],
+    "H22": [
+     "2012",
+     "H22-a",
+     "single-full"
+    ],
+    "H23": [
+     "Korean displays, Himalayan items, and art from Southeast Asia",
+     "H23-b",
+     "single-full"
+    ],
+    "H24": [
+     "full independent prescribing authority",
+     "H24-b",
+     "single-full"
+    ],
+    "H25": [
+     "New Orleans, France, and the Falkland Islands",
+     "H25-c",
+     "single-full"
+    ],
+    "H26": [
+     "As of 31 March 2008, Sky had 3,393,000 Sky+ users.",
+     "H26-b",
+     "single-full"
+    ],
+    "H27": [
+     "1294 to 1307",
+     "H27-a",
+     "single-full"
+    ],
+    "H28": [
+     "In 1926, Tesla commented on the ills of the social subservience of women and the struggle of women toward gender equality, and indicated that humanity's future would be run by 'Queen Bees.' He believed that women would become the dominant sex in the future.",
+     "H28-c",
+     "single-full"
+    ],
+    "H29": [
+     "The three primary expressions used to represent case complexity are the best case, worst case, and average case complexity.",
+     "H29-b",
+     "single-full"
+    ],
+    "H30": [
+     "WATCH ABC",
+     "H30-c",
+     "single-full"
+    ],
+    "H31": [
+     "Fermat primality test",
+     "H31-c",
+     "single-full"
+    ],
+    "H32": [
+     "Honorary freeman",
+     "H32-b",
+     "single-full"
+    ],
+    "H33": [
+     "1466",
+     "H33-a",
+     "single-full"
+    ],
+    "H34": [
+     "a noble death",
+     "H34-a",
+     "single-full"
+    ],
+    "H35": [
+     "international law and general principles of European Union law",
+     "H35-a",
+     "single-full"
+    ],
+    "H36": [
+     "Ismail El Gizouli",
+     "H36-c",
+     "single-full"
+    ],
+    "H37": [
+     "July 1977",
+     "H37-c",
+     "single-full"
+    ],
+    "H38": [
+     "14.6 mg\u00b7L\u22121",
+     "H38-c",
+     "single-full"
+    ],
+    "H39": [
+     "1929",
+     "H39-b",
+     "single-full"
+    ],
+    "H40": [
+     "Sometimes the prosecution proposes a plea bargain to civil disobedients.",
+     "H40-c",
+     "single-full"
+    ],
+    "H41": [
+     "20% of Victorians claim no religion.",
+     "H41-a",
+     "single-full"
+    ],
+    "H42": [
+     "chemical energy is used to produce food in the form of sugars",
+     "H42-a",
+     "single-full"
+    ],
+    "H43": [
+     "architects, interior designers, engineers, and constructors",
+     "H43-a",
+     "single-full"
+    ],
+    "H44": [
+     "Former Model C schools tend to produce better academic results than government schools formerly reserved for other race groups.",
+     "H44-a",
+     "single-full"
+    ],
+    "H45": [
+     "Wages work in the same way as for any other good",
+     "H45-b",
+     "single-full"
+    ],
+    "H46": [
+     "103.5 FM",
+     "H46-c",
+     "single-full"
+    ],
+    "H47": [
+     "Apollo 8 was planned to be the D mission in December 1968, crewed by McDivitt, Scott, and Schweickart, launched on a Saturn V instead of two Saturn IBs. In the summer it had become clear that the LM would not be ready in time. Rather than waste the Saturn V on another simple Earth-orbiting mission, ASPO Manager George Low suggested the bold step of sending Apollo 8 to orbit the Moon instead, deferring the D mission to the next mission in March 1969, and eliminating the E mission. This would keep the program on track.",
+     "H47-c",
+     "single-full"
+    ],
+    "H48": [
+     "The North Sea in the Netherlands",
+     "H48-a",
+     "single-full"
+    ]
+   }
+  },
+  {
+   "route": "carpool k=8",
+   "accepted": "24/48",
+   "calls": 28,
+   "total_tokens": 30049,
+   "uncached+output": 30049,
+   "tokens/accepted": 1252.0,
+   "uncached/accepted": 1252.0,
+   "seconds": 187.33,
+   "usd/accepted": 0.0,
+   "lenient": "31/48",
+   "wall_seconds": 187.3,
+   "cached_input": 0,
+   "usd": 0.0,
+   "regressions": [
+    "H06",
+    "H20",
+    "H34",
+    "H36"
+   ],
+   "lenient_regressions": [
+    "H06",
+    "H07",
+    "H34",
+    "H35",
+    "H36"
+   ],
+   "fallbacks": {
+    "H03": "verifier: answer not found in cited source",
+    "H05": "verifier: answer not found in cited source",
+    "H09": "unparseable batch response",
+    "H10": "unparseable batch response",
+    "H11": "unparseable batch response",
+    "H12": "unparseable batch response",
+    "H13": "unparseable batch response",
+    "H14": "unparseable batch response",
+    "H15": "unparseable batch response",
+    "H16": "unparseable batch response",
+    "H23": "verifier: answer not found in cited source",
+    "H27": "verifier: answer passage does not mention the question terms",
+    "H33": "verifier: answer not found in cited source",
+    "H38": "verifier: answer not found in cited source",
+    "H41": "unparseable batch response",
+    "H42": "unparseable batch response",
+    "H43": "unparseable batch response",
+    "H44": "unparseable batch response",
+    "H45": "unparseable batch response",
+    "H46": "unparseable batch response",
+    "H47": "unparseable batch response",
+    "H48": "unparseable batch response"
+   },
+   "routes": {
+    "batch-compact": 24,
+    "batch-full": 2,
+    "single-full": 22
+   },
+   "calls_detail": [
+    {
+     "in": 2536,
+     "cached": 0,
+     "out": 209,
+     "s": 28.04,
+     "usd": 0.0
+    },
+    {
+     "in": 1396,
+     "cached": 0,
+     "out": 242,
+     "s": 18.61,
+     "usd": 0.0
+    },
+    {
+     "in": 1762,
+     "cached": 0,
+     "out": 211,
+     "s": 21.28,
+     "usd": 0.0
+    },
+    {
+     "in": 2287,
+     "cached": 0,
+     "out": 276,
+     "s": 27.42,
+     "usd": 0.0
+    },
+    {
+     "in": 2736,
+     "cached": 0,
+     "out": 215,
+     "s": 26.14,
+     "usd": 0.0
+    },
+    {
+     "in": 2186,
+     "cached": 0,
+     "out": 229,
+     "s": 24.39,
+     "usd": 0.0
+    },
+    {
+     "in": 483,
+     "cached": 0,
+     "out": 37,
+     "s": 1.81,
+     "usd": 0.0
+    },
+    {
+     "in": 1026,
+     "cached": 0,
+     "out": 51,
+     "s": 2.51,
+     "usd": 0.0
+    },
+    {
+     "in": 608,
+     "cached": 0,
+     "out": 27,
+     "s": 1.37,
+     "usd": 0.0
+    },
+    {
+     "in": 749,
+     "cached": 0,
+     "out": 17,
+     "s": 0.78,
+     "usd": 0.0
+    },
+    {
+     "in": 798,
+     "cached": 0,
+     "out": 27,
+     "s": 1.34,
+     "usd": 0.0
+    },
+    {
+     "in": 648,
+     "cached": 0,
+     "out": 42,
+     "s": 2.72,
+     "usd": 0.0
+    },
+    {
+     "in": 619,
+     "cached": 0,
+     "out": 25,
+     "s": 1.21,
+     "usd": 0.0
+    },
+    {
+     "in": 761,
+     "cached": 0,
+     "out": 27,
+     "s": 1.46,
+     "usd": 0.0
+    },
+    {
+     "in": 643,
+     "cached": 0,
+     "out": 25,
+     "s": 1.39,
+     "usd": 0.0
+    },
+    {
+     "in": 627,
+     "cached": 0,
+     "out": 25,
+     "s": 1.33,
+     "usd": 0.0
+    },
+    {
+     "in": 635,
+     "cached": 0,
+     "out": 36,
+     "s": 1.66,
+     "usd": 0.0
+    },
+    {
+     "in": 826,
+     "cached": 0,
+     "out": 33,
+     "s": 1.62,
+     "usd": 0.0
+    },
+    {
+     "in": 1007,
+     "cached": 0,
+     "out": 27,
+     "s": 1.35,
+     "usd": 0.0
+    },
+    {
+     "in": 622,
+     "cached": 0,
+     "out": 32,
+     "s": 1.69,
+     "usd": 0.0
+    },
+    {
+     "in": 497,
+     "cached": 0,
+     "out": 32,
+     "s": 1.56,
+     "usd": 0.0
+    },
+    {
+     "in": 591,
+     "cached": 0,
+     "out": 35,
+     "s": 1.69,
+     "usd": 0.0
+    },
+    {
+     "in": 500,
+     "cached": 0,
+     "out": 34,
+     "s": 1.55,
+     "usd": 0.0
+    },
+    {
+     "in": 575,
+     "cached": 0,
+     "out": 42,
+     "s": 1.85,
+     "usd": 0.0
+    },
+    {
+     "in": 693,
+     "cached": 0,
+     "out": 35,
+     "s": 1.68,
+     "usd": 0.0
+    },
+    {
+     "in": 694,
+     "cached": 0,
+     "out": 29,
+     "s": 1.32,
+     "usd": 0.0
+    },
+    {
+     "in": 615,
+     "cached": 0,
+     "out": 149,
+     "s": 8.05,
+     "usd": 0.0
+    },
+    {
+     "in": 731,
+     "cached": 0,
+     "out": 29,
+     "s": 1.5,
+     "usd": 0.0
+    }
+   ],
+   "answers": {
+    "H01": [
+     "CD4 co-receptor",
+     "H01-b",
+     "batch-compact"
+    ],
+    "H02": [
+     "petrographic microscope",
+     "H02-a",
+     "batch-compact"
+    ],
+    "H03": [
+     "Combustible materials with an appropriate supply of air in a closed space",
+     "H03-b",
+     "single-full"
+    ],
+    "H04": [
+     "John Paul II",
+     "H04-a",
+     "batch-compact"
+    ],
+    "H05": [
+     "imperialism was a natural extension of capitalism that arose from the need for capitalist economies to constantly expand investment, material resources, and manpower in such a way that necessitated colonial expansion",
+     "H05-a",
+     "single-full"
+    ],
+    "H06": [
+     "Kearney Boulevard",
+     "H06-a",
+     "batch-compact"
+    ],
+    "H07": [
+     "nerves",
+     "H07-c",
+     "batch-compact"
+    ],
+    "H08": [
+     "as a curved line in space",
+     "H08-b",
+     "batch-compact"
+    ],
+    "H09": [
+     "Ominde Commission",
+     "H09-b",
+     "single-full"
+    ],
+    "H10": [
+     "railroad",
+     "H10-a",
+     "single-full"
+    ],
+    "H11": [
+     "Wahhabism",
+     "H11-b",
+     "single-full"
+    ],
+    "H12": [
+     "Nicholas Storch was a preacher who helped instigate the German Peasants' War of 1524\u201325.",
+     "H12-b",
+     "single-full"
+    ],
+    "H13": [
+     "Southern California",
+     "H13-c",
+     "single-full"
+    ],
+    "H14": [
+     "Teaching in Canada requires a post-secondary degree Bachelor's Degree.",
+     "H14-b",
+     "single-full"
+    ],
+    "H15": [
+     "Donald Davies",
+     "H15-a",
+     "single-full"
+    ],
+    "H16": [
+     "William Booth",
+     "H16-b",
+     "single-full"
+    ],
+    "H17": [
+     "60%",
+     "H17-b",
+     "batch-compact"
+    ],
+    "H18": [
+     "182 million tons",
+     "H18-a",
+     "batch-compact"
+    ],
+    "H19": [
+     "1060s",
+     "H19-a",
+     "batch-compact"
+    ],
+    "H20": [
+     "supplant",
+     "H20-a",
+     "batch-compact"
+    ],
+    "H21": [
+     "New Paltz",
+     "H21-c",
+     "batch-compact"
+    ],
+    "H22": [
+     "2012",
+     "H22-a",
+     "batch-compact"
+    ],
+    "H23": [
+     "Korean displays, Himalayan items, and art from Southeast Asia",
+     "H23-b",
+     "single-full"
+    ],
+    "H24": [
+     "full independent prescribing authority",
+     "H24-b",
+     "batch-compact"
+    ],
+    "H25": [
+     "North American provinces",
+     "H25-c",
+     "batch-compact"
+    ],
+    "H26": [
+     "2007",
+     "H26-b",
+     "batch-compact"
+    ],
+    "H27": [
+     "1294 to 1307",
+     "H27-a",
+     "single-full"
+    ],
+    "H28": [
+     "1926",
+     "H28-c",
+     "batch-full"
+    ],
+    "H29": [
+     "The best, worst and average case complexity",
+     "H29-b",
+     "batch-compact"
+    ],
+    "H30": [
+     "WATCH ABC",
+     "H30-c",
+     "batch-compact"
+    ],
+    "H31": [
+     "Fermat primality test",
+     "H31-c",
+     "batch-compact"
+    ],
+    "H32": [
+     "Honorary freemen",
+     "H32-b",
+     "batch-compact"
+    ],
+    "H33": [
+     "1466",
+     "H33-a",
+     "single-full"
+    ],
+    "H34": [
+     "friendship",
+     "H34-a",
+     "batch-compact"
+    ],
+    "H35": [
+     "European Court of Justice",
+     "H35-a",
+     "batch-compact"
+    ],
+    "H36": [
+     "Hoesung Lee",
+     "H36-c",
+     "batch-compact"
+    ],
+    "H37": [
+     "1977",
+     "H37-c",
+     "batch-compact"
+    ],
+    "H38": [
+     "14.6 mg\u00b7L\u22121",
+     "H38-c",
+     "single-full"
+    ],
+    "H39": [
+     "1950s",
+     "H39-a",
+     "batch-full"
+    ],
+    "H40": [
+     "covert lawbreaking",
+     "H40-a",
+     "batch-compact"
+    ],
+    "H41": [
+     "20% of Victorians claim no religion.",
+     "H41-a",
+     "single-full"
+    ],
+    "H42": [
+     "chemical energy is used to produce food in the form of sugars",
+     "H42-a",
+     "single-full"
+    ],
+    "H43": [
+     "architects, interior designers, engineers, and constructors",
+     "H43-a",
+     "single-full"
+    ],
+    "H44": [
+     "Former Model C schools tend to produce better academic results than government schools formerly reserved for other race groups.",
+     "H44-a",
+     "single-full"
+    ],
+    "H45": [
+     "Wages work in the same way as for any other good",
+     "H45-b",
+     "single-full"
+    ],
+    "H46": [
+     "103.5 FM",
+     "H46-c",
+     "single-full"
+    ],
+    "H47": [
+     "Apollo 8 was planned to be the D mission in December 1968, crewed by McDivitt, Scott, and Schweickart, launched on a Saturn V instead of two Saturn IBs. In the summer it had become clear that the LM would not be ready in time. Rather than waste the Saturn V on another simple Earth-orbiting mission, ASPO Manager George Low suggested the bold step of sending Apollo 8 to orbit the Moon instead, deferring the D mission to the next mission in March 1969, and eliminating the E mission. This would keep the program on track.",
+     "H47-c",
+     "single-full"
+    ],
+    "H48": [
+     "The North Sea in the Netherlands",
+     "H48-a",
+     "single-full"
+    ]
+   }
+  }
+ ],
+ "finished": "2026-11-27T09:03:51"
+}

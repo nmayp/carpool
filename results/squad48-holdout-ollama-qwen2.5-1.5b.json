@@ -1,0 +1,1263 @@
+{
+ "backend": "ollama:qwen2.5:1.5b",
+ "tasks": "bench/data/squad48-holdout.jsonl",
+ "n": 48,
+ "started": "2026-11-27T08:40:07",
+ "runs": [
+  {
+   "route": "baseline",
+   "accepted": "18/48",
+   "calls": 48,
+   "total_tokens": 32677,
+   "uncached+output": 32677,
+   "tokens/accepted": 1815.4,
+   "uncached/accepted": 1815.4,
+   "seconds": 184.02,
+   "usd/accepted": 0.0,
+   "lenient": "30/48",
+   "wall_seconds": 184.0,
+   "cached_input": 0,
+   "usd": 0.0,
+   "fallbacks": {},
+   "routes": {
+    "single-full": 48
+   },
+   "calls_detail": [
+    {
+     "in": 669,
+     "cached": 0,
+     "out": 28,
+     "s": 3.84,
+     "usd": 0.0
+    },
+    {
+     "in": 570,
+     "cached": 0,
+     "out": 27,
+     "s": 3.28,
+     "usd": 0.0
+    },
+    {
+     "in": 483,
+     "cached": 0,
+     "out": 37,
+     "s": 3.77,
+     "usd": 0.0
+    },
+    {
+     "in": 596,
+     "cached": 0,
+     "out": 18,
+     "s": 3.81,
+     "usd": 0.0
+    },
+    {
+     "in": 1026,
+     "cached": 0,
+     "out": 51,
+     "s": 6.16,
+     "usd": 0.0
+    },
+    {
+     "in": 668,
+     "cached": 0,
+     "out": 18,
+     "s": 3.12,
+     "usd": 0.0
+    },
+    {
+     "in": 691,
+     "cached": 0,
+     "out": 25,
+     "s": 3.4,
+     "usd": 0.0
+    },
+    {
+     "in": 725,
+     "cached": 0,
+     "out": 56,
+     "s": 5.06,
+     "usd": 0.0
+    },
+    {
+     "in": 608,
+     "cached": 0,
+     "out": 28,
+     "s": 3.71,
+     "usd": 0.0
+    },
+    {
+     "in": 749,
+     "cached": 0,
+     "out": 17,
+     "s": 3.39,
+     "usd": 0.0
+    },
+    {
+     "in": 798,
+     "cached": 0,
+     "out": 27,
+     "s": 4.2,
+     "usd": 0.0
+    },
+    {
+     "in": 648,
+     "cached": 0,
+     "out": 42,
+     "s": 4.12,
+     "usd": 0.0
+    },
+    {
+     "in": 619,
+     "cached": 0,
+     "out": 30,
+     "s": 3.47,
+     "usd": 0.0
+    },
+    {
+     "in": 761,
+     "cached": 0,
+     "out": 27,
+     "s": 4.04,
+     "usd": 0.0
+    },
+    {
+     "in": 643,
+     "cached": 0,
+     "out": 25,
+     "s": 3.14,
+     "usd": 0.0
+    },
+    {
+     "in": 627,
+     "cached": 0,
+     "out": 25,
+     "s": 3.55,
+     "usd": 0.0
+    },
+    {
+     "in": 723,
+     "cached": 0,
+     "out": 25,
+     "s": 3.51,
+     "usd": 0.0
+    },
+    {
+     "in": 666,
+     "cached": 0,
+     "out": 20,
+     "s": 2.96,
+     "usd": 0.0
+    },
+    {
+     "in": 423,
+     "cached": 0,
+     "out": 28,
+     "s": 2.56,
+     "usd": 0.0
+    },
+    {
+     "in": 706,
+     "cached": 0,
+     "out": 33,
+     "s": 3.75,
+     "usd": 0.0
+    },
+    {
+     "in": 662,
+     "cached": 0,
+     "out": 19,
+     "s": 2.85,
+     "usd": 0.0
+    },
+    {
+     "in": 596,
+     "cached": 0,
+     "out": 27,
+     "s": 3.14,
+     "usd": 0.0
+    },
+    {
+     "in": 635,
+     "cached": 0,
+     "out": 36,
+     "s": 3.72,
+     "usd": 0.0
+    },
+    {
+     "in": 515,
+     "cached": 0,
+     "out": 27,
+     "s": 2.8,
+     "usd": 0.0
+    },
+    {
+     "in": 556,
+     "cached": 0,
+     "out": 33,
+     "s": 3.29,
+     "usd": 0.0
+    },
+    {
+     "in": 681,
+     "cached": 0,
+     "out": 50,
+     "s": 4.45,
+     "usd": 0.0
+    },
+    {
+     "in": 826,
+     "cached": 0,
+     "out": 33,
+     "s": 4.36,
+     "usd": 0.0
+    },
+    {
+     "in": 322,
+     "cached": 0,
+     "out": 80,
+     "s": 5.06,
+     "usd": 0.0
+    },
+    {
+     "in": 474,
+     "cached": 0,
+     "out": 44,
+     "s": 4.2,
+     "usd": 0.0
+    },
+    {
+     "in": 786,
+     "cached": 0,
+     "out": 46,
+     "s": 4.95,
+     "usd": 0.0
+    },
+    {
+     "in": 660,
+     "cached": 0,
+     "out": 38,
+     "s": 3.9,
+     "usd": 0.0
+    },
+    {
+     "in": 558,
+     "cached": 0,
+     "out": 27,
+     "s": 3.07,
+     "usd": 0.0
+    },
+    {
+     "in": 1007,
+     "cached": 0,
+     "out": 27,
+     "s": 4.77,
+     "usd": 0.0
+    },
+    {
+     "in": 678,
+     "cached": 0,
+     "out": 18,
+     "s": 3.24,
+     "usd": 0.0
+    },
+    {
+     "in": 554,
+     "cached": 0,
+     "out": 32,
+     "s": 3.46,
+     "usd": 0.0
+    },
+    {
+     "in": 522,
+     "cached": 0,
+     "out": 30,
+     "s": 2.87,
+     "usd": 0.0
+    },
+    {
+     "in": 833,
+     "cached": 0,
+     "out": 29,
+     "s": 4.12,
+     "usd": 0.0
+    },
+    {
+     "in": 622,
+     "cached": 0,
+     "out": 32,
+     "s": 3.65,
+     "usd": 0.0
+    },
+    {
+     "in": 512,
+     "cached": 0,
+     "out": 27,
+     "s": 2.79,
+     "usd": 0.0
+    },
+    {
+     "in": 720,
+     "cached": 0,
+     "out": 34,
+     "s": 4.05,
+     "usd": 0.0
+    },
+    {
+     "in": 497,
+     "cached": 0,
+     "out": 32,
+     "s": 3.39,
+     "usd": 0.0
+    },
+    {
+     "in": 591,
+     "cached": 0,
+     "out": 35,
+     "s": 3.64,
+     "usd": 0.0
+    },
+    {
+     "in": 500,
+     "cached": 0,
+     "out": 34,
+     "s": 2.97,
+     "usd": 0.0
+    },
+    {
+     "in": 575,
+     "cached": 0,
+     "out": 44,
+     "s": 3.77,
+     "usd": 0.0
+    },
+    {
+     "in": 693,
+     "cached": 0,
+     "out": 35,
+     "s": 4.61,
+     "usd": 0.0
+    },
+    {
+     "in": 694,
+     "cached": 0,
+     "out": 29,
+     "s": 3.78,
+     "usd": 0.0
+    },
+    {
+     "in": 615,
+     "cached": 0,
+     "out": 149,
+     "s": 8.38,
+     "usd": 0.0
+    },
+    {
+     "in": 731,
+     "cached": 0,
+     "out": 29,
+     "s": 3.88,
+     "usd": 0.0
+    }
+   ],
+   "answers": {
+    "H01": [
+     "CD4 co-receptor",
+     "H01-b",
+     "single-full"
+    ],
+    "H02": [
+     "Petrographic microscope",
+     "H02-a",
+     "single-full"
+    ],
+    "H03": [
+     "Combustible materials with an appropriate supply of air in a closed space",
+     "H03-b",
+     "single-full"
+    ],
+    "H04": [
+     "John Paul II",
+     "H04-a",
+     "single-full"
+    ],
+    "H05": [
+     "imperialism was a natural extension of capitalism that arose from the need for capitalist economies to constantly expand investment, material resources, and manpower in such a way that necessitated colonial expansion",
+     "H05-a",
+     "single-full"
+    ],
+    "H06": [
+     "Brookhaven",
+     "H06-b",
+     "single-full"
+    ],
+    "H07": [
+     "cilia",
+     "H07-c",
+     "single-full"
+    ],
+    "H08": [
+     "In general relativity, forces are not viewed as a push or pull but as the curvature of space-time, which is the shortest path between two events in space-time.",
+     "H08-b",
+     "single-full"
+    ],
+    "H09": [
+     "The Ominde Commission",
+     "H09-b",
+     "single-full"
+    ],
+    "H10": [
+     "railroad",
+     "H10-a",
+     "single-full"
+    ],
+    "H11": [
+     "Wahhabism",
+     "H11-b",
+     "single-full"
+    ],
+    "H12": [
+     "Nicholas Storch was a preacher who helped instigate the German Peasants' War of 1524\u201325.",
+     "H12-b",
+     "single-full"
+    ],
+    "H13": [
+     "Northern San Diego and North County regions",
+     "H13-b",
+     "single-full"
+    ],
+    "H14": [
+     "Teaching in Canada requires a post-secondary degree Bachelor's Degree.",
+     "H14-b",
+     "single-full"
+    ],
+    "H15": [
+     "Donald Davies",
+     "H15-a",
+     "single-full"
+    ],
+    "H16": [
+     "William Booth",
+     "H16-b",
+     "single-full"
+    ],
+    "H17": [
+     "60%",
+     "H17-b",
+     "single-full"
+    ],
+    "H18": [
+     "132 million tons",
+     "H18-a",
+     "single-full"
+    ],
+    "H19": [
+     "1060s",
+     "H19-a",
+     "single-full"
+    ],
+    "H20": [
+     "The ordinary election is supplanted by the extraordinary election.",
+     "H20-a",
+     "single-full"
+    ],
+    "H21": [
+     "Huguenots",
+     "H21-c",
+     "single-full"
+    ],
+    "H22": [
+     "2012",
+     "H22-a",
+     "single-full"
+    ],
+    "H23": [
+     "Korean displays, Himalayan items, and art from Southeast Asia",
+     "H23-b",
+     "single-full"
+    ],
+    "H24": [
+     "full independent prescribing authority",
+     "H24-b",
+     "single-full"
+    ],
+    "H25": [
+     "New Orleans, France, and the Falkland Islands",
+     "H25-c",
+     "single-full"
+    ],
+    "H26": [
+     "As of 31 March 2008, Sky had 3,393,000 Sky+ users.",
+     "H26-b",
+     "single-full"
+    ],
+    "H27": [
+     "1294 to 1307",
+     "H27-a",
+     "single-full"
+    ],
+    "H28": [
+     "In 1926, Tesla commented on the ills of the social subservience of women and the struggle of women toward gender equality, and indicated that humanity's future would be run by 'Queen Bees.' He believed that women would become the dominant sex in the future.",
+     "H28-c",
+     "single-full"
+    ],
+    "H29": [
+     "The three primary expressions used to represent case complexity are the best case, worst case, and average case complexity.",
+     "H29-b",
+     "single-full"
+    ],
+    "H30": [
+     "ABC launched 'WATCH ABC', a revamp of its traditional multi-platform streaming services in May 2013.",
+     "H30-c",
+     "single-full"
+    ],
+    "H31": [
+     "The Fermat primality test is a straightforward case of a probabilistic test.",
+     "H31-c",
+     "single-full"
+    ],
+    "H32": [
+     "Honorary freeman",
+     "H32-b",
+     "single-full"
+    ],
+    "H33": [
+     "1466",
+     "H33-a",
+     "single-full"
+    ],
+    "H34": [
+     "a noble death",
+     "H34-a",
+     "single-full"
+    ],
+    "H35": [
+     "international law and general principles of European Union law",
+     "H35-a",
+     "single-full"
+    ],
+    "H36": [
+     "Ismail El Gizouli",
+     "H36-c",
+     "single-full"
+    ],
+    "H37": [
+     "July 1977",
+     "H37-c",
+     "single-full"
+    ],
+    "H38": [
+     "14.6 mg\u00b7L\u22121",
+     "H38-c",
+     "single-full"
+    ],
+    "H39": [
+     "1929",
+     "H39-b",
+     "single-full"
+    ],
+    "H40": [
+     "Sometimes the prosecution proposes a plea bargain to civil disobedients.",
+     "H40-c",
+     "single-full"
+    ],
+    "H41": [
+     "20% of Victorians claim no religion.",
+     "H41-a",
+     "single-full"
+    ],
+    "H42": [
+     "chemical energy is used to produce food in the form of sugars",
+     "H42-a",
+     "single-full"
+    ],
+    "H43": [
+     "architects, interior designers, engineers, and constructors",
+     "H43-a",
+     "single-full"
+    ],
+    "H44": [
+     "Former 'Model C' schools tend to produce better academic results than government schools formerly reserved for other race groups.",
+     "H44-a",
+     "single-full"
+    ],
+    "H45": [
+     "Wages work in the same way as for any other good",
+     "H45-b",
+     "single-full"
+    ],
+    "H46": [
+     "103.5 FM",
+     "H46-c",
+     "single-full"
+    ],
+    "H47": [
+     "Apollo 8 was planned to be the D mission in December 1968, crewed by McDivitt, Scott, and Schweickart, launched on a Saturn V instead of two Saturn IBs. In the summer, it became clear that the LM would not be ready in time. Instead of wasting the Saturn V on another simple Earth-orbiting mission, ASPO Manager George Low suggested the bold step of sending Apollo 8 to orbit the Moon instead, deferring the D mission to the next mission in March 1969, and eliminating the E mission. This would keep the program on track.",
+     "H47-c",
+     "single-full"
+    ],
+    "H48": [
+     "The North Sea in the Netherlands",
+     "H48-a",
+     "single-full"
+    ]
+   }
+  },
+  {
+   "route": "batch-only",
+   "accepted": "20/48",
+   "calls": 48,
+   "total_tokens": 58001,
+   "uncached+output": 58001,
+   "tokens/accepted": 2900.1,
+   "uncached/accepted": 2900.1,
+   "seconds": 459.06,
+   "usd/accepted": 0.0,
+   "lenient": "28/48",
+   "wall_seconds": 459.1,
+   "cached_input": 0,
+   "usd": 0.0,
+   "regressions": [
+    "H01"
+   ],
+   "lenient_regressions": [
+    "H01",
+    "H08",
+    "H13"
+   ],
+   "fallbacks": {
+    "H02": "missing answer",
+    "H03": "missing answer",
+    "H04": "missing answer",
+    "H05": "missing answer",
+    "H06": "missing answer",
+    "H07": "missing answer",
+    "H08": "missing answer",
+    "H09": "missing answer",
+    "H10": "missing answer",
+    "H11": "missing answer",
+    "H12": "missing answer",
+    "H13": "missing answer",
+    "H14": "missing answer",
+    "H15": "missing answer",
+    "H16": "missing answer",
+    "H17": "missing answer",
+    "H18": "missing answer",
+    "H19": "missing answer",
+    "H20": "missing answer",
+    "H21": "missing answer",
+    "H22": "missing answer",
+    "H23": "missing answer",
+    "H24": "missing answer",
+    "H25": "missing answer",
+    "H26": "missing answer",
+    "H27": "missing answer",
+    "H28": "missing answer",
+    "H29": "missing answer",
+    "H30": "missing answer",
+    "H31": "missing answer",
+    "H32": "missing answer",
+    "H33": "missing answer",
+    "H34": "missing answer",
+    "H35": "missing answer",
+    "H36": "missing answer",
+    "H37": "missing answer",
+    "H38": "missing answer",
+    "H39": "missing answer",
+    "H40": "missing answer",
+    "H41": "missing answer",
+    "H42": "missing answer",
+    "H43": "missing answer",
+    "H44": "missing answer",
+    "H45": "missing answer",
+    "H46": "missing answer",
+    "H47": "missing answer",
+    "H48": "missing answer"
+   },
+   "routes": {
+    "batch-full": 1,
+    "single-full": 47
+   },
+   "calls_detail": [
+    {
+     "in": 26035,
+     "cached": 0,
+     "out": 27,
+     "s": 376.99,
+     "usd": 0.0
+    },
+    {
+     "in": 570,
+     "cached": 0,
+     "out": 27,
+     "s": 1.74,
+     "usd": 0.0
+    },
+    {
+     "in": 483,
+     "cached": 0,
+     "out": 37,
+     "s": 1.78,
+     "usd": 0.0
+    },
+    {
+     "in": 596,
+     "cached": 0,
+     "out": 26,
+     "s": 1.39,
+     "usd": 0.0
+    },
+    {
+     "in": 1026,
+     "cached": 0,
+     "out": 51,
+     "s": 2.85,
+     "usd": 0.0
+    },
+    {
+     "in": 668,
+     "cached": 0,
+     "out": 18,
+     "s": 0.93,
+     "usd": 0.0
+    },
+    {
+     "in": 691,
+     "cached": 0,
+     "out": 25,
+     "s": 1.43,
+     "usd": 0.0
+    },
+    {
+     "in": 725,
+     "cached": 0,
+     "out": 52,
+     "s": 3.2,
+     "usd": 0.0
+    },
+    {
+     "in": 608,
+     "cached": 0,
+     "out": 27,
+     "s": 1.47,
+     "usd": 0.0
+    },
+    {
+     "in": 749,
+     "cached": 0,
+     "out": 17,
+     "s": 0.88,
+     "usd": 0.0
+    },
+    {
+     "in": 798,
+     "cached": 0,
+     "out": 27,
+     "s": 1.45,
+     "usd": 0.0
+    },
+    {
+     "in": 648,
+     "cached": 0,
+     "out": 42,
+     "s": 2.06,
+     "usd": 0.0
+    },
+    {
+     "in": 619,
+     "cached": 0,
+     "out": 25,
+     "s": 1.47,
+     "usd": 0.0
+    },
+    {
+     "in": 761,
+     "cached": 0,
+     "out": 27,
+     "s": 1.48,
+     "usd": 0.0
+    },
+    {
+     "in": 643,
+     "cached": 0,
+     "out": 25,
+     "s": 1.34,
+     "usd": 0.0
+    },
+    {
+     "in": 627,
+     "cached": 0,
+     "out": 25,
+     "s": 1.24,
+     "usd": 0.0
+    },
+    {
+     "in": 723,
+     "cached": 0,
+     "out": 25,
+     "s": 1.27,
+     "usd": 0.0
+    },
+    {
+     "in": 666,
+     "cached": 0,
+     "out": 20,
+     "s": 0.99,
+     "usd": 0.0
+    },
+    {
+     "in": 423,
+     "cached": 0,
+     "out": 28,
+     "s": 1.42,
+     "usd": 0.0
+    },
+    {
+     "in": 706,
+     "cached": 0,
+     "out": 26,
+     "s": 1.24,
+     "usd": 0.0
+    },
+    {
+     "in": 662,
+     "cached": 0,
+     "out": 27,
+     "s": 1.4,
+     "usd": 0.0
+    },
+    {
+     "in": 596,
+     "cached": 0,
+     "out": 27,
+     "s": 1.5,
+     "usd": 0.0
+    },
+    {
+     "in": 635,
+     "cached": 0,
+     "out": 36,
+     "s": 1.89,
+     "usd": 0.0
+    },
+    {
+     "in": 515,
+     "cached": 0,
+     "out": 27,
+     "s": 1.41,
+     "usd": 0.0
+    },
+    {
+     "in": 556,
+     "cached": 0,
+     "out": 33,
+     "s": 1.79,
+     "usd": 0.0
+    },
+    {
+     "in": 681,
+     "cached": 0,
+     "out": 50,
+     "s": 2.52,
+     "usd": 0.0
+    },
+    {
+     "in": 826,
+     "cached": 0,
+     "out": 33,
+     "s": 1.86,
+     "usd": 0.0
+    },
+    {
+     "in": 322,
+     "cached": 0,
+     "out": 80,
+     "s": 3.92,
+     "usd": 0.0
+    },
+    {
+     "in": 474,
+     "cached": 0,
+     "out": 44,
+     "s": 2.26,
+     "usd": 0.0
+    },
+    {
+     "in": 786,
+     "cached": 0,
+     "out": 25,
+     "s": 1.24,
+     "usd": 0.0
+    },
+    {
+     "in": 660,
+     "cached": 0,
+     "out": 21,
+     "s": 1.09,
+     "usd": 0.0
+    },
+    {
+     "in": 558,
+     "cached": 0,
+     "out": 27,
+     "s": 1.4,
+     "usd": 0.0
+    },
+    {
+     "in": 1007,
+     "cached": 0,
+     "out": 27,
+     "s": 1.45,
+     "usd": 0.0
+    },
+    {
+     "in": 678,
+     "cached": 0,
+     "out": 18,
+     "s": 0.9,
+     "usd": 0.0
+    },
+    {
+     "in": 554,
+     "cached": 0,
+     "out": 32,
+     "s": 1.48,
+     "usd": 0.0
+    },
+    {
+     "in": 522,
+     "cached": 0,
+     "out": 30,
+     "s": 1.45,
+     "usd": 0.0
+    },
+    {
+     "in": 833,
+     "cached": 0,
+     "out": 29,
+     "s": 1.47,
+     "usd": 0.0
+    },
+    {
+     "in": 622,
+     "cached": 0,
+     "out": 32,
+     "s": 1.66,
+     "usd": 0.0
+    },
+    {
+     "in": 512,
+     "cached": 0,
+     "out": 27,
+     "s": 1.36,
+     "usd": 0.0
+    },
+    {
+     "in": 720,
+     "cached": 0,
+     "out": 34,
+     "s": 1.66,
+     "usd": 0.0
+    },
+    {
+     "in": 497,
+     "cached": 0,
+     "out": 32,
+     "s": 1.62,
+     "usd": 0.0
+    },
+    {
+     "in": 591,
+     "cached": 0,
+     "out": 35,
+     "s": 1.73,
+     "usd": 0.0
+    },
+    {
+     "in": 500,
+     "cached": 0,
+     "out": 34,
+     "s": 1.71,
+     "usd": 0.0
+    },
+    {
+     "in": 575,
+     "cached": 0,
+     "out": 42,
+     "s": 2.06,
+     "usd": 0.0
+    },
+    {
+     "in": 693,
+     "cached": 0,
+     "out": 35,
+     "s": 1.91,
+     "usd": 0.0
+    },
+    {
+     "in": 694,
+     "cached": 0,
+     "out": 29,
+     "s": 1.29,
+     "usd": 0.0
+    },
+    {
+     "in": 615,
+     "cached": 0,
+     "out": 149,
+     "s": 6.85,
+     "usd": 0.0
+    },
+    {
+     "in": 731,
+     "cached": 0,
+     "out": 29,
+     "s": 1.57,
+     "usd": 0.0
+    }
+   ],
+   "answers": {
+    "H01": [
+     "T cell",
+     "H01-b",
+     "batch-full"
+    ],
+    "H02": [
+     "Petrographic microscope",
+     "H02-a",
+     "single-full"
+    ],
+    "H03": [
+     "Combustible materials with an appropriate supply of air in a closed space",
+     "H03-b",
+     "single-full"
+    ],
+    "H04": [
+     "John Paul II",
+     "H04-a",
+     "single-full"
+    ],
+    "H05": [
+     "imperialism was a natural extension of capitalism that arose from the need for capitalist economies to constantly expand investment, material resources, and manpower in such a way that necessitated colonial expansion",
+     "H05-a",
+     "single-full"
+    ],
+    "H06": [
+     "Brookhaven",
+     "H06-b",
+     "single-full"
+    ],
+    "H07": [
+     "cilia",
+     "H07-c",
+     "single-full"
+    ],
+    "H08": [
+     "In GR, objects move in straight lines through curved space-time, and the curvature of space-time is observed and inferred from the object's curved path.",
+     "H08-b",
+     "single-full"
+    ],
+    "H09": [
+     "Ominde Commission",
+     "H09-b",
+     "single-full"
+    ],
+    "H10": [
+     "railroad",
+     "H10-a",
+     "single-full"
+    ],
+    "H11": [
+     "Wahhabism",
+     "H11-b",
+     "single-full"
+    ],
+    "H12": [
+     "Nicholas Storch was a preacher who helped instigate the German Peasants' War of 1524\u201325.",
+     "H12-b",
+     "single-full"
+    ],
+    "H13": [
+     "Southern California",
+     "H13-c",
+     "single-full"
+    ],
+    "H14": [
+     "Teaching in Canada requires a post-secondary degree Bachelor's Degree.",
+     "H14-b",
+     "single-full"
+    ],
+    "H15": [
+     "Donald Davies",
+     "H15-a",
+     "single-full"
+    ],
+    "H16": [
+     "William Booth",
+     "H16-b",
+     "single-full"
+    ],
+    "H17": [
+     "60%",
+     "H17-b",
+     "single-full"
+    ],
+    "H18": [
+     "132 million tons",
+     "H18-a",
+     "single-full"
+    ],
+    "H19": [
+     "1060s",
+     "H19-a",
+     "single-full"
+    ],
+    "H20": [
+     "supplant it",
+     "H20-a",
+     "single-full"
+    ],
+    "H21": [
+     "Huguenots",
+     "H21-c",
+     "single-full"
+    ],
+    "H22": [
+     "2012",
+     "H22-a",
+     "single-full"
+    ],
+    "H23": [
+     "Korean displays, Himalayan items, and art from Southeast Asia",
+     "H23-b",
+     "single-full"
+    ],
+    "H24": [
+     "full independent prescribing authority",
+     "H24-b",
+     "single-full"
+    ],
+    "H25": [
+     "New Orleans, France, and the Falkland Islands",
+     "H25-c",
+     "single-full"
+    ],
+    "H26": [
+     "As of 31 March 2008, Sky had 3,393,000 Sky+ users.",
+     "H26-b",
+     "single-full"
+    ],
+    "H27": [
+     "1294 to 1307",
+     "H27-a",
+     "single-full"
+    ],
+    "H28": [
+     "In 1926, Tesla commented on the ills of the social subservience of women and the struggle of women toward gender equality, and indicated that humanity's future would be run by 'Queen Bees.' He believed that women would become the dominant sex in the future.",
+     "H28-c",
+     "single-full"
+    ],
+    "H29": [
+     "The three primary expressions used to represent case complexity are the best case, worst case, and average case complexity.",
+     "H29-b",
+     "single-full"
+    ],
+    "H30": [
+     "WATCH ABC",
+     "H30-c",
+     "single-full"
+    ],
+    "H31": [
+     "Fermat primality test",
+     "H31-c",
+     "single-full"
+    ],
+    "H32": [
+     "Honorary freeman",
+     "H32-b",
+     "single-full"
+    ],
+    "H33": [
+     "1466",
+     "H33-a",
+     "single-full"
+    ],
+    "H34": [
+     "a noble death",
+     "H34-a",
+     "single-full"
+    ],
+    "H35": [
+     "international law and general principles of European Union law",
+     "H35-a",
+     "single-full"
+    ],
+    "H36": [
+     "Ismail El Gizouli",
+     "H36-c",
+     "single-full"
+    ],
+    "H37": [
+     "July 1977",
+     "H37-c",
+     "single-full"
+    ],
+    "H38": [
+     "14.6 mg\u00b7L\u22121",
+     "H38-c",
+     "single-full"
+    ],
+    "H39": [
+     "1929",
+     "H39-b",
+     "single-full"
+    ],
+    "H40": [
+     "Sometimes the prosecution proposes a plea bargain to civil disobedients.",
+     "H40-c",
+     "single-full"
+    ],
+    "H41": [
+     "20% of Victorians claim no religion.",
+     "H41-a",
+     "single-full"
+    ],
+    "H42": [
+     "chemical energy is used to produce food in the form of sugars",
+     "H42-a",
+     "single-full"
+    ],
+    "H43": [
+     "architects, interior designers, engineers, and constructors",
+     "H43-a",
+     "single-full"
+    ],
+    "H44": [
+     "Former Model C schools tend to produce better academic results than government schools formerly reserved for other race groups.",
+     "H44-a",
+     "single-full"
+    ],
+    "H45": [
+     "Wages work in the same way as for any other good",
+     "H45-b",
+     "single-full"
+    ],
+    "H46": [
+     "103.5 FM",
+     "H46-c",
+     "single-full"
+    ],
+    "H47": [
+     "Apollo 8 was planned to be the D mission in December 1968, crewed by McDivitt, Scott, and Schweickart, launched on a Saturn V instead of two Saturn IBs. In the summer it had become clear that the LM would not be ready in time. Rather than waste the Saturn V on another simple Earth-orbiting mission, ASPO Manager George Low suggested the bold step of sending Apollo 8 to orbit the Moon instead, deferring the D mission to the next mission in March 1969, and eliminating the E mission. This would keep the program on track.",
+     "H47-c",
+     "single-full"
+    ],
+    "H48": [
+     "The North Sea in the Netherlands",
+     "H48-a",
+     "single-full"
+    ]
+   }
+  }
+ ]
+}

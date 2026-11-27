@@ -1,0 +1,270 @@
+{
+ "backend": "claude-code",
+ "tasks": "bench/data/squad48-holdout.jsonl",
+ "n": 48,
+ "group_sizes": [
+  4,
+  8,
+  16,
+  20
+ ],
+ "row": {
+  "route": "carpool adaptive",
+  "accepted": "46/48",
+  "calls": 5,
+  "total_tokens": 153464,
+  "uncached+output": 78004,
+  "tokens/accepted": 3336.2,
+  "uncached/accepted": 1695.7,
+  "seconds": 38.45,
+  "usd/accepted": 0.0144
+ },
+ "usd": 0.6601,
+ "regressions_vs_saved_baseline": [],
+ "fallbacks": {
+  "H12": "verifier: name looks incomplete (source continues with 'Nicholas')"
+ },
+ "wall_seconds": 38.5,
+ "answers": {
+  "H01": [
+   "CD4",
+   "H01-b",
+   "batch-compact"
+  ],
+  "H02": [
+   "petrographic microscope",
+   "H02-a",
+   "batch-compact"
+  ],
+  "H03": [
+   "burning combustible materials",
+   "H03-b",
+   "batch-compact"
+  ],
+  "H04": [
+   "John Paul II",
+   "H04-a",
+   "batch-compact"
+  ],
+  "H05": [
+   "idealism and philanthropy",
+   "H05-a",
+   "batch-full"
+  ],
+  "H06": [
+   "Brookhaven",
+   "H06-a",
+   "batch-compact"
+  ],
+  "H07": [
+   "water disturbances created by the cilia",
+   "H07-c",
+   "batch-compact"
+  ],
+  "H08": [
+   "global",
+   "H08-b",
+   "batch-compact"
+  ],
+  "H09": [
+   "Ominde Commission",
+   "H09-b",
+   "batch-compact"
+  ],
+  "H10": [
+   "railroad",
+   "H10-a",
+   "batch-compact"
+  ],
+  "H11": [
+   "Wahhabism",
+   "H11-b",
+   "batch-compact"
+  ],
+  "H12": [
+   "Zwickau prophet",
+   "H12-b",
+   "single-full"
+  ],
+  "H13": [
+   "North County",
+   "H13-b",
+   "batch-compact"
+  ],
+  "H14": [
+   "the private sector, businesses and sponsors",
+   "H14-b",
+   "batch-compact"
+  ],
+  "H15": [
+   "Donald Davies",
+   "H15-a",
+   "batch-compact"
+  ],
+  "H16": [
+   "William Booth",
+   "H16-b",
+   "batch-compact"
+  ],
+  "H17": [
+   "60%",
+   "H17-b",
+   "batch-compact"
+  ],
+  "H18": [
+   "182 million tons",
+   "H18-a",
+   "batch-compact"
+  ],
+  "H19": [
+   "1060s",
+   "H19-a",
+   "batch-compact"
+  ],
+  "H20": [
+   "supplant it",
+   "H20-a",
+   "batch-compact"
+  ],
+  "H21": [
+   "the oldest street in the United States of America",
+   "H21-c",
+   "batch-compact"
+  ],
+  "H22": [
+   "2012",
+   "H22-a",
+   "batch-compact"
+  ],
+  "H23": [
+   "porcelain, cloth and wallpaper",
+   "H23-b",
+   "batch-compact"
+  ],
+  "H24": [
+   "full independent prescribing authority",
+   "H24-b",
+   "batch-compact"
+  ],
+  "H25": [
+   "throughout its North American provinces",
+   "H25-c",
+   "batch-compact"
+  ],
+  "H26": [
+   "September 2007",
+   "H26-b",
+   "batch-compact"
+  ],
+  "H27": [
+   "1294 to 1307",
+   "H27-a",
+   "batch-full"
+  ],
+  "H28": [
+   "1926",
+   "H28-c",
+   "batch-full"
+  ],
+  "H29": [
+   "best, worst and average case complexity",
+   "H29-b",
+   "batch-compact"
+  ],
+  "H30": [
+   "WATCH ABC",
+   "H30-c",
+   "batch-compact"
+  ],
+  "H31": [
+   "Fermat primality test",
+   "H31-c",
+   "batch-compact"
+  ],
+  "H32": [
+   "Honorary freemen",
+   "H32-b",
+   "batch-compact"
+  ],
+  "H33": [
+   "14th to 17th centuries",
+   "H33-a",
+   "batch-full"
+  ],
+  "H34": [
+   "a noble death",
+   "H34-a",
+   "batch-compact"
+  ],
+  "H35": [
+   "case law by the Court of Justice",
+   "H35-a",
+   "batch-compact"
+  ],
+  "H36": [
+   "Ismail El Gizouli",
+   "H36-c",
+   "batch-compact"
+  ],
+  "H37": [
+   "July 1977",
+   "H37-c",
+   "batch-compact"
+  ],
+  "H38": [
+   "about twice as much",
+   "H38-c",
+   "batch-compact"
+  ],
+  "H39": [
+   "early 1950s",
+   "H39-a",
+   "batch-full"
+  ],
+  "H40": [
+   "fabricating evidence or committing perjury",
+   "H40-a",
+   "batch-compact"
+  ],
+  "H41": [
+   "Around 20%",
+   "H41-a",
+   "batch-compact"
+  ],
+  "H42": [
+   "food in the form of sugars",
+   "H42-a",
+   "batch-compact"
+  ],
+  "H43": [
+   "architects, interior designers, engineers and constructors",
+   "H43-a",
+   "batch-compact"
+  ],
+  "H44": [
+   "better academic results",
+   "H44-a",
+   "batch-compact"
+  ],
+  "H45": [
+   "prices",
+   "H45-b",
+   "batch-compact"
+  ],
+  "H46": [
+   "KRFX",
+   "H46-c",
+   "batch-compact"
+  ],
+  "H47": [
+   "orbit the Moon",
+   "H47-c",
+   "batch-compact"
+  ],
+  "H48": [
+   "North Sea",
+   "H48-a",
+   "batch-full"
+  ]
+ }
+}

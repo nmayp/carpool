@@ -1,0 +1,6 @@
+{"route": "baseline", "accepted": "42/48", "lenient": "48/48", "calls": 48, "total_tokens": 100221, "uncached+output": 100221, "usd": 0.8169, "wall_seconds": 60.9, "regressions": null}
+{"route": "batch-only#1", "accepted": "46/48", "lenient": "48/48", "calls": 3, "total_tokens": 46170, "uncached+output": 42998, "usd": 0.3616, "wall_seconds": 25.3, "regressions": []}
+{"route": "carpool#1", "accepted": "46/48", "lenient": "48/48", "calls": 3, "total_tokens": 25058, "uncached+output": 21886, "usd": 0.1954, "wall_seconds": 25.0, "regressions": []}
+{"route": "batch-only#2", "accepted": "46/48", "lenient": "48/48", "calls": 3, "total_tokens": 46175, "uncached+output": 3222, "usd": 0.0513, "wall_seconds": 23.1, "regressions": []}
+{"route": "carpool#2", "accepted": "46/48", "lenient": "48/48", "calls": 3, "total_tokens": 25012, "uncached+output": 3399, "usd": 0.0507, "wall_seconds": 24.9, "regressions": []}
+saved results/squad48-holdout-claude-lean.json

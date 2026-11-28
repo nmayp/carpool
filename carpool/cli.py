@@ -83,9 +83,26 @@ def cmd_stats(a):
         rows.append(row)
     print(f"{d.get('tasks')} · {d.get('n')} tasks · backend {d.get('backend')}\n")
     _table(rows)
+    if a.card:
+        from .share_card import write_card
+
+        try:
+            write_card(d, a.card)
+        except (KeyError, OSError, TypeError, ValueError) as exc:
+            sys.exit(f"carpool stats: {exc}")
+        print(f"\nWrote {a.card}")
     spent = sum(r.get("usd") or 0 for r in runs)
     if spent:
         print(f"\ntotal spend in this file: ${spent:.2f} (list price)")
+
+
+def cmd_setup(a):
+    from .setup import setup_agents
+
+    try:
+        return setup_agents(a.agent, remove=a.remove, backup=not a.no_backup)
+    except (OSError, ValueError) as exc:
+        sys.exit(f"carpool setup: {exc}")
 
 
 def _compiled(a):
@@ -254,7 +271,15 @@ def main(argv=None):
 
     s = sub.add_parser("stats", help="summarise a saved benchmark results file")
     s.add_argument("results")
+    s.add_argument("--card", type=Path, help="write a 1200 × 630 PNG share card")
     s.set_defaults(fn=cmd_stats)
+
+    s = sub.add_parser("setup", help="register carpool with installed agents")
+    s.add_argument("--agent", action="append", choices=["claude", "codex", "cursor", "gemini", "opencode"],
+                   help="configure this agent (repeatable; defaults to detected agents)")
+    s.add_argument("--remove", action="store_true", help="remove carpool configuration")
+    s.add_argument("--no-backup", action="store_true", help="skip .carpool.bak files")
+    s.set_defaults(fn=cmd_setup)
 
     s = sub.add_parser("compile", help="turn logged model calls into a plain function, behind a gate")
     s.add_argument("log", help='JSONL of logged calls: {"input": ..., "output": ...} per line')

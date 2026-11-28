@@ -10,7 +10,7 @@ readme = "docs/PYPI.md"
 license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = ["tomli; python_version < '3.11'"]
 keywords = ["llm", "agents", "tokens", "cost", "claude", "codex", "batching", "prompt-compression"]
 
 [project.urls]
@@ -22,14 +22,17 @@ Changelog = "https://github.com/nmayp/carpool/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 anthropic = ["anthropic"]
-dev = ["pytest"]
+card = ["Pillow>=10.1"]
+dev = ["pytest", "Pillow>=10.1"]
 
 [project.scripts]
 carpool = "carpool.cli:main"
 carpool-mcp = "carpool.mcp_server:main"
 
 [tool.setuptools]
-packages = ["carpool"]
+packages = ["carpool", "carpool._skill"]
+package-dir = {"carpool._skill" = "skills/carpool"}
 
 [tool.setuptools.package-data]
 carpool = ["data/*.jsonl"]
+"carpool._skill" = ["SKILL.md"]

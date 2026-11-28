@@ -17,7 +17,7 @@ pip install carpool-agents
 carpool bench          # offline demo with a mock model, no API key
 ```
 
-- **Library and CLI** with no dependencies, and backends that report real usage: Claude Code, Codex, Gemini CLI,
+- **Library and CLI** with backends that report real usage: Claude Code, Codex, Gemini CLI,
   Anthropic (including the Message Batches API), any OpenAI-compatible endpoint, Gemini API, Ollama.
 - **MCP server** (`carpool-mcp`) for Claude Code, Cursor, Windsurf, Cline, Codex, Gemini CLI and Claude Desktop.
 - **Claude Code plugin** with a skill, a `/carpool` command and hooks.

@@ -27,8 +27,8 @@ model's reply: those cases improve the checker.
 
 ## Change code
 
-- Python 3.10+, no runtime dependencies. Keep it that way: the library, CLI, MCP server and hooks use only the
-  standard library.
+- Python 3.10+. Keep the core library, MCP server and hooks on the standard library. Setup uses
+  `tomli` on Python 3.10, and share-card rendering uses the optional `card` extra.
 - Run `pytest -q` before opening a PR. CI runs it on Python 3.10, 3.12 and 3.14.
 - A change to the checker or the prompts must say how it was evaluated. If you tuned it on a task set, test it on
   a different one (`bench/make_squad.py` and `bench/make_fixtures.py` can generate fresh, disjoint sets).

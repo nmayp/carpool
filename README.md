@@ -8,7 +8,6 @@ Many independent LLM tasks, one verified request.
 
 [![CI](https://img.shields.io/github/actions/workflow/status/nmayp/carpool/ci.yml?style=flat-square&label=ci&labelColor=000000&color=1840ff)](https://github.com/nmayp/carpool/actions/workflows/ci.yml)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-1840ff?style=flat-square&labelColor=000000)
-![No dependencies](https://img.shields.io/badge/dependencies-none-1840ff?style=flat-square&labelColor=000000)
 ![MIT](https://img.shields.io/badge/license-MIT-1840ff?style=flat-square&labelColor=000000)
 
 <img alt="Terminal running carpool stats on 48 SQuAD questions with lean Claude calls: carpool uses 3 calls instead of 48, accepts 46 of 48 answers against 42, and costs 78 percent less per accepted answer on the first run, with 0 regressions." src="docs/assets/demo.svg" width="733">
@@ -22,6 +21,18 @@ the cost per accepted answer by about 80% against one lean call per task, and by
 agent call per task, with no regressions.[^1]
 
 ## 1. Quick start
+
+Paste this into your agent:
+
+```text
+Install carpool: run `pip install carpool-agents`, then `carpool setup`.
+Tell me when to restart you.
+```
+
+`carpool setup` configures the MCP server and skill for Claude Code, Codex, Cursor, Gemini CLI, and OpenCode.
+Use `--agent` to select an agent, `--remove` to undo setup, or `--no-backup` to skip the first
+`.carpool.bak` copy of an existing file. Keep the installation environment available so the agent can launch
+the server. These setup instructions apply to builds that include `carpool setup`.
 
 In Claude Code:
 
@@ -65,6 +76,15 @@ because the provider cached the grouped prompt, so the table quotes first runs.
 
 Every raw JSON file, the ablation, the group-size sweep and the agent experiments are in
 [docs/RESULTS.md](docs/RESULTS.md).
+
+[![SQuAD benchmark share card](docs/assets/share-card.png)](results/squad48-holdout-claude-lean.json)
+
+To generate a share card from a saved benchmark:
+
+```bash
+pip install 'carpool-agents[card]'
+carpool stats results/squad48-holdout-claude-lean.json --card out.png
+```
 
 What we measured:
 - The saving comes from sharing the request. Shortening evidence with one call per task saved 2.5% on the ops
@@ -159,7 +179,7 @@ gate, over a format mismatch in the log, and the write-up says what was changed 
 
 Paste the five rules in [`integrations/AGENTS.md`](integrations/AGENTS.md) into your `AGENTS.md`, `.cursorrules`, `GEMINI.md` or system prompt.
 
-### Python library / CLI (zero dependencies)
+### Python library / CLI
 
 ```bash
 pip install carpool-agents
